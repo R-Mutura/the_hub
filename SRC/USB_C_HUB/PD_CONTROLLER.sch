@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -447,23 +447,23 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 6196906F
-P 3875 1350
-F 0 "C?" H 3967 1396 50  0000 L CNN
-F 1 "22uF" H 3900 1275 50  0000 L CNN
-F 2 "" H 3875 1350 50  0001 C CNN
-F 3 "~" H 3875 1350 50  0001 C CNN
-	1    3875 1350
+P 2725 1350
+F 0 "C?" H 2817 1396 50  0000 L CNN
+F 1 "22uF" H 2750 1275 50  0000 L CNN
+F 2 "" H 2725 1350 50  0001 C CNN
+F 3 "~" H 2725 1350 50  0001 C CNN
+	1    2725 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 61969075
-P 5700 1400
-F 0 "R?" H 5700 1525 50  0000 R CNN
-F 1 "10K" H 5675 1275 50  0000 R CNN
-F 2 "" V 5740 1390 50  0001 C CNN
-F 3 "~" H 5700 1400 50  0001 C CNN
-	1    5700 1400
+P 4550 1400
+F 0 "R?" H 4550 1525 50  0000 R CNN
+F 1 "10K" H 4525 1275 50  0000 R CNN
+F 2 "" V 4590 1390 50  0001 C CNN
+F 3 "~" H 4550 1400 50  0001 C CNN
+	1    4550 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -522,117 +522,115 @@ Connection ~ 7300 3975
 Wire Wire Line
 	7050 4075 7650 4075
 Connection ~ 7650 4075
-NoConn ~ 10375 4525
-NoConn ~ 10375 4625
 $Comp
 L usb_hub:SI7997DP Q?
 U 1 1 619690A2
-P 4500 1100
-F 0 "Q?" V 4742 850 50  0000 C CNN
-F 1 "SI7997DP" V 4651 850 50  0000 C CNN
-F 2 "" H 4500 1100 50  0001 C CNN
-F 3 "" H 4500 1100 50  0001 C CNN
-	1    4500 1100
+P 3350 1100
+F 0 "Q?" V 3592 850 50  0000 C CNN
+F 1 "SI7997DP" V 3501 850 50  0000 C CNN
+F 2 "" H 3350 1100 50  0001 C CNN
+F 3 "" H 3350 1100 50  0001 C CNN
+	1    3350 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L usb_hub:SI7997DP Q?
 U 2 1 619690A8
-P 6450 1100
-F 0 "Q?" V 6692 750 50  0000 C CNN
-F 1 "SI7997DP" V 6601 750 50  0000 C CNN
-F 2 "" H 6450 1100 50  0001 C CNN
-F 3 "" H 6450 1100 50  0001 C CNN
-	2    6450 1100
+P 5300 1100
+F 0 "Q?" V 5542 750 50  0000 C CNN
+F 1 "SI7997DP" V 5451 750 50  0000 C CNN
+F 2 "" H 5300 1100 50  0001 C CNN
+F 3 "" H 5300 1100 50  0001 C CNN
+	2    5300 1100
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	5900 1100 5700 1100
+	4750 1100 4550 1100
 Wire Wire Line
-	4750 1400 4750 1625
+	3600 1400 3600 1625
 Wire Wire Line
-	4750 1625 5200 1625
+	3600 1625 4050 1625
 Wire Wire Line
-	6100 1625 6100 1400
+	4950 1625 4950 1400
 $Comp
 L Device:C_Small C?
 U 1 1 619690B2
-P 3475 1350
-F 0 "C?" H 3383 1396 50  0000 R CNN
-F 1 "22uF" H 3383 1305 50  0000 R CNN
-F 2 "" H 3475 1350 50  0001 C CNN
-F 3 "~" H 3475 1350 50  0001 C CNN
-	1    3475 1350
+P 2325 1350
+F 0 "C?" H 2233 1396 50  0000 R CNN
+F 1 "22uF" H 2233 1305 50  0000 R CNN
+F 2 "" H 2325 1350 50  0001 C CNN
+F 3 "~" H 2325 1350 50  0001 C CNN
+	1    2325 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3475 1450 3475 1600
+	2325 1450 2325 1600
 Wire Wire Line
-	3475 1600 3650 1600
+	2325 1600 2500 1600
 Wire Wire Line
-	3875 1600 3875 1450
+	2725 1600 2725 1450
 Wire Wire Line
-	3475 1100 3475 1250
+	2325 1100 2325 1250
 Wire Wire Line
-	3475 1100 3875 1100
+	2325 1100 2725 1100
 Wire Wire Line
-	3875 1100 3875 1250
-Connection ~ 3875 1100
+	2725 1100 2725 1250
+Connection ~ 2725 1100
 Wire Wire Line
-	3875 1100 4175 1100
+	2725 1100 3025 1100
 $Comp
 L Device:C_Small C?
 U 1 1 619690C0
-P 4175 1375
-F 0 "C?" H 4300 1450 50  0000 R CNN
-F 1 "0.1uF" H 4400 1275 50  0000 R CNN
-F 2 "" H 4175 1375 50  0001 C CNN
-F 3 "~" H 4175 1375 50  0001 C CNN
-	1    4175 1375
+P 3025 1375
+F 0 "C?" H 3150 1450 50  0000 R CNN
+F 1 "0.1uF" H 3250 1275 50  0000 R CNN
+F 2 "" H 3025 1375 50  0001 C CNN
+F 3 "~" H 3025 1375 50  0001 C CNN
+	1    3025 1375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4175 1275 4175 1100
-Connection ~ 4175 1100
+	3025 1275 3025 1100
+Connection ~ 3025 1100
 Wire Wire Line
-	4175 1100 4550 1100
+	3025 1100 3400 1100
 Wire Wire Line
-	4175 1475 4175 1625
+	3025 1475 3025 1625
 Wire Wire Line
-	4175 1625 4750 1625
-Connection ~ 4750 1625
+	3025 1625 3600 1625
+Connection ~ 3600 1625
 $Comp
 L Device:C_Small C?
 U 1 1 619690CC
-P 5200 1400
-F 0 "C?" H 5325 1475 50  0000 R CNN
-F 1 "0.1uF" H 5425 1300 50  0000 R CNN
-F 2 "" H 5200 1400 50  0001 C CNN
-F 3 "~" H 5200 1400 50  0001 C CNN
-	1    5200 1400
+P 4050 1400
+F 0 "C?" H 4175 1475 50  0000 R CNN
+F 1 "0.1uF" H 4275 1300 50  0000 R CNN
+F 2 "" H 4050 1400 50  0001 C CNN
+F 3 "~" H 4050 1400 50  0001 C CNN
+	1    4050 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 1300 5200 1100
-Connection ~ 5200 1100
+	4050 1300 4050 1100
+Connection ~ 4050 1100
 Wire Wire Line
-	5200 1100 5025 1100
+	4050 1100 3875 1100
 Wire Wire Line
-	5200 1500 5200 1625
-Connection ~ 5200 1625
+	4050 1500 4050 1625
+Connection ~ 4050 1625
 Wire Wire Line
-	5700 1550 5700 1625
-Connection ~ 5700 1625
+	4550 1550 4550 1625
+Connection ~ 4550 1625
 Wire Wire Line
-	5700 1625 6100 1625
+	4550 1625 4950 1625
 Wire Wire Line
-	5700 1250 5700 1100
-Connection ~ 5700 1100
+	4550 1250 4550 1100
+Connection ~ 4550 1100
 Wire Wire Line
-	5700 1100 5200 1100
+	4550 1100 4050 1100
 Wire Wire Line
-	6500 1100 6475 1100
-Text Label 6500 1100 0    50   ~ 0
+	5350 1100 5325 1100
+Text Label 5350 1100 0    50   ~ 0
 VBUS
 Text Label 10600 4825 0    50   ~ 0
 PP_EXT_CNTRL
@@ -765,19 +763,19 @@ F 3 "~" H 1425 5300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3475 1100 3100 1100
+	2325 1100 1950 1100
 Wire Wire Line
-	3100 1100 3100 1250
+	1950 1100 1950 1250
 Wire Wire Line
 	1425 4850 1425 5150
-Connection ~ 3475 1100
+Connection ~ 2325 1100
 Wire Wire Line
 	1175 5175 1175 4750
 Wire Wire Line
-	5025 1200 5025 1100
-Connection ~ 5025 1100
+	3875 1200 3875 1100
+Connection ~ 3875 1100
 Wire Wire Line
-	5025 1100 4950 1100
+	3875 1100 3800 1100
 Wire Wire Line
 	1175 5475 1175 5575
 Connection ~ 1175 5575
@@ -819,9 +817,9 @@ Text Label 1175 4750 1    50   ~ 0
 COMP_IN
 Text Label 1425 4925 1    50   ~ 0
 COMP_OUT
-Text Label 3100 1250 3    50   ~ 0
+Text Label 1950 1250 3    50   ~ 0
 COMP_IN
-Text Label 5025 1200 3    50   ~ 0
+Text Label 3875 1200 3    50   ~ 0
 COMP_OUT
 Text Label 4525 5675 3    50   ~ 0
 GND_FET
@@ -855,158 +853,156 @@ Wire Wire Line
 $Comp
 L OLIMEX_Power:GND #PWR?
 U 1 1 61969157
-P 3650 1600
-F 0 "#PWR?" H 3650 1350 50  0001 C CNN
-F 1 "GND" H 3655 1427 50  0000 C CNN
-F 2 "" H 3650 1600 60  0000 C CNN
-F 3 "" H 3650 1600 60  0000 C CNN
-	1    3650 1600
+P 2500 1600
+F 0 "#PWR?" H 2500 1350 50  0001 C CNN
+F 1 "GND" H 2505 1427 50  0000 C CNN
+F 2 "" H 2500 1600 60  0000 C CNN
+F 3 "" H 2500 1600 60  0000 C CNN
+	1    2500 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 3650 1600
+Connection ~ 2500 1600
 Wire Wire Line
-	3650 1600 3875 1600
-Text Label 3475 875  2    50   ~ 0
-POWER_IN(PP_EXT1)
+	2500 1600 2725 1600
 Text Label 6800 2475 2    50   ~ 0
 VBUS
 Wire Wire Line
 	6725 2475 6725 2775
 Wire Wire Line
-	5200 1625 5450 1625
-Connection ~ 5450 1625
+	4050 1625 4300 1625
+Connection ~ 4300 1625
 Wire Wire Line
-	5450 1625 5700 1625
+	4300 1625 4550 1625
 Wire Wire Line
-	3475 875  3475 1100
-Connection ~ 5450 3600
+	2325 875  2325 1100
+Connection ~ 4300 3600
 $Comp
 L OLIMEX_Power:GND #PWR?
 U 1 1 61969167
-P 5450 3600
-F 0 "#PWR?" H 5450 3350 50  0001 C CNN
-F 1 "GND" H 5455 3427 50  0000 C CNN
-F 2 "" H 5450 3600 60  0000 C CNN
-F 3 "" H 5450 3600 60  0000 C CNN
-	1    5450 3600
+P 4300 3600
+F 0 "#PWR?" H 4300 3350 50  0001 C CNN
+F 1 "GND" H 4305 3427 50  0000 C CNN
+F 2 "" H 4300 3600 60  0000 C CNN
+F 3 "" H 4300 3600 60  0000 C CNN
+	1    4300 3600
 	-1   0    0    -1  
 $EndComp
-Connection ~ 5450 2825
+Connection ~ 4300 2825
 Wire Wire Line
-	5450 2825 5450 3600
+	4300 2825 4300 3600
 Wire Wire Line
-	5450 2825 5450 2550
+	4300 2825 4300 2550
 Wire Wire Line
-	5350 2825 5450 2825
+	4200 2825 4300 2825
 Wire Wire Line
-	4375 2450 4375 2850
-Connection ~ 4375 2450
-Connection ~ 4575 2450
+	3225 2450 3225 2850
+Connection ~ 3225 2450
+Connection ~ 3425 2450
 Wire Wire Line
-	4575 2450 4375 2450
+	3425 2450 3225 2450
 Wire Wire Line
-	5150 2450 4575 2450
+	4000 2450 3425 2450
 Wire Wire Line
-	4575 2825 4575 2450
+	3425 2825 3425 2450
 Wire Wire Line
-	4950 2825 4575 2825
+	3800 2825 3425 2825
 $Comp
 L dk_TVS-Diodes:PGB1010603MR D?
 U 1 1 6196917D
-P 5150 2825
-F 0 "D?" H 5150 3087 60  0000 C CNN
-F 1 "D12V0L1B2LP-7B" H 5000 2975 60  0000 C CNN
-F 2 "Diode_SMD:D_01005_0402Metric" H 5350 3025 60  0001 L CNN
-F 3 "https://www.digikey.com/en/products/detail/diodes-incorporated/D12V0L1B2LP-7B/5033747" H 5350 3125 60  0001 L CNN
-F 4 "Circuit Protection" H 5350 3425 60  0001 L CNN "Category"
-F 5 "TVS - Diodes" H 5350 3525 60  0001 L CNN "Family"
-F 6 "/product-detail/en/littelfuse-inc/PGB1010603MR/F2594CT-ND/813072" H 5350 3725 60  0001 L CNN "DK_Detail_Page"
-F 7 "25V Clamp 4A (8/20µs) Ipp Tvs Diode Surface Mount X1-DFN1006-2" H 5350 3825 60  0001 L CNN "Description"
-F 8 "Active" H 5350 4025 60  0001 L CNN "Status"
-	1    5150 2825
+P 4000 2825
+F 0 "D?" H 4000 3087 60  0000 C CNN
+F 1 "D12V0L1B2LP-7B" H 3850 2975 60  0000 C CNN
+F 2 "Diode_SMD:D_01005_0402Metric" H 4200 3025 60  0001 L CNN
+F 3 "https://www.digikey.com/en/products/detail/diodes-incorporated/D12V0L1B2LP-7B/5033747" H 4200 3125 60  0001 L CNN
+F 4 "Circuit Protection" H 4200 3425 60  0001 L CNN "Category"
+F 5 "TVS - Diodes" H 4200 3525 60  0001 L CNN "Family"
+F 6 "/product-detail/en/littelfuse-inc/PGB1010603MR/F2594CT-ND/813072" H 4200 3725 60  0001 L CNN "DK_Detail_Page"
+F 7 "25V Clamp 4A (8/20µs) Ipp Tvs Diode Surface Mount X1-DFN1006-2" H 4200 3825 60  0001 L CNN "Description"
+F 8 "Active" H 4200 4025 60  0001 L CNN "Status"
+	1    4000 2825
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7002P_215 Q?
 U 1 1 61969185
-P 5450 2350
-F 0 "Q?" H 5558 2403 60  0000 L CNN
-F 1 "MMBF2201NT1G" H 5558 2297 60  0000 L CNN
-F 2 "digikey-footprints:SOT-323" H 5650 2550 60  0001 L CNN
-F 3 "https://www.digikey.com/en/products/detail/onsemi/MMBF2201NT1G/919579" H 5650 2650 60  0001 L CNN
-F 4 "MMBF2201NT1G" H 5650 2750 60  0001 L CNN "Digi-Key_PN"
-F 5 "Transistors - FETs, MOSFETs - Single" H 5650 3050 60  0001 L CNN "Family"
-	1    5450 2350
+P 4300 2350
+F 0 "Q?" H 4408 2403 60  0000 L CNN
+F 1 "MMBF2201NT1G" H 4408 2297 60  0000 L CNN
+F 2 "digikey-footprints:SOT-323" H 4500 2550 60  0001 L CNN
+F 3 "https://www.digikey.com/en/products/detail/onsemi/MMBF2201NT1G/919579" H 4500 2650 60  0001 L CNN
+F 4 "MMBF2201NT1G" H 4500 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "Transistors - FETs, MOSFETs - Single" H 4500 3050 60  0001 L CNN "Family"
+	1    4300 2350
 	1    0    0    -1  
 $EndComp
-Connection ~ 4375 3600
+Connection ~ 3225 3600
 Wire Wire Line
-	4375 3600 5450 3600
+	3225 3600 4300 3600
 Wire Wire Line
-	4375 3600 4375 3250
+	3225 3600 3225 3250
 Wire Wire Line
-	4175 3600 4375 3600
+	3025 3600 3225 3600
 Wire Wire Line
-	3600 3150 3450 3150
-Connection ~ 3600 3150
+	2450 3150 2300 3150
+Connection ~ 2450 3150
 Wire Wire Line
-	3600 3600 3600 3150
+	2450 3600 2450 3150
 Wire Wire Line
-	3775 3600 3600 3600
+	2625 3600 2450 3600
 $Comp
 L dk_Diodes-Zener-Single:MMSZ5231B-7-F Z?
 U 1 1 61969196
-P 3975 3600
-F 0 "Z?" H 3975 3338 60  0000 C CNN
-F 1 "BZT52C11-7-F" H 3975 3444 60  0000 C CNN
-F 2 "digikey-footprints:SOD-123" H 4175 3800 60  0001 L CNN
-F 3 "https://www.digikey.com/en/products/detail/diodes-incorporated/BZT52C11-7-F/768779" H 4175 3900 60  0001 L CNN
-F 4 "DIODE ZENER 5.1V 500MW SOD123" H 4175 4600 60  0001 L CNN "Description"
-F 5 "Diodes Incorporated" H 4175 4700 60  0001 L CNN "Manufacturer"
-F 6 "Active" H 4175 4800 60  0001 L CNN "Status"
-	1    3975 3600
+P 2825 3600
+F 0 "Z?" H 2825 3338 60  0000 C CNN
+F 1 "BZT52C11-7-F" H 2825 3444 60  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 3025 3800 60  0001 L CNN
+F 3 "https://www.digikey.com/en/products/detail/diodes-incorporated/BZT52C11-7-F/768779" H 3025 3900 60  0001 L CNN
+F 4 "DIODE ZENER 5.1V 500MW SOD123" H 3025 4600 60  0001 L CNN "Description"
+F 5 "Diodes Incorporated" H 3025 4700 60  0001 L CNN "Manufacturer"
+F 6 "Active" H 3025 4800 60  0001 L CNN "Status"
+	1    2825 3600
 	-1   0    0    1   
 $EndComp
-Text Label 3725 2450 2    50   ~ 0
+Text Label 2575 2450 2    50   ~ 0
 PP_EXT_CNTRL
 Wire Wire Line
-	3900 2450 3725 2450
+	2750 2450 2575 2450
 Wire Wire Line
-	4200 2450 4375 2450
+	3050 2450 3225 2450
 $Comp
 L Device:R_US R?
 U 1 1 6196919F
-P 4050 2450
-F 0 "R?" V 4000 2575 50  0000 C CNN
-F 1 "1K" V 4000 2275 50  0000 C CNN
-F 2 "" V 4090 2440 50  0001 C CNN
-F 3 "~" H 4050 2450 50  0001 C CNN
-	1    4050 2450
+P 2900 2450
+F 0 "R?" V 2850 2575 50  0000 C CNN
+F 1 "1K" V 2850 2275 50  0000 C CNN
+F 2 "" V 2940 2440 50  0001 C CNN
+F 3 "~" H 2900 2450 50  0001 C CNN
+	1    2900 2450
 	0    -1   1    0   
 $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7002P_215 Q?
 U 1 1 619691A7
-P 4375 3050
-F 0 "Q?" H 4483 3103 60  0000 L CNN
-F 1 "MMBF2201NT1G" H 4483 2997 60  0000 L CNN
-F 2 "digikey-footprints:SOT-323" H 4575 3250 60  0001 L CNN
-F 3 "https://www.digikey.com/en/products/detail/onsemi/MMBF2201NT1G/919579" H 4575 3350 60  0001 L CNN
-F 4 "MMBF2201NT1G" H 4575 3450 60  0001 L CNN "Digi-Key_PN"
-F 5 "Transistors - FETs, MOSFETs - Single" H 4575 3750 60  0001 L CNN "Family"
-	1    4375 3050
+P 3225 3050
+F 0 "Q?" H 3333 3103 60  0000 L CNN
+F 1 "MMBF2201NT1G" H 3333 2997 60  0000 L CNN
+F 2 "digikey-footprints:SOT-323" H 3425 3250 60  0001 L CNN
+F 3 "https://www.digikey.com/en/products/detail/onsemi/MMBF2201NT1G/919579" H 3425 3350 60  0001 L CNN
+F 4 "MMBF2201NT1G" H 3425 3450 60  0001 L CNN "Digi-Key_PN"
+F 5 "Transistors - FETs, MOSFETs - Single" H 3425 3750 60  0001 L CNN "Family"
+	1    3225 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4075 3150 3600 3150
-Text Label 3450 3150 2    50   ~ 0
+	2925 3150 2450 3150
+Text Label 2300 3150 2    50   ~ 0
 GND_FET
 Wire Wire Line
-	5450 1625 5450 2150
-Text Notes 3125 2775 0    39   ~ 0
-PP_EXT_CNTRL turns on the mosfet via \na gate thus making the PP_EXT1 mosfet\ngate  zero. turning on the mosfet and\n allowing current flow
-Text Notes 3600 3925 0    39   ~ 0
-GND_NMOS comes from the \ncomparator. When no power is \npressent the comparator connectes the \nPP_EXT_CNTRL pin to GND via NMOS 
+	4300 1625 4300 2150
+Text Notes 1975 2775 0    39   ~ 0
+PP_EXT_CTRL turns on the mosfet via \na gate thus making the PP_EXT1 mosfet\ngate  zero. turning on the mosfet and\n allowing current flow
+Text Notes 2450 3925 0    39   ~ 0
+GND_NMOS comes from the \ncomparator. When no power is \npresent the comparator connectes the \nPP_EXT_CTRL pin to GND via NMOS 
 Wire Wire Line
 	7375 3725 7375 3750
 Wire Wire Line
@@ -1109,17 +1105,9 @@ Connection ~ 8175 3350
 Text Notes 7275 1050 0    39   ~ 0
 The TPS65987D requires firmware \nprogramming via a downloadable GUI tool.\nRecomendation: Since the system takes in a \ncharger we can configure it as a Source device\n(read:https://www.embedded.com/usb-type-c-and-power-delivery-101-ports-and-connections/) \nSecondly: we can configure it as a DRP device that can source(provide) or sink(receive) power. Its a source when the charging \nreceptacle it active and a sink when the charging receptacle is in active.
 Wire Notes Line
-	2625 525  2625 4050
+	1475 525  1475 4050
 Wire Notes Line
-	2625 4050 6475 4050
-Wire Notes Line
-	6475 4050 6475 1175
-Wire Notes Line
-	6475 1175 6725 1175
-Wire Notes Line
-	6725 1175 6725 525 
-Wire Notes Line
-	6725 525  2625 525 
+	5575 525  1475 525 
 Wire Notes Line
 	6550 1275 6550 6525
 Wire Notes Line
@@ -1152,84 +1140,13 @@ Wire Notes Line
 	6425 4100 4650 4100
 Wire Notes Line
 	4650 4100 4650 6000
-Wire Notes Line
-	2575 525  2600 4050
-Wire Wire Line
-	2050 3600 2050 3675
-Connection ~ 2050 3600
-Wire Wire Line
-	2350 3600 2050 3600
-Wire Wire Line
-	2350 3575 2350 3600
-NoConn ~ 1450 1275
-NoConn ~ 1450 1175
-Wire Notes Line
-	500  525  2575 525 
-Wire Notes Line
-	500  4050 500  525 
-Wire Notes Line
-	2600 4050 500  4050
-Text Label 1275 975  2    50   ~ 0
-POWER_IN(PP_EXT1)
-Wire Wire Line
-	1450 975  1275 975 
-Wire Wire Line
-	2050 3575 2050 3600
-$Comp
-L OLIMEX_Power:GND #PWR?
-U 1 1 6196920D
-P 2050 3675
-F 0 "#PWR?" H 2050 3425 50  0001 C CNN
-F 1 "GND" H 2055 3502 50  0000 C CNN
-F 2 "" H 2050 3675 60  0000 C CNN
-F 3 "" H 2050 3675 60  0000 C CNN
-	1    2050 3675
-	-1   0    0    -1  
-$EndComp
-Text Notes 1250 2525 2    50   ~ 0
-UNUSED \nIN THE TYPE C \nCHARGING INPUT
-Wire Notes Line
-	1300 3325 1475 3325
-Wire Notes Line
-	1300 1075 1300 3325
-Wire Notes Line
-	1450 1075 1300 1075
-NoConn ~ 1450 3275
-NoConn ~ 1450 3175
-NoConn ~ 1450 2975
-NoConn ~ 1450 2875
-NoConn ~ 1450 2675
-NoConn ~ 1450 2575
-NoConn ~ 1450 2375
-NoConn ~ 1450 2275
-NoConn ~ 1450 2075
-NoConn ~ 1450 1975
-Text Notes 525  700  0    50   ~ 0
-CHARGER INPUT TYPE C\n  RECEPTACLE
-$Comp
-L Connector:USB_C_Receptacle J?
-U 1 1 61969222
-P 2050 1975
-F 0 "J?" H 2157 3242 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 2157 3151 50  0000 C CNN
-F 2 "" H 2200 1975 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2200 1975 50  0001 C CNN
-	1    2050 1975
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 1450 1475
-NoConn ~ 1450 1575
-NoConn ~ 1450 1675
-NoConn ~ 1450 1775
-Text Notes 550  4000 0    39   ~ 0
-The input receptacle receives input from a\n charging brick that can deliver upto 100W\n(20V at 5A). the level of power sourced is \ncontrolled by the PD via the buck-boost and \nthe external power path and FFETs  
-Text GLabel 6475 950  1    39   Input ~ 0
+Text GLabel 5325 950  1    39   Input ~ 0
 VBUS
 Wire Wire Line
-	6475 950  6475 1100
-Connection ~ 6475 1100
+	5325 950  5325 1100
+Connection ~ 5325 1100
 Wire Wire Line
-	6475 1100 6300 1100
+	5325 1100 5150 1100
 Text HLabel 7050 3975 0    50   Input ~ 0
 CC_CC1
 Text HLabel 7050 4075 0    50   Input ~ 0
@@ -1268,4 +1185,22 @@ Text HLabel 10875 5125 2    43   Input ~ 0
 USB_D+
 Text HLabel 10875 5225 2    43   Input ~ 0
 USB_D-
+Text GLabel 2325 875  0    50   Input ~ 0
+SYS_PWR
+Text HLabel 10625 4525 2    39   Input ~ 0
+POWER_LVL1
+Text HLabel 10625 4625 2    39   Input ~ 0
+POWER_LVL2
+Text HLabel 10600 4925 2    39   Input ~ 0
+POWER_LVL3
+Wire Wire Line
+	10600 4925 10375 4925
+Wire Wire Line
+	10625 4625 10375 4625
+Wire Wire Line
+	10375 4525 10625 4525
+Wire Notes Line
+	5575 525  5575 4050
+Wire Notes Line
+	1475 4050 5575 4050
 $EndSCHEMATC
