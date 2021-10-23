@@ -1200,6 +1200,4 @@ Wire Wire Line
 Wire Wire Line
 	8175 3350 8175 3325
 Connection ~ 8175 3325
-Text Notes 7275 1025 0    39   ~ 0
-The TPS65987D requires firmware \nprogramming via a downloadable GUI tool.\nRecomendation: Since the system takes in a \ncharger we can configure it as a Source device\n(read:https://www.embedded.com/usb-type-c-and-power-delivery-101-ports-and-connections/) \nSecondly: we can configure it as a DRP device that can source(provide) or sink(receive) power. Its a source when the charging \nreceptacle it active and a sink when the charging receptacle is in active.
 $EndSCHEMATC
