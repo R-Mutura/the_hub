@@ -1,0 +1,16 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cbst,Panasonic,ECPU1C474MA5,1,0.2,10.92,Cap: 470 nF  Total Derated Cap: 470 nF  VDC: 16 V  ESR: 0 Ω  Package: 1206  
+Cin,TDK,C1005X5R1V105K050BC,3,0.03,3,Cap: 1 µF  Total Derated Cap: 210 nF  VDC: 35 V  ESR: 11.42 mΩ  Package: 0402  
+Css,TDK,CGA4F2C0G1H153J085AA,1,0.07,6.75,Cap: 15 nF  Total Derated Cap: 15 nF  VDC: 50 V  ESR: 0 Ω  Package: 0805  
+L1,Bourns,SRR1280-4R5Y,1,0.45,210.25,L: 4.5 µH  DCR: 13.5 mΩ  IDC: 8.5 A  
+M1,Texas Instruments,CSD17579Q5A,1,0.17,55.2,VdsMax: 30 V  IdsMax: 25 Amps  
+Rfb1,Vishay-Dale,CRCW080510K0FKEA,1,0.01,6.75,Resistance: 10 kΩ  Tolerance: 1.0%  Power: 125 mW  
+Rfb2,Vishay-Dale,CRCW080545K3FKEA,1,0.01,6.75,Resistance: 45.3 kΩ  Tolerance: 1.0%  Power: 125 mW  
+Rilim,Panasonic,ERJ-6ENF1241V,1,0.01,6.75,Resistance: 1.24 kΩ  Tolerance: 1.0%  Power: 125 mW  
+U1,Texas Instruments,LM3150MH/NOPB,1,1.569,58.8,
+Cout,Panasonic,6SVPE220MW,1,0.2,53.29,Cap: 220 µF  Total Derated Cap: 220 µF  VDC: 6.3 V  ESR: 15 mΩ  Package: 5x5.9  
+Cbyp,Kemet,C0805C104M5RACTU,1,0.01,6.75,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 50 V  ESR: 64 mΩ  Package: 0805  
+Cvcc,Taiyo Yuden,EMK212BJ225KG-T,1,0.02,6.75,Cap: 2.2 µF  Total Derated Cap: 2.2 µF  VDC: 16 V  ESR: 1 mΩ  Package: 0805  
+M2,Texas Instruments,CSD18537NQ5A,1,0.27,55.2,VdsMax: 60 V  IdsMax: 50 Amps  
+Ron,Vishay-Dale,CRCW080563K4FKEA,1,0.01,6.75,Resistance: 63.4 kΩ  Tolerance: 1.0%  Power: 125 mW  
+Cff,Samsung Electro-Mechanics,CL21C560JBANNNC,1,0.01,6.75,Cap: 56 pF  Total Derated Cap: 56 pF  VDC: 50 V  ESR: 0 Ω  Package: 0805  
