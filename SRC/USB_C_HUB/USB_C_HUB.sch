@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -153,28 +153,6 @@ Wire Wire Line
 	1475 4950 1300 4950
 Text Label 1300 4850 2    39   ~ 0
 CC1_PWR
-$Comp
-L dk_TVS-Diodes:ESD5Z3_3T1G D?
-U 1 1 61D69198
-P 1500 6900
-AR Path="/61C45066/61D69198" Ref="D?"  Part="1" 
-AR Path="/61D69198" Ref="D?"  Part="1" 
-F 0 "D?" V 1553 6772 60  0000 R CNN
-F 1 "ESDA25P35" V 1447 6772 60  0000 R CNN
-F 2 "digikey-footprints:SOD-523" H 1700 7100 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 1700 7200 60  0001 L CNN
-F 4 "ESD5Z3.3T1GOSCT-ND" H 1700 7300 60  0001 L CNN "Digi-Key_PN"
-F 5 "ESD5Z3.3T1G" H 1700 7400 60  0001 L CNN "MPN"
-F 6 "Circuit Protection" H 1700 7500 60  0001 L CNN "Category"
-F 7 "TVS - Diodes" H 1700 7600 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 1700 7700 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/ESD5Z3.3T1G/ESD5Z3.3T1GOSCT-ND/1967044" H 1700 7800 60  0001 L CNN "DK_Detail_Page"
-F 10 "TVS DIODE 3.3V 14.1V SOD523" H 1700 7900 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 1700 8000 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1700 8100 60  0001 L CNN "Status"
-	1    1500 6900
-	0    -1   -1   0   
-$EndComp
 Text Label 1300 4950 2    39   ~ 0
 CC2_PWR
 Text Label 1300 4650 2    50   ~ 0
@@ -197,5 +175,11 @@ U 61DDBD9F
 F0 "ST_PD CHARGING" 39
 F1 "ST_PD CHARGING CONTROLLER.sch" 39
 F2 "PWR_IN" I L 3050 4525 39 
+$EndSheet
+$Sheet
+S 3175 700  1675 1050
+U 61F5E4BA
+F0 "5V_BUCK" 50
+F1 "5V_BUCK.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -90,8 +90,6 @@ Wire Wire Line
 Connection ~ 2800 3075
 Wire Wire Line
 	2375 2175 2375 1575
-Wire Wire Line
-	2375 1575 2300 1575
 Wire Wire Line
 	2375 1575 2800 1575
 Wire Wire Line
@@ -313,9 +311,6 @@ Wire Wire Line
 	7150 2475 7150 3075
 Wire Wire Line
 	4925 3075 6800 3075
-Connection ~ 6800 3075
-Wire Wire Line
-	6800 3075 7150 3075
 Text Label 3450 2475 2    39   ~ 0
 CC1_PWR
 Text Label 3450 2775 2    39   ~ 0
@@ -422,7 +417,7 @@ NoConn ~ 4925 2975
 NoConn ~ 4925 2875
 NoConn ~ 3725 2275
 NoConn ~ 3725 3475
-Text HLabel 2300 1575 0    50   Input ~ 0
+Text HLabel 1375 1575 0    50   Input ~ 0
 PWR_IN
 Wire Wire Line
 	3500 3575 3500 3375
@@ -452,4 +447,64 @@ Wire Wire Line
 	7800 1575 8125 1575
 Text GLabel 8125 1575 2    39   Input ~ 0
 VBUS
+$Comp
+L dk_TVS-Diodes:ESD5Z3_3T1G D?
+U 1 1 61F50F14
+P 1550 2325
+AR Path="/61C45066/61F50F14" Ref="D?"  Part="1" 
+AR Path="/61F50F14" Ref="D?"  Part="1" 
+AR Path="/61DDBD9F/61F50F14" Ref="D?"  Part="1" 
+F 0 "D?" V 1603 2197 60  0000 R CNN
+F 1 "ESDA25P35" V 1497 2197 60  0000 R CNN
+F 2 "digikey-footprints:SOD-523" H 1750 2525 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 1750 2625 60  0001 L CNN
+F 4 "ESD5Z3.3T1GOSCT-ND" H 1750 2725 60  0001 L CNN "Digi-Key_PN"
+F 5 "ESD5Z3.3T1G" H 1750 2825 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 1750 2925 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 1750 3025 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 1750 3125 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/ESD5Z3.3T1G/ESD5Z3.3T1GOSCT-ND/1967044" H 1750 3225 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 3.3V 14.1V SOD523" H 1750 3325 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 1750 3425 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1750 3525 60  0001 L CNN "Status"
+	1    1550 2325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 2125 1550 1575
+Wire Wire Line
+	1375 1575 1550 1575
+Connection ~ 1550 1575
+Wire Wire Line
+	1550 1575 2375 1575
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61F58B30
+P 7150 3075
+AR Path="/619540C6/61F58B30" Ref="#PWR?"  Part="1" 
+AR Path="/61F58B30" Ref="#PWR?"  Part="1" 
+AR Path="/61DDBD9F/61F58B30" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7150 2825 50  0001 C CNN
+F 1 "GND" H 7155 2902 50  0000 C CNN
+F 2 "" H 7150 3075 60  0000 C CNN
+F 3 "" H 7150 3075 60  0000 C CNN
+	1    7150 3075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2525 1550 3050
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61F5A776
+P 1550 3050
+AR Path="/619540C6/61F5A776" Ref="#PWR?"  Part="1" 
+AR Path="/61F5A776" Ref="#PWR?"  Part="1" 
+AR Path="/61DDBD9F/61F5A776" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1550 2800 50  0001 C CNN
+F 1 "GND" H 1555 2877 50  0000 C CNN
+F 2 "" H 1550 3050 60  0000 C CNN
+F 3 "" H 1550 3050 60  0000 C CNN
+	1    1550 3050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
