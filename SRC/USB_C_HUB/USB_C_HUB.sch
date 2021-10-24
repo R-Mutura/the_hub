@@ -76,37 +76,8 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 21
 $EndComp
 Text GLabel 1925 1125 2    39   Input ~ 0
 VBUS
-Text Label 3100 775  2    50   ~ 0
-C_CC1
-Text Label 3100 875  2    50   ~ 0
-VCONN
-Wire Wire Line
-	3100 775  3375 775 
-Wire Wire Line
-	3100 875  3375 875 
-Text Label 3125 950  2    50   ~ 0
-USB_D+
-Text Label 3125 1025 2    50   ~ 0
-USB_D-
-$Sheet
-S 3375 625  2075 4350
-U 619540C6
-F0 "Sheet619540C5" 39
-F1 "PD_CONTROLLER.sch" 39
-F2 "CC_CC1" I L 3375 775 39 
-F3 "VCONN" I L 3375 875 39 
-F4 "USB_D+" I L 3375 950 39 
-F5 "USB_D-" I L 3375 1025 39 
-F6 "POWER_LVL1" I L 3375 4725 39 
-F7 "POWER_LVL2" I L 3375 4800 39 
-F8 "POWER_LVL3" I L 3375 4875 39 
-$EndSheet
-Wire Wire Line
-	3375 950  3125 950 
-Wire Wire Line
-	3125 1025 3375 1025
 Wire Notes Line
-	2600 4200 2625 7725
+	2650 4200 2650 7725
 Wire Wire Line
 	2075 7275 2075 7350
 Connection ~ 2075 7275
@@ -114,14 +85,12 @@ Wire Wire Line
 	2375 7275 2075 7275
 Wire Wire Line
 	2375 7250 2375 7275
-NoConn ~ 1475 4950
-NoConn ~ 1475 4850
 Wire Notes Line
-	525  4200 2600 4200
+	525  4200 2650 4200
 Wire Notes Line
 	525  7725 525  4200
 Wire Notes Line
-	2625 7725 525  7725
+	2650 7725 525  7725
 Wire Wire Line
 	1475 4650 1300 4650
 Wire Wire Line
@@ -144,9 +113,9 @@ UNUSED \nIN THE TYPE C \nCHARGING INPUT
 Wire Notes Line
 	1325 7000 1500 7000
 Wire Notes Line
-	1325 4750 1325 7000
+	1325 5050 1325 7000
 Wire Notes Line
-	1475 4750 1325 4750
+	1525 5050 1325 5050
 NoConn ~ 1475 6950
 NoConn ~ 1475 6850
 NoConn ~ 1475 6650
@@ -178,33 +147,55 @@ NoConn ~ 1475 5350
 NoConn ~ 1475 5450
 Text Notes 575  7675 0    39   ~ 0
 The input receptacle receives input from a\n charging brick that can deliver upto 100W\n(20V at 5A). the level of power sourced is \ncontrolled by the PD via the buck-boost and \nthe external power path and FFETs  
-Text GLabel 1300 4650 0    50   Input ~ 0
-SYS_PWR
+Wire Wire Line
+	1475 4850 1300 4850
+Wire Wire Line
+	1475 4950 1300 4950
+Text Label 1300 4850 2    39   ~ 0
+CC1_PWR
+$Comp
+L dk_TVS-Diodes:ESD5Z3_3T1G D?
+U 1 1 61D69198
+P 1500 6900
+AR Path="/61C45066/61D69198" Ref="D?"  Part="1" 
+AR Path="/61D69198" Ref="D?"  Part="1" 
+F 0 "D?" V 1553 6772 60  0000 R CNN
+F 1 "ESDA25P35" V 1447 6772 60  0000 R CNN
+F 2 "digikey-footprints:SOD-523" H 1700 7100 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 1700 7200 60  0001 L CNN
+F 4 "ESD5Z3.3T1GOSCT-ND" H 1700 7300 60  0001 L CNN "Digi-Key_PN"
+F 5 "ESD5Z3.3T1G" H 1700 7400 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 1700 7500 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 1700 7600 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 1700 7700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/ESD5Z3.3T1G/ESD5Z3.3T1GOSCT-ND/1967044" H 1700 7800 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 3.3V 14.1V SOD523" H 1700 7900 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 1700 8000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1700 8100 60  0001 L CNN "Status"
+	1    1500 6900
+	0    -1   -1   0   
+$EndComp
+Text Label 1300 4950 2    39   ~ 0
+CC2_PWR
+Text Label 1300 4650 2    50   ~ 0
+PWR_IN
+Text Label 2950 4525 2    50   ~ 0
+PWR_IN
 $Sheet
-S 3275 5225 2275 925 
-U 61C45066
-F0 "variable voltage" 50
-F1 "Variable Voltage Source.sch" 50
-F2 "POWER_LVL1" I L 3275 5450 39 
-F3 "POWER_LVL2" I L 3275 5350 39 
-F4 "POWER_LVL3" I L 3275 5275 39 
+S 11775 6725 2525 1500
+U 61EF7DEC
+F0 "UFP_PD_CONTROLLER" 50
+F1 "UFP_PD_CTRL + VAR_V_SOURCE.sch" 50
 $EndSheet
+Text Notes 12150 7325 0    50   ~ 0
+PRESERVED FOR USE LATER_\nNO CONNECTION TO THE SCHEMATIC
 Wire Wire Line
-	3375 4725 3075 4725
-Wire Wire Line
-	3075 4725 3075 5450
-Wire Wire Line
-	3075 5450 3275 5450
-Wire Wire Line
-	3275 5350 3100 5350
-Wire Wire Line
-	3100 5350 3100 4800
-Wire Wire Line
-	3100 4800 3375 4800
-Wire Wire Line
-	3375 4875 3150 4875
-Wire Wire Line
-	3150 4875 3150 5275
-Wire Wire Line
-	3150 5275 3275 5275
+	3050 4525 2950 4525
+$Sheet
+S 3050 4425 2325 975 
+U 61DDBD9F
+F0 "ST_PD CHARGING" 39
+F1 "ST_PD CHARGING CONTROLLER.sch" 39
+F2 "PWR_IN" I L 3050 4525 39 
+$EndSheet
 $EndSCHEMATC

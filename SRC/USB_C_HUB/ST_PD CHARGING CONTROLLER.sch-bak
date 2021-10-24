@@ -1,0 +1,455 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 7150 1575 1    50   Input ~ 0
+SYS_PWR
+Wire Wire Line
+	2800 3075 3725 3075
+$Comp
+L Device:R_US R?
+U 1 1 61DE3B32
+P 2800 2275
+AR Path="/61DE3B32" Ref="R?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B32" Ref="R?"  Part="1" 
+F 0 "R?" H 2868 2321 50  0000 L CNN
+F 1 "470" H 2868 2230 50  0000 L CNN
+F 2 "" V 2840 2265 50  0001 C CNN
+F 3 "~" H 2800 2275 50  0001 C CNN
+	1    2800 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2425 2800 2575
+$Comp
+L Device:C C?
+U 1 1 61DE3B39
+P 2375 2825
+AR Path="/61DE3B39" Ref="C?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B39" Ref="C?"  Part="1" 
+F 0 "C?" H 2490 2871 50  0000 L CNN
+F 1 "1uF" H 2490 2780 50  0000 L CNN
+F 2 "" H 2413 2675 50  0001 C CNN
+F 3 "~" H 2375 2825 50  0001 C CNN
+	1    2375 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 61DE3B3F
+P 2800 2800
+AR Path="/61DE3B3F" Ref="R?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B3F" Ref="R?"  Part="1" 
+F 0 "R?" H 2868 2846 50  0000 L CNN
+F 1 "1K" H 2868 2755 50  0000 L CNN
+F 2 "" V 2840 2790 50  0001 C CNN
+F 3 "~" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2950 2800 3075
+$Comp
+L Device:D_Schottky D?
+U 1 1 61DE3B46
+P 2375 2325
+AR Path="/61DE3B46" Ref="D?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B46" Ref="D?"  Part="1" 
+F 0 "D?" V 2475 2300 50  0000 R CNN
+F 1 "MBRAF440T3G" V 2225 2450 50  0000 R CNN
+F 2 "" H 2375 2325 50  0001 C CNN
+F 3 "~" H 2375 2325 50  0001 C CNN
+	1    2375 2325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2375 2475 2375 2575
+Wire Wire Line
+	2375 2575 2800 2575
+Connection ~ 2375 2575
+Wire Wire Line
+	2375 2575 2375 2675
+Connection ~ 2800 2575
+Wire Wire Line
+	2800 2575 2800 2650
+Wire Wire Line
+	2375 2975 2375 3075
+Wire Wire Line
+	2375 3075 2800 3075
+Connection ~ 2800 3075
+Wire Wire Line
+	2375 2175 2375 1575
+Wire Wire Line
+	2375 1575 2300 1575
+Wire Wire Line
+	2375 1575 2800 1575
+Wire Wire Line
+	2800 1575 2800 2125
+Connection ~ 2375 1575
+Wire Wire Line
+	2800 1575 3975 1575
+Wire Wire Line
+	3975 1575 3975 2075
+Connection ~ 2800 1575
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 61DE3B5D
+P 4175 1850
+AR Path="/61DE3B5D" Ref="#PWR?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B5D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4175 1700 50  0001 C CNN
+F 1 "+3.3V" H 4190 2023 50  0000 C CNN
+F 2 "" H 4175 1850 60  0000 C CNN
+F 3 "" H 4175 1850 60  0000 C CNN
+	1    4175 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L usb_hub:SI7997DP Q?
+U 1 1 61DE3B63
+P 6075 1575
+AR Path="/61DE3B63" Ref="Q?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B63" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6317 1325 50  0000 C CNN
+F 1 "STL6P3LLH6" V 6226 1325 50  0000 C CNN
+F 2 "" H 6075 1575 50  0001 C CNN
+F 3 "" H 6075 1575 50  0001 C CNN
+	1    6075 1575
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 61DE3B69
+P 5300 1800
+AR Path="/61DE3B69" Ref="R?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B69" Ref="R?"  Part="1" 
+F 0 "R?" H 5368 1846 50  0000 L CNN
+F 1 "100K" H 5368 1755 50  0000 L CNN
+F 2 "" V 5340 1790 50  0001 C CNN
+F 3 "~" H 5300 1800 50  0001 C CNN
+	1    5300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 61DE3B6F
+P 5300 2325
+AR Path="/61DE3B6F" Ref="R?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B6F" Ref="R?"  Part="1" 
+F 0 "R?" H 5368 2371 50  0000 L CNN
+F 1 "22K" H 5368 2280 50  0000 L CNN
+F 2 "" V 5340 2315 50  0001 C CNN
+F 3 "~" H 5300 2325 50  0001 C CNN
+	1    5300 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1950 5300 2050
+Wire Wire Line
+	5300 1650 5300 1575
+Connection ~ 5300 1575
+Wire Wire Line
+	5300 1575 5625 1575
+Wire Wire Line
+	4925 2675 5300 2675
+Wire Wire Line
+	5300 2675 5300 2475
+$Comp
+L Device:R_US R?
+U 1 1 61DE3B7B
+P 6175 2050
+AR Path="/61DE3B7B" Ref="R?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B7B" Ref="R?"  Part="1" 
+F 0 "R?" H 6243 2096 50  0000 L CNN
+F 1 "22K" H 6243 2005 50  0000 L CNN
+F 2 "" V 6215 2040 50  0001 C CNN
+F 3 "~" H 6175 2050 50  0001 C CNN
+	1    6175 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6025 2050 5825 2050
+Connection ~ 5300 2050
+Wire Wire Line
+	5300 2050 5300 2175
+Wire Wire Line
+	5825 1875 5825 2050
+Connection ~ 5825 2050
+Wire Wire Line
+	5825 2050 5300 2050
+$Comp
+L Device:C C?
+U 1 1 61DE3B87
+P 6550 2050
+AR Path="/61DE3B87" Ref="C?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B87" Ref="C?"  Part="1" 
+F 0 "C?" V 6802 2050 50  0000 C CNN
+F 1 "0.1uF" V 6711 2050 50  0000 C CNN
+F 2 "" H 6588 1900 50  0001 C CNN
+F 3 "~" H 6550 2050 50  0001 C CNN
+	1    6550 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6325 2050 6400 2050
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61DE3B8E
+P 4325 3925
+AR Path="/619540C6/61DE3B8E" Ref="#PWR?"  Part="1" 
+AR Path="/61DE3B8E" Ref="#PWR?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B8E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4325 3675 50  0001 C CNN
+F 1 "GND" H 4330 3752 50  0000 C CNN
+F 2 "" H 4325 3925 60  0000 C CNN
+F 3 "" H 4325 3925 60  0000 C CNN
+	1    4325 3925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 3925 4325 3875
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61DE3B95
+P 5125 1950
+AR Path="/619540C6/61DE3B95" Ref="#PWR?"  Part="1" 
+AR Path="/61DE3B95" Ref="#PWR?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B95" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5125 1700 50  0001 C CNN
+F 1 "GND" H 5130 1777 50  0000 C CNN
+F 2 "" H 5125 1950 60  0000 C CNN
+F 3 "" H 5125 1950 60  0000 C CNN
+	1    5125 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61DE3B9B
+P 4825 2000
+AR Path="/61DE3B9B" Ref="C?"  Part="1" 
+AR Path="/61DDBD9F/61DE3B9B" Ref="C?"  Part="1" 
+F 0 "C?" V 4775 2100 50  0000 C CNN
+F 1 "1uF" V 4875 2100 50  0000 C CNN
+F 2 "" H 4825 2000 50  0001 C CNN
+F 3 "~" H 4825 2000 50  0001 C CNN
+	1    4825 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 2000 5000 2000
+Wire Wire Line
+	5000 2000 5000 1950
+Wire Wire Line
+	5000 1950 5125 1950
+Wire Wire Line
+	5000 1650 5000 1950
+Connection ~ 5000 1950
+Wire Wire Line
+	4725 2000 4650 2000
+$Comp
+L Device:R_US R?
+U 1 1 61DE3BA7
+P 6800 2325
+AR Path="/61DE3BA7" Ref="R?"  Part="1" 
+AR Path="/61DDBD9F/61DE3BA7" Ref="R?"  Part="1" 
+F 0 "R?" H 6868 2371 50  0000 L CNN
+F 1 "1K" H 6868 2280 50  0000 L CNN
+F 2 "" V 6840 2315 50  0001 C CNN
+F 3 "~" H 6800 2325 50  0001 C CNN
+	1    6800 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 1575 6800 1575
+Wire Wire Line
+	6700 2050 6800 2050
+Wire Wire Line
+	6800 1575 6800 2050
+Connection ~ 6800 2050
+Wire Wire Line
+	6800 2050 6800 2175
+Wire Wire Line
+	6800 3075 6800 2475
+$Comp
+L dk_TVS-Diodes:ESD5Z3_3T1G D?
+U 1 1 61DE3BBC
+P 7150 2275
+AR Path="/61C45066/61DE3BBC" Ref="D?"  Part="1" 
+AR Path="/61DE3BBC" Ref="D?"  Part="1" 
+AR Path="/61DDBD9F/61DE3BBC" Ref="D?"  Part="1" 
+F 0 "D?" V 7203 2147 60  0000 R CNN
+F 1 "ESDA25P35" V 7097 2147 60  0000 R CNN
+F 2 "digikey-footprints:SOD-523" H 7350 2475 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 7350 2575 60  0001 L CNN
+F 4 "ESD5Z3.3T1GOSCT-ND" H 7350 2675 60  0001 L CNN "Digi-Key_PN"
+F 5 "ESD5Z3.3T1G" H 7350 2775 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 7350 2875 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 7350 2975 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 7350 3075 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/ESD5Z3.3T1G/ESD5Z3.3T1GOSCT-ND/1967044" H 7350 3175 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 3.3V 14.1V SOD523" H 7350 3275 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 7350 3375 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7350 3475 60  0001 L CNN "Status"
+	1    7150 2275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 1575 7150 1575
+Wire Wire Line
+	7150 1575 7150 2075
+Connection ~ 6800 1575
+Wire Wire Line
+	7150 2475 7150 3075
+Wire Wire Line
+	4925 3075 6800 3075
+Connection ~ 6800 3075
+Wire Wire Line
+	6800 3075 7150 3075
+Text Label 3450 2475 2    39   ~ 0
+CC1_PWR
+Text Label 3450 2775 2    39   ~ 0
+CC2_PWR
+Wire Wire Line
+	3725 2475 3650 2475
+Wire Wire Line
+	3450 2775 3650 2775
+Wire Wire Line
+	3725 2875 3650 2875
+Wire Wire Line
+	3650 2875 3650 2775
+Connection ~ 3650 2775
+Wire Wire Line
+	3650 2775 3725 2775
+Wire Wire Line
+	3725 2575 3650 2575
+Wire Wire Line
+	3650 2575 3650 2475
+Connection ~ 3650 2475
+Wire Wire Line
+	3650 2475 3450 2475
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61DE3BD5
+P 3500 3650
+AR Path="/619540C6/61DE3BD5" Ref="#PWR?"  Part="1" 
+AR Path="/61DE3BD5" Ref="#PWR?"  Part="1" 
+AR Path="/61DDBD9F/61DE3BD5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 3400 50  0001 C CNN
+F 1 "GND" H 3505 3477 50  0000 C CNN
+F 2 "" H 3500 3650 60  0000 C CNN
+F 3 "" H 3500 3650 60  0000 C CNN
+	1    3500 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 3575 3625 3575
+Wire Wire Line
+	3500 3575 3500 3650
+Wire Wire Line
+	3725 3675 3625 3675
+Wire Wire Line
+	3625 3675 3625 3575
+Connection ~ 3625 3575
+Wire Wire Line
+	3625 3575 3500 3575
+Wire Wire Line
+	4525 2075 4525 1950
+$Comp
+L Device:C C?
+U 1 1 61DE3BE2
+P 4475 1800
+AR Path="/61DE3BE2" Ref="C?"  Part="1" 
+AR Path="/61DDBD9F/61DE3BE2" Ref="C?"  Part="1" 
+F 0 "C?" H 4500 1900 50  0000 L CNN
+F 1 "1uF" H 4325 1900 50  0000 L CNN
+F 2 "" H 4513 1650 50  0001 C CNN
+F 3 "~" H 4475 1800 50  0001 C CNN
+	1    4475 1800
+	1    0    0    -1  
+$EndComp
+Text Label 4650 1525 0    39   ~ 0
+2V7
+Connection ~ 3975 1575
+Wire Wire Line
+	3975 1575 5300 1575
+Wire Wire Line
+	3975 2075 4225 2075
+Wire Wire Line
+	4175 1850 4175 1975
+Wire Wire Line
+	4175 1975 4325 1975
+Wire Wire Line
+	4325 1975 4325 2075
+Wire Wire Line
+	4475 1650 5000 1650
+Wire Wire Line
+	4525 1950 4475 1950
+Wire Wire Line
+	4650 1525 4650 2000
+Wire Wire Line
+	4625 2075 4625 2000
+Wire Wire Line
+	4625 2000 4650 2000
+Connection ~ 4650 2000
+NoConn ~ 4925 3375
+NoConn ~ 4925 3475
+$Comp
+L Interface_USB:STUSB4500QTR U?
+U 1 1 61DE3BF7
+P 4325 2975
+AR Path="/61DE3BF7" Ref="U?"  Part="1" 
+AR Path="/61DDBD9F/61DE3BF7" Ref="U?"  Part="1" 
+F 0 "U?" H 4025 2100 50  0000 C CNN
+F 1 "STUSB4500QTR" H 3975 2025 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 4325 2975 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stusb4500.pdf" H 4325 2975 50  0001 C CNN
+	1    4325 2975
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4925 3575
+NoConn ~ 4925 2975
+NoConn ~ 4925 2875
+NoConn ~ 3725 2275
+NoConn ~ 3725 3475
+Text HLabel 2300 1575 0    50   Input ~ 0
+PWR_IN
+Wire Wire Line
+	3500 3575 3500 3375
+Wire Wire Line
+	3500 3275 3725 3275
+Connection ~ 3500 3575
+Wire Wire Line
+	3725 3375 3500 3375
+Connection ~ 3500 3375
+Wire Wire Line
+	3500 3375 3500 3275
+Wire Wire Line
+	7150 1575 7500 1575
+Connection ~ 7150 1575
+$Comp
+L Device:D D?
+U 1 1 61E1CE99
+P 7650 1575
+F 0 "D?" H 7650 1358 50  0000 C CNN
+F 1 "SBR10B45P5-13" H 7650 1449 50  0000 C CNN
+F 2 "" H 7650 1575 50  0001 C CNN
+F 3 "~" H 7650 1575 50  0001 C CNN
+	1    7650 1575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 1575 8125 1575
+Text GLabel 8125 1575 2    39   Input ~ 0
+VBUS
+$EndSCHEMATC
