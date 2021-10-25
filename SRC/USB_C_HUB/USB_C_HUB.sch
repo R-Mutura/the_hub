@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -29,38 +29,22 @@ Wire Wire Line
 	1750 1625 1925 1625
 Text Notes 625  750  0    50   ~ 0
 UPWARD FACING PORT(UFP)\n
-$Comp
-L OLIMEX_Power:GND #PWR?
-U 1 1 6184FD01
-P 1150 3825
-F 0 "#PWR?" H 1150 3575 50  0001 C CNN
-F 1 "GND" H 1155 3652 50  0000 C CNN
-F 2 "" H 1150 3825 60  0000 C CNN
-F 3 "" H 1150 3825 60  0000 C CNN
-	1    1150 3825
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1150 3725 1150 3775
 Wire Wire Line
 	1750 1125 1925 1125
 Wire Notes Line
-	2650 600  2650 4125
+	2650 600  2650 4150
 Wire Notes Line
-	2650 4125 550  4125
+	2650 4150 550  4150
 Wire Notes Line
-	550  4125 550  600 
+	550  4150 550  600 
 Wire Notes Line
 	550  600  2650 600 
 Wire Wire Line
 	1750 1825 1925 1825
 Wire Wire Line
 	850  3725 850  3775
-Wire Wire Line
-	850  3775 1150 3775
-Connection ~ 1150 3775
-Wire Wire Line
-	1150 3775 1150 3825
 Text Notes 1750 4025 0    39   ~ 0
 Connected to computer(host).\n
 $Comp
@@ -157,12 +141,12 @@ PWR_IN
 Text Label 3075 4650 2    50   ~ 0
 PWR_IN
 $Sheet
-S 13200 8275 2525 1500
+S 825  9500 2525 1500
 U 61EF7DEC
 F0 "UFP_PD_CONTROLLER" 50
 F1 "UFP_PD_CTRL + VAR_V_SOURCE.sch" 50
 $EndSheet
-Text Notes 13650 8950 0    50   ~ 0
+Text Notes 1275 10175 0    50   ~ 0
   PRESERVED FOR USE LATER_\nNO CONNECTION TO THE SCHEMATIC\n(MAYBE NEEDED TO INITIATE THE UFP)
 Wire Wire Line
 	3175 4650 3075 4650
@@ -279,8 +263,6 @@ Wire Wire Line
 	5125 2100 4975 2100
 Wire Notes Line
 	5675 4200 5675 7725
-Wire Notes Line
-	5675 7725 2700 7725
 Wire Notes Line
 	2700 7725 2700 4200
 Wire Notes Line
@@ -755,4 +737,122 @@ Wire Wire Line
 Wire Wire Line
 	15800 7575 15650 7575
 Connection ~ 15650 7575
+Wire Notes Line
+	5675 7725 2700 7725
+$Sheet
+S 12825 1150 925  1150
+U 631C6BCF
+F0 "ETHERNET" 50
+F1 "LAN7850 ETHERNET.sch" 50
+F2 "USB_DP" O L 12825 1250 39 
+F3 "USB_DM" O L 12825 1375 39 
+$EndSheet
+$Comp
+L Device:C_Small C?
+U 1 1 632ABF2E
+P 1000 3950
+F 0 "C?" V 950 3875 50  0000 C CNN
+F 1 "0.1uF" V 950 4075 50  0000 C CNN
+F 2 "" H 1000 3950 50  0001 C CNN
+F 3 "~" H 1000 3950 50  0001 C CNN
+	1    1000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 632B4A9A
+P 1000 3775
+F 0 "R?" V 795 3775 50  0000 C CNN
+F 1 "R_US" V 886 3775 50  0000 C CNN
+F 2 "" V 1040 3765 50  0001 C CNN
+F 3 "~" H 1000 3775 50  0001 C CNN
+	1    1000 3775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  3775 850  3950
+Wire Wire Line
+	850  3950 900  3950
+Connection ~ 850  3775
+Connection ~ 1150 3775
+Wire Wire Line
+	1150 3950 1150 3775
+Wire Wire Line
+	1100 3950 1150 3950
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6184FD01
+P 1325 3900
+F 0 "#PWR?" H 1325 3650 50  0001 C CNN
+F 1 "GND" H 1330 3727 50  0000 C CNN
+F 2 "" H 1325 3900 60  0000 C CNN
+F 3 "" H 1325 3900 60  0000 C CNN
+	1    1325 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1325 3900 1325 3775
+Wire Wire Line
+	1325 3775 1150 3775
+$Comp
+L power:Earth_Clean #PWR?
+U 1 1 632DC3BF
+P 700 3875
+AR Path="/632DC3BF" Ref="#PWR?"  Part="1" 
+AR Path="/631C6BCF/632DC3BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 950 3875 50  0001 C CNN
+F 1 "Earth_Clean" H 1000 3725 50  0001 C CNN
+F 2 "" H 700 3825 50  0001 C CNN
+F 3 "~" H 700 3825 50  0001 C CNN
+	1    700  3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3775 700  3775
+Wire Wire Line
+	700  3775 700  3875
+Text Notes 575  4100 0    39   ~ 0
+USB_CHASIS
+Text Label 10400 2400 0    50   ~ 0
+USB2DN_DP3
+Text Label 10400 2475 0    50   ~ 0
+USB2DN_DN3
+Wire Wire Line
+	10225 2400 10400 2400
+Wire Wire Line
+	10225 2475 10400 2475
+Text Label 12675 1250 2    50   ~ 0
+USB2DN_DP3
+Text Label 12675 1375 2    50   ~ 0
+USB2DN_DN3
+Wire Wire Line
+	12825 1250 12675 1250
+Wire Wire Line
+	12825 1375 12675 1375
+Text Notes 12850 1050 0    50   ~ 0
+EHERNET df PORT
+$Sheet
+S 12850 2700 1250 925 
+U 63D2BAD4
+F0 "SD CARD UHS" 31
+F1 "SD_CARD UHS II.sch" 31
+F2 "USB+" O L 12850 2800 39 
+F3 "USB-" O L 12850 2925 39 
+$EndSheet
+Text Label 10425 2975 0    50   ~ 0
+USB2DN_DP4
+Text Label 10425 3050 0    50   ~ 0
+USB2DN_DN4
+Wire Wire Line
+	10225 2975 10425 2975
+Wire Wire Line
+	10225 3050 10425 3050
+Text Label 12675 2800 2    50   ~ 0
+USB2DN_DP4
+Text Label 12675 2925 2    50   ~ 0
+USB2DN_DN4
+Wire Wire Line
+	12850 2925 12675 2925
+Wire Wire Line
+	12675 2800 12850 2800
 $EndSCHEMATC
