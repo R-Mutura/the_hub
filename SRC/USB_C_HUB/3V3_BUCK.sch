@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -838,7 +838,7 @@ L Device:CP1 C?
 U 1 1 62095E55
 P 6850 4900
 F 0 "C?" H 6965 4946 50  0000 L CNN
-F 1 "270uF(8mOHM)" H 6965 4855 50  0000 L CNN
+F 1 "270uF(8mOHM)" H 6625 5075 50  0000 L CNN
 F 2 "" H 6850 4900 50  0001 C CNN
 F 3 "~" H 6850 4900 50  0001 C CNN
 F 4 "16SVPG270M" H 6850 4900 50  0001 C CNN "Mfr No."
@@ -861,138 +861,8 @@ Text Notes 950  800  0    50   ~ 0
 3.3V 5A BUCK CONVERTER
 Text Notes 1000 3875 0    50   ~ 0
 BOOST CONVERTER 5A 5V\n
-$Comp
-L SamacSys_Parts:LP38501ATJ-ADJ_NOPB IC?
-U 1 1 63E1D6AB
-P 2950 6650
-F 0 "IC?" H 3450 6915 50  0000 C CNN
-F 1 "LP38501ATJ-ADJ_NOPB" H 3450 6824 50  0000 C CNN
-F 2 "LP38511TJADJNOPB" H 3800 6750 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/lp38501-adj" H 3800 6650 50  0001 L CNN
-F 4 "3A FlexCap Low Dropout Linear Regulator for 2.7V to 5.5V Inputs" H 3800 6550 50  0001 L CNN "Description"
-F 5 "2" H 3800 6450 50  0001 L CNN "Height"
-F 6 "926-LP38501ATJADJNPB" H 3800 6350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LP38501ATJ-ADJ-NOPB?qs=1FNqv8aZn1Tm7xOyj30Idw%3D%3D" H 3800 6250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3800 6150 50  0001 L CNN "Manufacturer_Name"
-F 9 "LP38501ATJ-ADJ/NOPB" H 3800 6050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2950 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 63E2270D
-P 1975 7100
-F 0 "C?" H 2067 7146 50  0000 L CNN
-F 1 "10uF" H 2067 7055 50  0000 L CNN
-F 2 "" H 1975 7100 50  0001 C CNN
-F 3 "~" H 1975 7100 50  0001 C CNN
-	1    1975 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 63E232F9
-P 2525 6800
-F 0 "R?" H 2593 6846 50  0000 L CNN
-F 1 "10K" H 2593 6755 50  0000 L CNN
-F 2 "" V 2565 6790 50  0001 C CNN
-F 3 "~" H 2525 6800 50  0001 C CNN
-	1    2525 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1975 7000 1975 6650
-Wire Wire Line
-	1975 6650 2525 6650
-Connection ~ 2525 6650
-Wire Wire Line
-	2525 6650 2950 6650
-Wire Wire Line
-	2525 6950 2525 7075
-Wire Wire Line
-	2525 7075 2900 7075
-Wire Wire Line
-	2900 7075 2900 6850
-Wire Wire Line
-	2900 6850 2950 6850
-$Comp
-L Device:R_US R?
-U 1 1 63E3FAAB
-P 4300 7150
-F 0 "R?" H 4368 7196 50  0000 L CNN
-F 1 "10K" H 4368 7105 50  0000 L CNN
-F 2 "" V 4340 7140 50  0001 C CNN
-F 3 "~" H 4300 7150 50  0001 C CNN
-	1    4300 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 63E45348
-P 4300 6800
-F 0 "R?" H 4368 6846 50  0000 L CNN
-F 1 "8.25K" H 4368 6755 50  0000 L CNN
-F 2 "" V 4340 6790 50  0001 C CNN
-F 3 "~" H 4300 6800 50  0001 C CNN
-	1    4300 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 6650 4300 6650
-Wire Wire Line
-	3950 6800 4125 6800
-Wire Wire Line
-	4125 6800 4125 7000
-Wire Wire Line
-	4125 7000 4300 7000
-Wire Wire Line
-	4300 6950 4300 7000
-Connection ~ 4300 7000
-Wire Wire Line
-	4300 7350 4300 7300
-Wire Wire Line
-	1975 7350 1975 7200
-Wire Wire Line
-	1975 7350 3450 7350
-Connection ~ 3450 7350
-Wire Wire Line
-	3450 7350 4300 7350
-$Comp
-L Device:C_Small C?
-U 1 1 63E6C31A
-P 4725 7000
-F 0 "C?" H 4817 7046 50  0000 L CNN
-F 1 "10uF" H 4817 6955 50  0000 L CNN
-F 2 "" H 4725 7000 50  0001 C CNN
-F 3 "~" H 4725 7000 50  0001 C CNN
-	1    4725 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 6650 4725 6650
-Wire Wire Line
-	4725 6650 4725 6900
-Connection ~ 4300 6650
-Wire Wire Line
-	4300 7350 4725 7350
-Wire Wire Line
-	4725 7350 4725 7100
-Connection ~ 4300 7350
-NoConn ~ 3950 7050
-$Comp
-L power:+1V1 #PWR?
-U 1 1 63EA2F10
-P 4725 6650
-F 0 "#PWR?" H 4725 6500 50  0001 C CNN
-F 1 "+1V1" H 4740 6823 50  0000 C CNN
-F 2 "" H 4725 6650 50  0001 C CNN
-F 3 "" H 4725 6650 50  0001 C CNN
-	1    4725 6650
-	1    0    0    -1  
-$EndComp
-Connection ~ 4725 6650
-Text Notes 1800 6375 0    50   ~ 0
-1.1V LDO
+Text Notes 1475 6450 0    50   ~ 0
+1.1V BUCK CONVERTER\nHIGHLY EFFICIENT\n
 Wire Notes Line
 	525  7675 6825 7675
 Wire Notes Line
@@ -1009,4 +879,220 @@ Wire Notes Line
 	525  6200 6825 6200
 Wire Notes Line
 	6825 6200 6825 7675
+$Comp
+L SamacSys_Parts:TPS62824ADMQR IC?
+U 1 1 64ECFEB2
+P 3300 6625
+F 0 "IC?" H 3800 6890 50  0000 C CNN
+F 1 "TPS62824ADMQR" H 3800 6799 50  0000 C CNN
+F 2 "TPS62824ADMQR" H 4150 6725 50  0001 L CNN
+F 3 "" H 4150 6625 50  0001 L CNN
+F 4 "Switching Voltage Regulators 2.4-V to 5.5-V input, 1-A step-down converter with forced PWM in 1.5-mm 1.5-mm QFN package 6-VSON-HR -40 to 125" H 4150 6525 50  0001 L CNN "Description"
+F 5 "1" H 4150 6425 50  0001 L CNN "Height"
+F 6 "" H 4150 6325 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4150 6225 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4150 6125 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPS62824ADMQR" H 4150 6025 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3300 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64EDDC79
+P 5525 6800
+F 0 "R?" H 5593 6846 50  0000 L CNN
+F 1 "82.5K" H 5593 6755 50  0000 L CNN
+F 2 "" V 5565 6790 50  0001 C CNN
+F 3 "~" H 5525 6800 50  0001 C CNN
+	1    5525 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 64EDE7DF
+P 6000 6775
+F 0 "C?" H 6092 6821 50  0000 L CNN
+F 1 "10uF_1mOHM_402" V 5875 6225 50  0000 L CNN
+F 2 "" H 6000 6775 50  0001 C CNN
+F 3 "~" H 6000 6775 50  0001 C CNN
+F 4 "GRM155R60G106ME44D" H 6000 6775 50  0001 C CNN "Mfr No."
+	1    6000 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 64EDF03B
+P 2700 6850
+F 0 "C?" H 2725 6925 50  0000 L CNN
+F 1 "4.7uF" H 2725 6725 50  0000 L CNN
+F 2 "" H 2700 6850 50  0001 C CNN
+F 3 "~" H 2700 6850 50  0001 C CNN
+	1    2700 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 64EFFBF6
+P 5200 6925
+F 0 "C?" H 5292 6971 50  0000 L CNN
+F 1 "120Pf_1mOHM" V 5075 6525 50  0000 L CNN
+F 2 "" H 5200 6925 50  0001 C CNN
+F 3 "~" H 5200 6925 50  0001 C CNN
+	1    5200 6925
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_RCL:INDUCTOR_SMALL L?
+U 1 1 64F1F01B
+P 4700 6625
+F 0 "L?" H 4700 6840 50  0000 C CNN
+F 1 "470nH_30m" H 4700 6749 50  0000 C CNN
+F 2 "" H 4700 6625 60  0000 C CNN
+F 3 "" H 4700 6625 60  0000 C CNN
+F 4 "SRP3012TA-R47M" H 4700 6625 50  0001 C CNN "Mfr No."
+	1    4700 6625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6625 4450 6625
+$Comp
+L Device:R_US R?
+U 1 1 64F33A65
+P 5525 7225
+F 0 "R?" H 5593 7271 50  0000 L CNN
+F 1 "100K" H 5593 7180 50  0000 L CNN
+F 2 "" V 5565 7215 50  0001 C CNN
+F 3 "~" H 5525 7225 50  0001 C CNN
+	1    5525 7225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6625 5200 6625
+Wire Wire Line
+	5525 6625 5525 6650
+Wire Wire Line
+	5525 6950 5525 7075
+Wire Wire Line
+	5200 6825 5200 6625
+Connection ~ 5200 6625
+Wire Wire Line
+	5200 6625 5525 6625
+Wire Wire Line
+	5525 7375 6000 7375
+Wire Wire Line
+	6000 7375 6000 6875
+Wire Wire Line
+	6000 6625 5525 6625
+Wire Wire Line
+	6000 6675 6000 6625
+Connection ~ 5525 6625
+Wire Wire Line
+	5200 7025 5200 7075
+Wire Wire Line
+	5200 7075 5525 7075
+Connection ~ 5525 7075
+Wire Wire Line
+	5200 7075 4575 7075
+Wire Wire Line
+	4575 7075 4575 6925
+Wire Wire Line
+	4575 6925 4300 6925
+Connection ~ 5200 7075
+$Comp
+L Device:C_Small C?
+U 1 1 64F733AE
+P 2350 6875
+F 0 "C?" H 2442 6921 50  0000 L CNN
+F 1 "1uF" H 2442 6830 50  0000 L CNN
+F 2 "" H 2350 6875 50  0001 C CNN
+F 3 "~" H 2350 6875 50  0001 C CNN
+	1    2350 6875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6775 2350 6625
+Wire Wire Line
+	2350 6625 2700 6625
+Wire Wire Line
+	2700 6750 2700 6625
+Connection ~ 2700 6625
+Wire Wire Line
+	2700 6625 2925 6625
+$Comp
+L power:+3V3 #PWR?
+U 1 1 64F89CEB
+P 2350 6625
+F 0 "#PWR?" H 2350 6475 50  0001 C CNN
+F 1 "+3V3" H 2365 6798 50  0000 C CNN
+F 2 "" H 2350 6625 50  0001 C CNN
+F 3 "" H 2350 6625 50  0001 C CNN
+	1    2350 6625
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 6625
+Wire Wire Line
+	2350 6975 2350 7375
+Wire Wire Line
+	2350 7375 2700 7375
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64F99548
+P 3800 7450
+F 0 "#PWR?" H 3800 7200 50  0001 C CNN
+F 1 "GND" H 3805 7277 50  0000 C CNN
+F 2 "" H 3800 7450 60  0000 C CNN
+F 3 "" H 3800 7450 60  0000 C CNN
+	1    3800 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 7450 3800 7375
+Wire Wire Line
+	3800 7375 2700 7375
+Wire Wire Line
+	2700 6950 2700 7375
+Connection ~ 3800 7375
+Wire Wire Line
+	3800 7375 3800 7275
+Connection ~ 2700 7375
+Connection ~ 5525 7375
+Wire Wire Line
+	3800 7375 5525 7375
+$Comp
+L Device:R_US R?
+U 1 1 64FE1CD7
+P 3150 6925
+F 0 "R?" V 3218 6971 50  0000 L CNN
+F 1 "100K" V 3050 6850 50  0000 L CNN
+F 2 "" V 3190 6915 50  0001 C CNN
+F 3 "~" H 3150 6925 50  0001 C CNN
+	1    3150 6925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 6925 2925 6925
+Wire Wire Line
+	2925 6925 2925 6625
+Connection ~ 2925 6625
+Wire Wire Line
+	2925 6625 3075 6625
+Wire Wire Line
+	3300 6725 3075 6725
+Wire Wire Line
+	3075 6725 3075 6625
+Connection ~ 3075 6625
+Wire Wire Line
+	3075 6625 3300 6625
+$Comp
+L power:+1V1 #PWR?
+U 1 1 65005EAF
+P 6000 6625
+F 0 "#PWR?" H 6000 6475 50  0001 C CNN
+F 1 "+1V1" H 6015 6798 50  0000 C CNN
+F 2 "" H 6000 6625 50  0001 C CNN
+F 3 "" H 6000 6625 50  0001 C CNN
+	1    6000 6625
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 6625
 $EndSCHEMATC

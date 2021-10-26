@@ -1,0 +1,9 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cin,TDK,C1608X7S1A475K080AC,1,0.05,4.68,Cap: 4.7 µF  Total Derated Cap: 1.6 µF  VDC: 10 V  ESR: 3.73 mΩ  Package: 0603  
+U1,Texas Instruments,TPS62824ADMQR,1,0.399,6.25,
+L1,Bourns,SRR4011-R47YL,1,0.32,33.64,L: 470 nH  DCR: 30 mΩ  IDC: 3.2 A  
+Cout,MuRata,GRM155R60G106ME44D,1,0.03,3,Cap: 10 µF  Total Derated Cap: 7.9 µF  VDC: 4 V  ESR: 1 mΩ  Package: 0402  
+Rpg,Susumu Co Ltd,RR1220P-104-D,1,0.01,6.75,Resistance: 100 kΩ  Tolerance: 0.5%  Power: 100 mW  
+Rfbb,Vishay-Dale,CRCW0402100KFKED,1,0.01,3,Resistance: 100 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Rfbt,Vishay-Dale,CRCW040282K5FKED,1,0.01,3,Resistance: 82.5 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Cff,MuRata,GRM1555C1H121JA01D,1,0.01,3,Cap: 120 pF  Total Derated Cap: 120 pF  VDC: 50 V  ESR: 1 mΩ  Package: 0402  

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -337,23 +337,21 @@ Wire Wire Line
 	6425 4425 6575 4425
 Connection ~ 2375 7275
 Wire Wire Line
-	5725 1125 3225 1125
+	5725 1125 4675 1125
 Wire Wire Line
-	5725 1225 3225 1225
+	5725 1225 4800 1225
 Wire Wire Line
 	5725 1775 5325 1775
 Wire Wire Line
-	3225 2125 4975 2125
+	3225 2125 4450 2125
 Wire Wire Line
 	4975 2125 4975 2100
 Wire Wire Line
-	3225 2225 4975 2225
-Wire Wire Line
 	4975 2225 4975 2325
 Wire Wire Line
-	5725 2725 3250 2725
+	5725 2725 4425 2725
 Wire Wire Line
-	3250 2825 5725 2825
+	3250 2825 4550 2825
 Wire Wire Line
 	5725 3675 3225 3675
 Wire Wire Line
@@ -381,7 +379,7 @@ F 3 "~" H 5225 1775 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5125 1775 3225 1775
+	5125 1775 4775 1775
 Wire Wire Line
 	5300 1550 5550 1550
 Wire Wire Line
@@ -392,8 +390,6 @@ Wire Wire Line
 	5100 1550 4975 1550
 Wire Wire Line
 	4975 1550 4975 1675
-Wire Wire Line
-	4975 1675 3225 1675
 $Comp
 L Device:C_Small C?
 U 1 1 62140483
@@ -813,23 +809,23 @@ Wire Wire Line
 	10225 2400 10400 2400
 Wire Wire Line
 	10225 2475 10400 2475
-Text Label 14825 8475 2    50   ~ 0
+Text Label 15450 8575 1    50   ~ 0
 USB2DN_DP3
-Text Label 14825 8600 2    50   ~ 0
+Text Label 15325 8575 1    50   ~ 0
 USB2DN_DN3
 Wire Wire Line
-	14975 8475 14825 8475
+	15450 8725 15450 8575
 Wire Wire Line
-	14975 8600 14825 8600
-Text Notes 15000 8275 0    50   ~ 0
-EHERNET df PORT
+	15325 8725 15325 8575
+Text Notes 14375 8675 0    50   ~ 0
+EHERNET DFP PORT
 $Sheet
-S 12475 8575 1250 925 
+S 13025 8425 925  1250
 U 63D2BAD4
 F0 "SD CARD UHS" 31
 F1 "SD_CARD UHS II.sch" 31
-F2 "USB+" O L 12475 8675 39 
-F3 "USB-" O L 12475 8800 39 
+F2 "USB+" O T 13850 8425 39 
+F3 "USB-" O T 13725 8425 39 
 $EndSheet
 Text Label 10425 2975 0    50   ~ 0
 USB2DN_DP4
@@ -839,21 +835,21 @@ Wire Wire Line
 	10225 2975 10425 2975
 Wire Wire Line
 	10225 3050 10425 3050
-Text Label 12300 8675 2    50   ~ 0
+Text Label 13850 8250 1    50   ~ 0
 USB2DN_DP4
-Text Label 12300 8800 2    50   ~ 0
+Text Label 13725 8250 1    50   ~ 0
 USB2DN_DN4
 Wire Wire Line
-	12475 8800 12300 8800
+	13725 8425 13725 8250
 Wire Wire Line
-	12300 8675 12475 8675
+	13850 8250 13850 8425
 $Sheet
-S 14975 8375 925  1150
+S 14400 8725 1150 925 
 U 631C6BCF
 F0 "ETHERNET" 50
 F1 "LAN7850 ETHERNET.sch" 50
-F2 "USB_DP" O L 14975 8475 39 
-F3 "USB_DM" O L 14975 8600 39 
+F2 "USB_DP" O T 15450 8725 39 
+F3 "USB_DM" O T 15325 8725 39 
 $EndSheet
 $Comp
 L usb_hub:SY6280 U?
@@ -1165,4 +1161,298 @@ Wire Wire Line
 Connection ~ 12425 6025
 Wire Wire Line
 	12425 6025 12500 6025
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 63FF7651
+P 3650 1425
+F 0 "D?" H 3550 1350 50  0000 C CNN
+F 1 "ESD122DMXR" H 3550 1275 50  0000 C CNN
+F 2 "DMX0003A" H 4500 1525 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 4500 1425 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 4500 1325 50  0001 L CNN "Description"
+F 5 "" H 4500 1225 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 4500 1125 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 4500 1025 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4500 925 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 4500 825 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3650 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1425 4675 1425
+Wire Wire Line
+	4675 1425 4675 1125
+Connection ~ 4675 1125
+Wire Wire Line
+	4675 1125 3225 1125
+Wire Wire Line
+	4650 1525 4800 1525
+Wire Wire Line
+	4800 1525 4800 1225
+Connection ~ 4800 1225
+Wire Wire Line
+	4800 1225 3225 1225
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6400E923
+P 3275 1425
+AR Path="/619540C6/6400E923" Ref="#PWR?"  Part="1" 
+AR Path="/6400E923" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3275 1175 50  0001 C CNN
+F 1 "GND" H 3280 1252 50  0000 C CNN
+F 2 "" H 3275 1425 60  0000 C CNN
+F 3 "" H 3275 1425 60  0000 C CNN
+	1    3275 1425
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3650 1425 3275 1425
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 64025F0E
+P 3625 1900
+F 0 "D?" H 3525 1825 50  0000 C CNN
+F 1 "ESD122DMXR" H 3525 1750 50  0000 C CNN
+F 2 "DMX0003A" H 4475 2000 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 4475 1900 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 4475 1800 50  0001 L CNN "Description"
+F 5 "" H 4475 1700 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 4475 1600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 4475 1500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4475 1400 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 4475 1300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3625 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64025F2A
+P 3250 1900
+AR Path="/619540C6/64025F2A" Ref="#PWR?"  Part="1" 
+AR Path="/64025F2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3250 1650 50  0001 C CNN
+F 1 "GND" H 3255 1727 50  0000 C CNN
+F 2 "" H 3250 1900 60  0000 C CNN
+F 3 "" H 3250 1900 60  0000 C CNN
+	1    3250 1900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3625 1900 3250 1900
+Wire Wire Line
+	3225 1675 4650 1675
+Wire Wire Line
+	4625 1900 4650 1900
+Wire Wire Line
+	4650 1900 4650 1675
+Connection ~ 4650 1675
+Wire Wire Line
+	4650 1675 4975 1675
+Wire Wire Line
+	4625 2000 4775 2000
+Wire Wire Line
+	4775 2000 4775 1775
+Connection ~ 4775 1775
+Wire Wire Line
+	4775 1775 3225 1775
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 6406FC84
+P 3425 2400
+F 0 "D?" H 3325 2325 50  0000 C CNN
+F 1 "ESD122DMXR" H 3325 2250 50  0000 C CNN
+F 2 "DMX0003A" H 4275 2500 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 4275 2400 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 4275 2300 50  0001 L CNN "Description"
+F 5 "" H 4275 2200 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 4275 2100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 4275 2000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4275 1900 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 4275 1800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3425 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6406FC8E
+P 3050 2400
+AR Path="/619540C6/6406FC8E" Ref="#PWR?"  Part="1" 
+AR Path="/6406FC8E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 2150 50  0001 C CNN
+F 1 "GND" H 3055 2227 50  0000 C CNN
+F 2 "" H 3050 2400 60  0000 C CNN
+F 3 "" H 3050 2400 60  0000 C CNN
+	1    3050 2400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3425 2400 3050 2400
+Wire Wire Line
+	4425 2400 4450 2400
+Wire Wire Line
+	4425 2500 4575 2500
+Wire Wire Line
+	4450 2125 4450 2400
+Connection ~ 4450 2125
+Wire Wire Line
+	4450 2125 4975 2125
+Wire Wire Line
+	3225 2225 4575 2225
+Connection ~ 4575 2225
+Wire Wire Line
+	4575 2225 4975 2225
+Wire Wire Line
+	4575 2225 4575 2500
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 640B4D97
+P 3400 3000
+F 0 "D?" H 3300 2925 50  0000 C CNN
+F 1 "ESD122DMXR" H 3300 2850 50  0000 C CNN
+F 2 "DMX0003A" H 4250 3100 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 4250 3000 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 4250 2900 50  0001 L CNN "Description"
+F 5 "" H 4250 2800 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 4250 2700 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 4250 2600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4250 2500 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 4250 2400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 640B4DA1
+P 3025 3000
+AR Path="/619540C6/640B4DA1" Ref="#PWR?"  Part="1" 
+AR Path="/640B4DA1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3025 2750 50  0001 C CNN
+F 1 "GND" H 3030 2827 50  0000 C CNN
+F 2 "" H 3025 3000 60  0000 C CNN
+F 3 "" H 3025 3000 60  0000 C CNN
+	1    3025 3000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3400 3000 3025 3000
+Wire Wire Line
+	4400 3000 4425 3000
+Wire Wire Line
+	4400 3100 4550 3100
+Wire Wire Line
+	4425 2725 4425 3000
+Connection ~ 4425 2725
+Wire Wire Line
+	4425 2725 3250 2725
+Wire Wire Line
+	4550 3100 4550 2825
+Connection ~ 4550 2825
+Wire Wire Line
+	4550 2825 5725 2825
+Text Label 7500 1975 0    50   ~ 0
+LnA_n
+Text Label 7500 2075 0    50   ~ 0
+LnA_p
+Text Label 7475 2275 0    50   ~ 0
+LnB_n
+Text Label 7475 2375 0    50   ~ 0
+LnB_p
+Text Label 7500 2575 0    50   ~ 0
+LnC_n
+Text Label 7500 2675 0    50   ~ 0
+LnC_p
+Text Label 7500 2875 0    50   ~ 0
+LnD_n
+Text Label 7500 2975 0    50   ~ 0
+LnD_p
+Wire Wire Line
+	7375 1975 7500 1975
+Wire Wire Line
+	7375 2075 7500 2075
+Wire Wire Line
+	7375 2275 7475 2275
+Wire Wire Line
+	7375 2375 7475 2375
+Wire Wire Line
+	7375 2575 7500 2575
+Wire Wire Line
+	7375 2675 7500 2675
+Wire Wire Line
+	7375 2875 7500 2875
+Wire Wire Line
+	7500 2975 7375 2975
+Text Label 7500 3625 0    50   ~ 0
+AUX+
+Text Label 7500 3725 0    50   ~ 0
+AUX-
+Wire Wire Line
+	7500 3625 7375 3625
+Wire Wire Line
+	7375 3725 7500 3725
+$Sheet
+S 7200 9400 2500 1650
+U 64E160D5
+F0 "DP TO HDMI" 50
+F1 "DP TO HDMI.sch" 50
+$EndSheet
+$Sheet
+S 10075 8575 1600 2525
+U 64EB4507
+F0 "SATA INTERFACE" 50
+F1 "USB TO SATA.sch" 50
+F2 "USB_SSTXP" O T 11525 8575 39 
+F3 "USS_SSSTXM" O T 11400 8575 39 
+F4 "USB_SSRXP" O T 11275 8575 39 
+F5 "USS_SSSRXM" O T 11150 8575 39 
+F6 "USB_DP" O T 11025 8575 39 
+F7 "USB_DM" O T 10900 8575 39 
+$EndSheet
+Text Label 11525 8425 1    39   ~ 0
+USB_SSTXP
+Text Label 11400 8425 1    39   ~ 0
+USB_SSTXM
+Text Label 11275 8425 1    39   ~ 0
+USB_SSRXP
+Text Label 11150 8425 1    39   ~ 0
+USB_SSRXM
+Text Label 11025 8425 1    39   ~ 0
+USB_DP
+Text Label 10900 8425 1    39   ~ 0
+USB_DM
+Wire Wire Line
+	11525 8575 11525 8425
+Wire Wire Line
+	11400 8425 11400 8575
+Wire Wire Line
+	11275 8425 11275 8575
+Wire Wire Line
+	11150 8425 11150 8575
+Wire Wire Line
+	11025 8425 11025 8575
+Wire Wire Line
+	10900 8425 10900 8575
+Text Label 10450 3550 0    39   ~ 0
+USB_SSTXP
+Text Label 10450 3625 0    39   ~ 0
+USB_SSTXM
+Text Label 10450 3725 0    39   ~ 0
+USB_SSRXP
+Text Label 10450 3800 0    39   ~ 0
+USB_SSRXM
+Text Label 10450 3925 0    39   ~ 0
+USB_DP
+Text Label 10450 4000 0    39   ~ 0
+USB_DM
+Wire Wire Line
+	10225 4000 10450 4000
+Wire Wire Line
+	10450 3925 10225 3925
+Wire Wire Line
+	10225 3800 10450 3800
+Wire Wire Line
+	10450 3725 10225 3725
+Wire Wire Line
+	10225 3625 10450 3625
+Wire Wire Line
+	10450 3550 10225 3550
 $EndSCHEMATC

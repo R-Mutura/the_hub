@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -852,4 +852,130 @@ NoConn ~ 6575 5900
 NoConn ~ 6575 6000
 NoConn ~ 6575 6100
 NoConn ~ 6575 6200
+$Comp
+L Connector:Micro_SD_Card_Det J?
+U 1 1 65C685B8
+P 2125 5975
+F 0 "J?" H 2075 6792 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 2075 6701 50  0000 C CNN
+F 2 "" H 4175 6675 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 2125 6075 50  0001 C CNN
+	1    2125 5975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3000 1150 3000
+Connection ~ 1650 3000
+Wire Wire Line
+	1650 3000 2275 3000
+Wire Wire Line
+	1500 3000 1650 3000
+Connection ~ 1650 3500
+Wire Wire Line
+	1650 3500 2300 3500
+Wire Wire Line
+	1150 3275 1150 3500
+Connection ~ 1150 3275
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65D01721
+P 1150 3275
+AR Path="/619540C6/65D01721" Ref="#PWR?"  Part="1" 
+AR Path="/65D01721" Ref="#PWR?"  Part="1" 
+AR Path="/631C6BCF/65D01721" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1150 3025 50  0001 C CNN
+F 1 "GND" H 1155 3102 50  0000 C CNN
+F 2 "" H 1150 3275 60  0000 C CNN
+F 3 "" H 1150 3275 60  0000 C CNN
+	1    1150 3275
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1150 3500 1275 3500
+Wire Wire Line
+	1150 3000 1150 3275
+Wire Wire Line
+	1650 3000 1650 3150
+Wire Wire Line
+	1650 3500 1650 3350
+Wire Wire Line
+	1475 3500 1650 3500
+$Comp
+L Device:C_Small C?
+U 1 1 65D0172C
+P 1400 3000
+AR Path="/65D0172C" Ref="C?"  Part="1" 
+AR Path="/631C6BCF/65D0172C" Ref="C?"  Part="1" 
+F 0 "C?" V 1350 2925 50  0000 C CNN
+F 1 "22pF" V 1525 3025 50  0000 C CNN
+F 2 "" H 1400 3000 50  0001 C CNN
+F 3 "~" H 1400 3000 50  0001 C CNN
+	1    1400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 65D01733
+P 1650 3250
+AR Path="/65D01733" Ref="Y?"  Part="1" 
+AR Path="/631C6BCF/65D01733" Ref="Y?"  Part="1" 
+F 0 "Y?" V 1550 3350 50  0000 L CNN
+F 1 "25MHz_402F2501XIAR" V 1750 3275 50  0000 L CNN
+F 2 "" H 1650 3250 50  0001 C CNN
+F 3 "~" H 1650 3250 50  0001 C CNN
+F 4 "402F2501XIAR" H 1650 3250 50  0001 C CNN "Mfr No."
+	1    1650 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65D01739
+P 1375 3500
+AR Path="/65D01739" Ref="C?"  Part="1" 
+AR Path="/631C6BCF/65D01739" Ref="C?"  Part="1" 
+F 0 "C?" V 1325 3425 50  0000 C CNN
+F 1 "22pF" V 1500 3525 50  0000 C CNN
+F 2 "" H 1375 3500 50  0001 C CNN
+F 3 "~" H 1375 3500 50  0001 C CNN
+	1    1375 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 3250 1200 3250
+Wire Wire Line
+	1200 3250 1200 3275
+Wire Wire Line
+	1150 3275 1200 3275
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65D01742
+P 1950 3225
+AR Path="/619540C6/65D01742" Ref="#PWR?"  Part="1" 
+AR Path="/65D01742" Ref="#PWR?"  Part="1" 
+AR Path="/631C6BCF/65D01742" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1950 2975 50  0001 C CNN
+F 1 "GND" V 1975 3050 50  0000 C CNN
+F 2 "" H 1950 3225 60  0000 C CNN
+F 3 "" H 1950 3225 60  0000 C CNN
+	1    1950 3225
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1750 3250 1900 3250
+Wire Wire Line
+	1900 3250 1900 3225
+Wire Wire Line
+	1900 3225 1950 3225
+Text Label 2275 3000 0    50   ~ 0
+oscin
+Text Label 3200 2450 2    50   ~ 0
+oscin
+Text Label 2300 3500 0    50   ~ 0
+oscout
+Text Label 3200 2350 2    50   ~ 0
+oscout
+Wire Wire Line
+	3575 2350 3200 2350
+Wire Wire Line
+	3575 2450 3200 2450
 $EndSCHEMATC

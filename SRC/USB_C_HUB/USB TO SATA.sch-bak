@@ -1,0 +1,1498 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L usb_hub:TUSB9261 U?
+U 1 1 64EB4D27
+P 3450 1825
+F 0 "U?" H 3950 -1375 50  0000 C CNN
+F 1 "TUSB9261" H 3975 -1450 50  0000 C CNN
+F 2 "" H 2300 1575 50  0001 C CNN
+F 3 "" H 2300 1575 50  0001 C CNN
+	1    3450 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V1 #PWR?
+U 1 1 64EB6B8E
+P 2950 1575
+F 0 "#PWR?" H 2950 1425 50  0001 C CNN
+F 1 "+1V1" H 2965 1748 50  0000 C CNN
+F 2 "" H 2950 1575 50  0001 C CNN
+F 3 "" H 2950 1575 50  0001 C CNN
+	1    2950 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1725 2500 1575
+Wire Wire Line
+	2600 1725 2600 1575
+Wire Wire Line
+	2500 1575 2600 1575
+Connection ~ 2600 1575
+Wire Wire Line
+	2600 1575 2700 1575
+Wire Wire Line
+	2700 1725 2700 1575
+Connection ~ 2700 1575
+Wire Wire Line
+	2700 1575 2800 1575
+Wire Wire Line
+	2800 1725 2800 1575
+Connection ~ 2800 1575
+Wire Wire Line
+	2800 1575 2900 1575
+Wire Wire Line
+	2900 1725 2900 1575
+Connection ~ 2900 1575
+Wire Wire Line
+	2900 1575 2950 1575
+Wire Wire Line
+	2950 1575 3000 1575
+Wire Wire Line
+	3000 1575 3000 1725
+Connection ~ 2950 1575
+Wire Wire Line
+	3500 1575 3500 1725
+Connection ~ 3000 1575
+Wire Wire Line
+	3400 1725 3400 1575
+Wire Wire Line
+	3000 1575 3100 1575
+Connection ~ 3400 1575
+Wire Wire Line
+	3400 1575 3500 1575
+Wire Wire Line
+	3300 1725 3300 1575
+Connection ~ 3300 1575
+Wire Wire Line
+	3300 1575 3400 1575
+Wire Wire Line
+	3200 1725 3200 1575
+Connection ~ 3200 1575
+Wire Wire Line
+	3200 1575 3300 1575
+Wire Wire Line
+	3100 1725 3100 1575
+Connection ~ 3100 1575
+Wire Wire Line
+	3100 1575 3200 1575
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 64EB9757
+P 4050 1600
+F 0 "#PWR?" H 4050 1450 50  0001 C CNN
+F 1 "+3.3V" H 4065 1773 50  0000 C CNN
+F 2 "" H 4050 1600 60  0000 C CNN
+F 3 "" H 4050 1600 60  0000 C CNN
+	1    4050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1725 3650 1600
+Wire Wire Line
+	3750 1725 3750 1600
+Wire Wire Line
+	3650 1600 3750 1600
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1600 3850 1600
+Wire Wire Line
+	3850 1725 3850 1600
+Connection ~ 3850 1600
+Wire Wire Line
+	3850 1600 4000 1600
+Wire Wire Line
+	4000 1725 4000 1600
+Connection ~ 4000 1600
+Wire Wire Line
+	4000 1600 4050 1600
+Wire Wire Line
+	4050 1600 4100 1600
+Wire Wire Line
+	4100 1600 4100 1725
+Connection ~ 4050 1600
+Wire Wire Line
+	4100 1600 4200 1600
+Wire Wire Line
+	4200 1600 4200 1725
+Connection ~ 4100 1600
+Wire Wire Line
+	4200 1600 4300 1600
+Wire Wire Line
+	4300 1600 4300 1725
+Connection ~ 4200 1600
+$Comp
+L Device:R_US R?
+U 1 1 64EBC85D
+P 1575 3750
+F 0 "R?" H 1625 3850 50  0000 L CNN
+F 1 "10K_1%" H 1600 3675 50  0000 L CNN
+F 2 "" V 1615 3740 50  0001 C CNN
+F 3 "~" H 1575 3750 50  0001 C CNN
+	1    1575 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 3600 1575 3575
+Wire Wire Line
+	1575 3575 2200 3575
+Wire Wire Line
+	2200 3675 1925 3675
+Wire Wire Line
+	1925 3675 1925 3925
+Wire Wire Line
+	1925 3925 1575 3925
+Wire Wire Line
+	1575 3925 1575 3900
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64EBE2D9
+P 3450 5425
+F 0 "#PWR?" H 3450 5175 50  0001 C CNN
+F 1 "GND" H 3455 5252 50  0000 C CNN
+F 2 "" H 3450 5425 60  0000 C CNN
+F 3 "" H 3450 5425 60  0000 C CNN
+	1    3450 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5325 3300 5425
+Wire Wire Line
+	3450 5425 3500 5425
+Wire Wire Line
+	3500 5425 3500 5325
+Connection ~ 3450 5425
+Wire Wire Line
+	3500 5425 3600 5425
+Wire Wire Line
+	3600 5425 3600 5325
+Connection ~ 3500 5425
+Text Notes 7950 1725 0    50   ~ 0
+m.2 connector (M-KEY)\n
+Text Label 7950 3925 2    50   ~ 0
+PERn3_PCIE3_RX
+Text Label 7950 3825 2    50   ~ 0
+PERp3_PCIE3_RX+
+Text Label 7950 3725 2    50   ~ 0
+PETn3_PCIE3_TX
+Text Label 7950 3625 2    50   ~ 0
+PETp3_PCIE3_TX+
+Text Label 7950 3525 2    50   ~ 0
+PERn2_PCIE2_RX
+Text Label 7950 3425 2    50   ~ 0
+PERp2_PCIE2_RX+
+Text Label 7950 3325 2    50   ~ 0
+PETn2_PCIE2_TX
+Text Label 7950 3225 2    50   ~ 0
+PETp2_PCIE2_TX+
+Text Label 7950 3125 2    50   ~ 0
+PERn1_PCIE1_RX
+Text Label 7950 3025 2    50   ~ 0
+PERp1_PCIE1_RX+
+Text Label 7950 2925 2    50   ~ 0
+PETn1_PCIE1_TX
+Text Label 7950 2825 2    50   ~ 0
+PETp1_PCIE1_TX+
+Text Label 7950 2725 2    50   ~ 0
+PCIE0_RX-_SATA0_RX+
+Text Label 8175 2625 2    50   ~ 0
+PCIE0_RX+_SATA0_RX
+Text Label 8175 2525 2    50   ~ 0
+PCIE0_TX-_SATA0_TX
+Text Label 8175 2425 2    50   ~ 0
+PCIE0_TX+_SATA0_TX+
+Text Label 8175 2025 2    50   ~ 0
+~PERST~(O)(0_3.3V)_NC
+Text Label 8175 2125 2    50   ~ 0
+~CLKREQ
+Text Label 8175 2225 2    50   ~ 0
+~PEWAKE
+Text Label 8200 5125 2    50   ~ 0
+PCIE_CLK-
+Text Label 8200 5225 2    50   ~ 0
+PCIE_CLK+
+Wire Wire Line
+	8325 5225 8200 5225
+Wire Wire Line
+	8325 5125 8200 5125
+Wire Wire Line
+	8325 4625 8200 4625
+Wire Wire Line
+	8175 3825 8325 3825
+Wire Wire Line
+	8175 3725 8325 3725
+Wire Wire Line
+	8175 3625 8325 3625
+Wire Wire Line
+	8175 3925 8325 3925
+Wire Wire Line
+	8175 3425 8325 3425
+Wire Wire Line
+	8175 3325 8325 3325
+Wire Wire Line
+	8175 3225 8325 3225
+Wire Wire Line
+	8175 3525 8325 3525
+Wire Wire Line
+	8175 3025 8325 3025
+Wire Wire Line
+	8175 2925 8325 2925
+Wire Wire Line
+	8175 2825 8325 2825
+Wire Wire Line
+	8175 3125 8325 3125
+Wire Wire Line
+	8175 2625 8325 2625
+Wire Wire Line
+	8175 2525 8325 2525
+Wire Wire Line
+	8175 2425 8325 2425
+Wire Wire Line
+	8175 2725 8325 2725
+Wire Wire Line
+	8175 2225 8325 2225
+Wire Wire Line
+	8175 2125 8325 2125
+Wire Wire Line
+	8175 2025 8325 2025
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 6503E04C
+P 9325 1725
+F 0 "#PWR?" H 9325 1575 50  0001 C CNN
+F 1 "+3.3V" H 9340 1898 50  0000 C CNN
+F 2 "" H 9325 1725 60  0000 C CNN
+F 3 "" H 9325 1725 60  0000 C CNN
+	1    9325 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9325 1825 9325 1725
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 650420CC
+P 9325 5725
+F 0 "#PWR?" H 9325 5475 50  0001 C CNN
+F 1 "GND" H 9330 5552 50  0000 C CNN
+F 2 "" H 9325 5725 60  0000 C CNN
+F 3 "" H 9325 5725 60  0000 C CNN
+	1    9325 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9325 5725 9325 5625
+Text Label 10500 4525 0    50   ~ 0
+PEDET
+Wire Wire Line
+	10325 4525 10500 4525
+NoConn ~ 10325 4825
+Wire Wire Line
+	10325 4125 10500 4125
+$Comp
+L Device:C_Small C?
+U 1 1 6505EDF8
+P 10925 825
+F 0 "C?" H 10950 875 50  0000 L CNN
+F 1 "0.1uF" H 10950 750 50  0000 L CNN
+F 2 "" H 10925 825 50  0001 C CNN
+F 3 "~" H 10925 825 50  0001 C CNN
+	1    10925 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6505EDEE
+P 10675 825
+F 0 "C?" H 10700 875 50  0000 L CNN
+F 1 "0.1uF" H 10700 750 50  0000 L CNN
+F 2 "" H 10675 825 50  0001 C CNN
+F 3 "~" H 10675 825 50  0001 C CNN
+	1    10675 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6505EDD6
+P 10400 825
+F 0 "C?" H 10425 875 50  0000 L CNN
+F 1 "0.1uF" H 10425 750 50  0000 L CNN
+F 2 "" H 10400 825 50  0001 C CNN
+F 3 "~" H 10400 825 50  0001 C CNN
+	1    10400 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6505C8FF
+P 10125 825
+F 0 "C?" H 10150 875 50  0000 L CNN
+F 1 "0.1uF" H 10150 750 50  0000 L CNN
+F 2 "" H 10125 825 50  0001 C CNN
+F 3 "~" H 10125 825 50  0001 C CNN
+	1    10125 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6505C8F5
+P 9875 825
+F 0 "C?" H 9900 875 50  0000 L CNN
+F 1 "0.1uF" H 9900 750 50  0000 L CNN
+F 2 "" H 9875 825 50  0001 C CNN
+F 3 "~" H 9875 825 50  0001 C CNN
+	1    9875 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6505C8EB
+P 9600 825
+F 0 "C?" H 9625 875 50  0000 L CNN
+F 1 "0.1uF" H 9625 750 50  0000 L CNN
+F 2 "" H 9600 825 50  0001 C CNN
+F 3 "~" H 9600 825 50  0001 C CNN
+	1    9600 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65056555
+P 9325 825
+F 0 "C?" H 9350 875 50  0000 L CNN
+F 1 "0.1uF" H 9350 750 50  0000 L CNN
+F 2 "" H 9325 825 50  0001 C CNN
+F 3 "~" H 9325 825 50  0001 C CNN
+	1    9325 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65054C4E
+P 9075 825
+F 0 "C?" H 9100 875 50  0000 L CNN
+F 1 "0.1uF" H 9100 750 50  0000 L CNN
+F 2 "" H 9075 825 50  0001 C CNN
+F 3 "~" H 9075 825 50  0001 C CNN
+	1    9075 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65053C35
+P 8800 825
+F 0 "C?" H 8825 875 50  0000 L CNN
+F 1 "0.1uF" H 8825 750 50  0000 L CNN
+F 2 "" H 8800 825 50  0001 C CNN
+F 3 "~" H 8800 825 50  0001 C CNN
+	1    8800 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L New~Connector:Bus_M.2_Socket_M J?
+U 1 1 6502BA4B
+P 9325 3725
+F 0 "J?" H 9575 5225 50  0000 C CNN
+F 1 "Bus_M.2_Socket_M" H 9650 5100 50  0000 C CNN
+F 2 "" H 9325 4775 50  0001 C CNN
+F 3 "" H 9325 4775 50  0001 C CNN
+	1    9325 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 65069D62
+P 9875 700
+F 0 "#PWR?" H 9875 550 50  0001 C CNN
+F 1 "+3.3V" H 9890 873 50  0000 C CNN
+F 2 "" H 9875 700 60  0000 C CNN
+F 3 "" H 9875 700 60  0000 C CNN
+	1    9875 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 725  8800 700 
+Wire Wire Line
+	8800 700  9075 700 
+Wire Wire Line
+	9875 700  10125 700 
+Wire Wire Line
+	10925 700  10925 725 
+Connection ~ 9875 700 
+Wire Wire Line
+	8800 925  8800 1050
+Wire Wire Line
+	8800 1050 9075 1050
+Wire Wire Line
+	10925 1050 10925 925 
+Wire Wire Line
+	10675 700  10675 725 
+Wire Wire Line
+	10675 925  10675 1050
+Connection ~ 10675 700 
+Wire Wire Line
+	10675 700  10925 700 
+Connection ~ 10675 1050
+Wire Wire Line
+	10675 1050 10925 1050
+Wire Wire Line
+	10400 700  10400 725 
+Wire Wire Line
+	10400 925  10400 1050
+Connection ~ 10400 700 
+Wire Wire Line
+	10400 700  10675 700 
+Connection ~ 10400 1050
+Wire Wire Line
+	10400 1050 10675 1050
+Wire Wire Line
+	10125 700  10125 725 
+Wire Wire Line
+	10125 925  10125 1050
+Connection ~ 10125 700 
+Wire Wire Line
+	10125 700  10400 700 
+Connection ~ 10125 1050
+Wire Wire Line
+	10125 1050 10400 1050
+Wire Wire Line
+	9875 700  9875 725 
+Wire Wire Line
+	9875 925  9875 1050
+Connection ~ 9875 1050
+Wire Wire Line
+	9875 1050 10125 1050
+Wire Wire Line
+	9600 700  9600 725 
+Wire Wire Line
+	9600 925  9600 1050
+Connection ~ 9600 700 
+Wire Wire Line
+	9600 700  9875 700 
+Connection ~ 9600 1050
+Wire Wire Line
+	9600 1050 9875 1050
+Wire Wire Line
+	9325 700  9325 725 
+Wire Wire Line
+	9325 925  9325 1050
+Connection ~ 9325 700 
+Wire Wire Line
+	9325 700  9600 700 
+Connection ~ 9325 1050
+Wire Wire Line
+	9325 1050 9600 1050
+Wire Wire Line
+	9075 700  9075 725 
+Wire Wire Line
+	9075 925  9075 1050
+Connection ~ 9075 700 
+Wire Wire Line
+	9075 700  9325 700 
+Connection ~ 9075 1050
+Wire Wire Line
+	9075 1050 9325 1050
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6508175D
+P 9875 1050
+F 0 "#PWR?" H 9875 800 50  0001 C CNN
+F 1 "GND" H 9880 877 50  0000 C CNN
+F 2 "" H 9875 1050 60  0000 C CNN
+F 3 "" H 9875 1050 60  0000 C CNN
+	1    9875 1050
+	1    0    0    -1  
+$EndComp
+Text Notes 9425 650  2    50   ~ 0
+DECOUPLING CAPS
+$Comp
+L Device:C_Small C?
+U 1 1 65093383
+P 5550 1875
+F 0 "C?" V 5475 1800 50  0000 C CNN
+F 1 "0.01uF" V 5475 2100 50  0000 C CNN
+F 2 "" H 5550 1875 50  0001 C CNN
+F 3 "~" H 5550 1875 50  0001 C CNN
+	1    5550 1875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65099B10
+P 5550 2075
+F 0 "C?" V 5475 2000 50  0000 C CNN
+F 1 "0.01uF" V 5475 2300 50  0000 C CNN
+F 2 "" H 5550 2075 50  0001 C CNN
+F 3 "~" H 5550 2075 50  0001 C CNN
+	1    5550 2075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6509CA7F
+P 5550 2275
+F 0 "C?" V 5475 2200 50  0000 C CNN
+F 1 "0.01uF" V 5475 2500 50  0000 C CNN
+F 2 "" H 5550 2275 50  0001 C CNN
+F 3 "~" H 5550 2275 50  0001 C CNN
+	1    5550 2275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6509CA97
+P 5550 2475
+F 0 "C?" V 5475 2400 50  0000 C CNN
+F 1 "0.01uF" V 5475 2700 50  0000 C CNN
+F 2 "" H 5550 2475 50  0001 C CNN
+F 3 "~" H 5550 2475 50  0001 C CNN
+	1    5550 2475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2075 5175 2075
+Wire Wire Line
+	5175 2075 5175 1875
+Wire Wire Line
+	5175 1875 5450 1875
+Wire Wire Line
+	5000 2175 5275 2175
+Wire Wire Line
+	5275 2175 5275 2075
+Wire Wire Line
+	5275 2075 5450 2075
+Wire Wire Line
+	5000 2375 5275 2375
+Wire Wire Line
+	5275 2375 5275 2475
+Wire Wire Line
+	5275 2475 5450 2475
+Wire Wire Line
+	5000 2275 5450 2275
+Text Label 5975 2475 0    50   ~ 0
+PCIE0_RX+_SATA0_RX
+Wire Wire Line
+	5650 2475 5975 2475
+Text Label 6000 2275 0    50   ~ 0
+PCIE0_RX-_SATA0_RX+
+Wire Wire Line
+	6000 2275 5650 2275
+Text Label 6000 2075 0    50   ~ 0
+PCIE0_TX-_SATA0_TX
+Text Label 6025 1875 0    50   ~ 0
+PCIE0_TX+_SATA0_TX+
+Wire Wire Line
+	5650 1875 6025 1875
+Wire Wire Line
+	5650 2075 6000 2075
+Text Notes 6650 2350 2    39   ~ 0
+intentionally swapped
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 650EA8C3
+P 1025 5450
+F 0 "Y?" H 1175 5600 50  0000 L CNN
+F 1 "40MHz" H 1100 5250 50  0000 L CNN
+F 2 "" H 1025 5450 50  0001 C CNN
+F 3 "~" H 1025 5450 50  0001 C CNN
+F 4 "ABM10W-40.0000MHZ-8-D1X-T3" H 1025 5450 50  0001 C CNN "Mfr No."
+	1    1025 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 650EC0E7
+P 775 5875
+F 0 "C?" H 867 5921 50  0000 L CNN
+F 1 "12pF" H 867 5830 50  0000 L CNN
+F 2 "" H 775 5875 50  0001 C CNN
+F 3 "~" H 775 5875 50  0001 C CNN
+	1    775  5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 650EC734
+P 1350 5875
+F 0 "C?" H 1442 5921 50  0000 L CNN
+F 1 "12pF" H 1442 5830 50  0000 L CNN
+F 2 "" H 1350 5875 50  0001 C CNN
+F 3 "~" H 1350 5875 50  0001 C CNN
+	1    1350 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	775  5775 775  5450
+Wire Wire Line
+	775  5450 875  5450
+Wire Wire Line
+	1175 5450 1350 5450
+Wire Wire Line
+	1350 5450 1350 5775
+Wire Wire Line
+	3300 5425 3450 5425
+Text Label 3200 5375 2    39   ~ 0
+vssosc
+Wire Wire Line
+	3400 5325 3400 5375
+Wire Wire Line
+	3400 5375 3200 5375
+Text Label 1100 6075 3    39   ~ 0
+vssosc
+Wire Wire Line
+	1100 6000 1100 6075
+Wire Wire Line
+	775  5975 775  6000
+Wire Wire Line
+	775  6000 1075 6000
+Wire Wire Line
+	1350 6000 1350 5975
+Connection ~ 1100 6000
+Wire Wire Line
+	1100 6000 1350 6000
+Wire Wire Line
+	1025 5650 1075 5650
+Wire Wire Line
+	1075 5650 1075 5725
+Wire Wire Line
+	1075 6000 1100 6000
+Connection ~ 1075 6000
+Wire Wire Line
+	1025 5250 700  5250
+Wire Wire Line
+	700  5250 700  5725
+Wire Wire Line
+	700  5725 1075 5725
+Connection ~ 1075 5725
+Wire Wire Line
+	1075 5725 1075 6000
+Wire Wire Line
+	1350 5450 1350 5150
+Connection ~ 1350 5450
+Wire Wire Line
+	775  5450 775  5125
+Connection ~ 775  5450
+Text Label 775  5125 2    39   ~ 0
+XI
+Text Label 1350 5150 2    39   ~ 0
+XO
+Text Label 2050 2275 2    39   ~ 0
+XI
+Text Label 2050 2375 2    39   ~ 0
+XO
+Wire Wire Line
+	2200 2275 2050 2275
+Wire Wire Line
+	2050 2375 2200 2375
+NoConn ~ 5000 5025
+NoConn ~ 5000 5125
+NoConn ~ 5000 3325
+NoConn ~ 5000 3425
+NoConn ~ 5000 3525
+NoConn ~ 5000 3625
+NoConn ~ 5000 3725
+NoConn ~ 5000 2625
+NoConn ~ 5000 2725
+NoConn ~ 5000 2825
+NoConn ~ 5000 2925
+NoConn ~ 5000 3025
+NoConn ~ 5000 3125
+Wire Wire Line
+	1950 3375 2200 3375
+Wire Wire Line
+	1950 3275 2200 3275
+Wire Wire Line
+	1950 3175 2200 3175
+Wire Wire Line
+	1950 3075 2200 3075
+Wire Wire Line
+	1950 2975 2200 2975
+Wire Wire Line
+	1950 2875 2200 2875
+$Comp
+L Device:R_US R?
+U 1 1 651C9456
+P 1325 3475
+F 0 "R?" H 1375 3575 50  0000 L CNN
+F 1 "90.9K" V 1375 3075 50  0000 L CNN
+F 2 "" V 1365 3465 50  0001 C CNN
+F 3 "~" H 1325 3475 50  0001 C CNN
+	1    1325 3475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1475 3475 2200 3475
+$Comp
+L OLIMEX_Power:+5V #PWR?
+U 1 1 651D75FF
+P 1100 3400
+F 0 "#PWR?" H 1100 3250 50  0001 C CNN
+F 1 "+5V" H 1115 3573 50  0000 C CNN
+F 2 "" H 1100 3400 60  0000 C CNN
+F 3 "" H 1100 3400 60  0000 C CNN
+	1    1100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3400 1100 3475
+Wire Wire Line
+	1100 3475 1175 3475
+$Comp
+L Device:C_Small C?
+U 1 1 651DECD7
+P 875 3475
+F 0 "C?" V 925 3550 50  0000 L CNN
+F 1 "1uF" V 925 3300 50  0000 L CNN
+F 2 "" H 875 3475 50  0001 C CNN
+F 3 "~" H 875 3475 50  0001 C CNN
+	1    875  3475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1100 3475 975  3475
+Connection ~ 1100 3475
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 651F4851
+P 775 3550
+F 0 "#PWR?" H 775 3300 50  0001 C CNN
+F 1 "GND" H 780 3377 50  0000 C CNN
+F 2 "" H 775 3550 60  0000 C CNN
+F 3 "" H 775 3550 60  0000 C CNN
+	1    775  3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	775  3475 775  3550
+Text HLabel 1950 2875 0    39   Output ~ 0
+USB_SSTXP
+Text HLabel 1950 2975 0    39   Output ~ 0
+USS_SSSTXM
+Text HLabel 1950 3075 0    39   Output ~ 0
+USB_SSRXP
+Text HLabel 1950 3175 0    39   Output ~ 0
+USS_SSSRXM
+Text HLabel 1950 3275 0    39   Output ~ 0
+USB_DP
+Text HLabel 1950 3375 0    39   Output ~ 0
+USB_DM
+$Comp
+L Device:C_Small C?
+U 1 1 653FD4BA
+P 675 925
+F 0 "C?" H 700 1000 50  0000 L CNN
+F 1 "0.01uF" H 700 850 50  0000 L CNN
+F 2 "" H 675 925 50  0001 C CNN
+F 3 "~" H 675 925 50  0001 C CNN
+	1    675  925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 653FDAB6
+P 1000 925
+F 0 "C?" H 1025 1000 50  0000 L CNN
+F 1 "0.01uF" H 1025 850 50  0000 L CNN
+F 2 "" H 1000 925 50  0001 C CNN
+F 3 "~" H 1000 925 50  0001 C CNN
+	1    1000 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65404E17
+P 1350 925
+F 0 "C?" H 1375 1000 50  0000 L CNN
+F 1 "0.01uF" H 1375 850 50  0000 L CNN
+F 2 "" H 1350 925 50  0001 C CNN
+F 3 "~" H 1350 925 50  0001 C CNN
+	1    1350 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65404E2F
+P 1675 925
+F 0 "C?" H 1700 1000 50  0000 L CNN
+F 1 "0.01uF" H 1700 850 50  0000 L CNN
+F 2 "" H 1675 925 50  0001 C CNN
+F 3 "~" H 1675 925 50  0001 C CNN
+	1    1675 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6540C495
+P 1975 925
+F 0 "C?" H 2000 1000 50  0000 L CNN
+F 1 "0.01uF" H 2000 850 50  0000 L CNN
+F 2 "" H 1975 925 50  0001 C CNN
+F 3 "~" H 1975 925 50  0001 C CNN
+	1    1975 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6540C49F
+P 2300 925
+F 0 "C?" H 2325 1000 50  0000 L CNN
+F 1 "0.01uF" H 2325 850 50  0000 L CNN
+F 2 "" H 2300 925 50  0001 C CNN
+F 3 "~" H 2300 925 50  0001 C CNN
+	1    2300 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6540C4A9
+P 2650 925
+F 0 "C?" H 2675 1000 50  0000 L CNN
+F 1 "0.01uF" H 2675 850 50  0000 L CNN
+F 2 "" H 2650 925 50  0001 C CNN
+F 3 "~" H 2650 925 50  0001 C CNN
+	1    2650 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6540C4B3
+P 2975 925
+F 0 "C?" H 3000 1000 50  0000 L CNN
+F 1 "0.01uF" H 3000 850 50  0000 L CNN
+F 2 "" H 2975 925 50  0001 C CNN
+F 3 "~" H 2975 925 50  0001 C CNN
+	1    2975 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65414659
+P 3275 925
+F 0 "C?" H 3300 1000 50  0000 L CNN
+F 1 "0.01uF" H 3300 850 50  0000 L CNN
+F 2 "" H 3275 925 50  0001 C CNN
+F 3 "~" H 3275 925 50  0001 C CNN
+	1    3275 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 65414663
+P 3625 925
+F 0 "C?" H 3650 1000 50  0000 L CNN
+F 1 "0.01uF" H 3650 850 50  0000 L CNN
+F 2 "" H 3625 925 50  0001 C CNN
+F 3 "~" H 3625 925 50  0001 C CNN
+	1    3625 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6541466D
+P 3950 925
+F 0 "C?" H 3975 1000 50  0000 L CNN
+F 1 "0.01uF" H 3975 850 50  0000 L CNN
+F 2 "" H 3950 925 50  0001 C CNN
+F 3 "~" H 3950 925 50  0001 C CNN
+	1    3950 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V1 #PWR?
+U 1 1 6541C77F
+P 675 750
+F 0 "#PWR?" H 675 600 50  0001 C CNN
+F 1 "+1V1" H 690 923 50  0000 C CNN
+F 2 "" H 675 750 50  0001 C CNN
+F 3 "" H 675 750 50  0001 C CNN
+	1    675  750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	675  750  675  775 
+Wire Wire Line
+	675  775  1000 775 
+Wire Wire Line
+	3950 775  3950 825 
+Wire Wire Line
+	675  1150 675  1025
+Wire Wire Line
+	3950 1025 3950 1150
+Connection ~ 675  775 
+Wire Wire Line
+	675  775  675  825 
+Wire Wire Line
+	1000 775  1000 825 
+Wire Wire Line
+	1000 1025 1000 1150
+Connection ~ 1000 775 
+Wire Wire Line
+	1000 775  1350 775 
+Connection ~ 1000 1150
+Wire Wire Line
+	1000 1150 675  1150
+Wire Wire Line
+	1350 775  1350 825 
+Wire Wire Line
+	1350 1025 1350 1150
+Connection ~ 1350 775 
+Wire Wire Line
+	1350 775  1675 775 
+Connection ~ 1350 1150
+Wire Wire Line
+	1350 1150 1000 1150
+Wire Wire Line
+	1675 775  1675 825 
+Wire Wire Line
+	1675 1025 1675 1150
+Connection ~ 1675 775 
+Wire Wire Line
+	1675 775  1975 775 
+Connection ~ 1675 1150
+Wire Wire Line
+	1675 1150 1350 1150
+Wire Wire Line
+	1975 775  1975 825 
+Wire Wire Line
+	1675 1150 1975 1150
+Wire Wire Line
+	1975 1025 1975 1150
+Connection ~ 1975 775 
+Wire Wire Line
+	1975 775  2300 775 
+Connection ~ 1975 1150
+Wire Wire Line
+	1975 1150 2300 1150
+Wire Wire Line
+	2300 775  2300 825 
+Wire Wire Line
+	2300 1025 2300 1150
+Connection ~ 2300 775 
+Wire Wire Line
+	2300 775  2650 775 
+Connection ~ 2300 1150
+Wire Wire Line
+	2300 1150 2650 1150
+Wire Wire Line
+	2650 775  2650 825 
+Wire Wire Line
+	2650 1025 2650 1150
+Connection ~ 2650 775 
+Wire Wire Line
+	2650 775  2975 775 
+Connection ~ 2650 1150
+Wire Wire Line
+	2650 1150 2975 1150
+Wire Wire Line
+	2975 775  2975 825 
+Wire Wire Line
+	2975 1025 2975 1150
+Connection ~ 2975 775 
+Wire Wire Line
+	2975 775  3275 775 
+Connection ~ 2975 1150
+Wire Wire Line
+	2975 1150 3275 1150
+Wire Wire Line
+	3275 775  3275 825 
+Wire Wire Line
+	3275 1025 3275 1150
+Connection ~ 3275 775 
+Wire Wire Line
+	3275 775  3625 775 
+Connection ~ 3275 1150
+Wire Wire Line
+	3275 1150 3625 1150
+Wire Wire Line
+	3625 775  3625 825 
+Wire Wire Line
+	3625 1025 3625 1150
+Connection ~ 3625 775 
+Wire Wire Line
+	3625 775  3950 775 
+Connection ~ 3625 1150
+Wire Wire Line
+	3625 1150 3950 1150
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6549F1C3
+P 675 1150
+F 0 "#PWR?" H 675 900 50  0001 C CNN
+F 1 "GND" H 680 977 50  0000 C CNN
+F 2 "" H 675 1150 60  0000 C CNN
+F 3 "" H 675 1150 60  0000 C CNN
+	1    675  1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 675  1150
+$Comp
+L Device:C_Small C?
+U 1 1 654AC384
+P 4650 950
+F 0 "C?" H 4675 1025 50  0000 L CNN
+F 1 "0.1uF" H 4675 875 50  0000 L CNN
+F 2 "" H 4650 950 50  0001 C CNN
+F 3 "~" H 4650 950 50  0001 C CNN
+	1    4650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 654B80F4
+P 4925 950
+F 0 "C?" H 4950 1025 50  0000 L CNN
+F 1 "0.1uF" H 4925 875 50  0000 L CNN
+F 2 "" H 4925 950 50  0001 C CNN
+F 3 "~" H 4925 950 50  0001 C CNN
+	1    4925 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 654C3D92
+P 5150 950
+F 0 "C?" H 5175 1025 50  0000 L CNN
+F 1 "0.1uF" H 5175 875 50  0000 L CNN
+F 2 "" H 5150 950 50  0001 C CNN
+F 3 "~" H 5150 950 50  0001 C CNN
+	1    5150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 654C3DAA
+P 6075 925
+F 0 "C?" H 6100 1000 50  0000 L CNN
+F 1 "0.1uF" H 6075 850 50  0000 L CNN
+F 2 "" H 6075 925 50  0001 C CNN
+F 3 "~" H 6075 925 50  0001 C CNN
+	1    6075 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 654CFD7F
+P 6300 925
+F 0 "C?" H 6325 1000 50  0000 L CNN
+F 1 "0.1uF" H 6300 850 50  0000 L CNN
+F 2 "" H 6300 925 50  0001 C CNN
+F 3 "~" H 6300 925 50  0001 C CNN
+	1    6300 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 654CFD97
+P 6525 925
+F 0 "C?" H 6550 1000 50  0000 L CNN
+F 1 "0.1uF" H 6550 850 50  0000 L CNN
+F 2 "" H 6525 925 50  0001 C CNN
+F 3 "~" H 6525 925 50  0001 C CNN
+	1    6525 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 654CFDA1
+P 6800 925
+F 0 "C?" H 6825 1000 50  0000 L CNN
+F 1 "0.1uF" H 6825 850 50  0000 L CNN
+F 2 "" H 6800 925 50  0001 C CNN
+F 3 "~" H 6800 925 50  0001 C CNN
+	1    6800 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 654DBB98
+P 4650 750
+F 0 "#PWR?" H 4650 600 50  0001 C CNN
+F 1 "+3.3V" H 4665 923 50  0000 C CNN
+F 2 "" H 4650 750 60  0000 C CNN
+F 3 "" H 4650 750 60  0000 C CNN
+	1    4650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 654E7B33
+P 4650 1175
+F 0 "#PWR?" H 4650 925 50  0001 C CNN
+F 1 "GND" H 4655 1002 50  0000 C CNN
+F 2 "" H 4650 1175 60  0000 C CNN
+F 3 "" H 4650 1175 60  0000 C CNN
+	1    4650 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1175 4650 1125
+Wire Wire Line
+	4650 850  4650 750 
+Wire Wire Line
+	4650 750  4925 750 
+Wire Wire Line
+	6800 725  6800 825 
+Connection ~ 4650 750 
+Wire Wire Line
+	6800 1025 6800 1100
+Connection ~ 4650 1125
+Wire Wire Line
+	4650 1125 4650 1050
+Wire Wire Line
+	4925 750  4925 850 
+Wire Wire Line
+	4925 1050 4925 1125
+Connection ~ 4925 750 
+Wire Wire Line
+	4925 750  5150 750 
+Connection ~ 4925 1125
+Wire Wire Line
+	4925 1125 4650 1125
+Wire Wire Line
+	5150 750  5150 850 
+Wire Wire Line
+	4925 1125 5150 1125
+Wire Wire Line
+	5150 1050 5150 1125
+Wire Wire Line
+	6075 725  6075 825 
+Wire Wire Line
+	6075 1025 6075 1100
+Wire Wire Line
+	6075 725  6300 725 
+Wire Wire Line
+	6075 1100 6300 1100
+Wire Wire Line
+	6300 725  6300 825 
+Wire Wire Line
+	6300 1025 6300 1100
+Connection ~ 6300 725 
+Wire Wire Line
+	6300 725  6525 725 
+Connection ~ 6300 1100
+Wire Wire Line
+	6300 1100 6525 1100
+Wire Wire Line
+	6525 725  6525 825 
+Wire Wire Line
+	6525 1025 6525 1100
+Connection ~ 6525 725 
+Wire Wire Line
+	6525 725  6800 725 
+Connection ~ 6525 1100
+Wire Wire Line
+	6525 1100 6800 1100
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 6558AC6F
+P 5775 725
+F 0 "#PWR?" H 5775 575 50  0001 C CNN
+F 1 "+3.3V" H 5790 898 50  0000 C CNN
+F 2 "" H 5775 725 60  0000 C CNN
+F 3 "" H 5775 725 60  0000 C CNN
+	1    5775 725 
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65599191
+P 5775 1125
+F 0 "#PWR?" H 5775 875 50  0001 C CNN
+F 1 "GND" H 5780 952 50  0000 C CNN
+F 2 "" H 5775 1125 60  0000 C CNN
+F 3 "" H 5775 1125 60  0000 C CNN
+	1    5775 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 655D2D43
+P 5775 900
+F 0 "C?" H 5800 975 50  0000 L CNN
+F 1 "22uF" H 5800 825 50  0000 L CNN
+F 2 "" H 5775 900 50  0001 C CNN
+F 3 "~" H 5775 900 50  0001 C CNN
+	1    5775 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 655E127F
+P 5575 900
+F 0 "C?" H 5600 975 50  0000 L CNN
+F 1 "1uF" H 5600 825 50  0000 L CNN
+F 2 "" H 5575 900 50  0001 C CNN
+F 3 "~" H 5575 900 50  0001 C CNN
+	1    5575 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 800  5575 725 
+Wire Wire Line
+	5575 725  5775 725 
+Wire Wire Line
+	5775 725  5775 800 
+Connection ~ 5775 725 
+Wire Wire Line
+	5575 1125 5775 1125
+Wire Wire Line
+	5575 1000 5575 1125
+Wire Wire Line
+	5775 1125 5775 1000
+Connection ~ 5775 1125
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 6562AF6E
+P 6075 725
+F 0 "#PWR?" H 6075 575 50  0001 C CNN
+F 1 "+3.3V" H 6090 898 50  0000 C CNN
+F 2 "" H 6075 725 60  0000 C CNN
+F 3 "" H 6075 725 60  0000 C CNN
+	1    6075 725 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6075 725 
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65639CD9
+P 6075 1100
+F 0 "#PWR?" H 6075 850 50  0001 C CNN
+F 1 "GND" H 6080 927 50  0000 C CNN
+F 2 "" H 6075 1100 60  0000 C CNN
+F 3 "" H 6075 1100 60  0000 C CNN
+	1    6075 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6075 1100
+Text Notes 6350 700  0    39   ~ 0
+DECOUPLING\nCAPS
+Text Notes 4850 700  0    39   ~ 0
+DECOUPLING\nCAPS
+Text Notes 1875 700  0    39   ~ 0
+DECOUPLING\nCAPS
+Text Notes 5375 1250 0    39   ~ 0
+BULK CAPS
+$Comp
+L Device:R_US R?
+U 1 1 65685D9B
+P 1600 2625
+F 0 "R?" V 1650 2725 50  0000 L CNN
+F 1 "4.7K" V 1650 2350 50  0000 L CNN
+F 2 "" V 1640 2615 50  0001 C CNN
+F 3 "~" H 1600 2625 50  0001 C CNN
+	1    1600 2625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 656A41C1
+P 1600 2475
+F 0 "R?" V 1650 2575 50  0000 L CNN
+F 1 "4.7K" V 1650 2200 50  0000 L CNN
+F 2 "" V 1640 2465 50  0001 C CNN
+F 3 "~" H 1600 2475 50  0001 C CNN
+	1    1600 2475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 2625 1750 2625
+Wire Wire Line
+	2200 2525 1925 2525
+Wire Wire Line
+	1925 2525 1925 2475
+Wire Wire Line
+	1925 2475 1750 2475
+Wire Wire Line
+	1450 2475 1250 2475
+Wire Wire Line
+	1250 2475 1250 2625
+Wire Wire Line
+	1250 2625 1450 2625
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 656E2426
+P 1250 2475
+F 0 "#PWR?" H 1250 2325 50  0001 C CNN
+F 1 "+3.3V" H 1265 2648 50  0000 C CNN
+F 2 "" H 1250 2475 60  0000 C CNN
+F 3 "" H 1250 2475 60  0000 C CNN
+	1    1250 2475
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 2475
+$Comp
+L Device:R_US R?
+U 1 1 656F3775
+P 5400 4775
+F 0 "R?" V 5450 4875 50  0000 L CNN
+F 1 "4.7K" V 5450 4500 50  0000 L CNN
+F 2 "" V 5440 4765 50  0001 C CNN
+F 3 "~" H 5400 4775 50  0001 C CNN
+	1    5400 4775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 4775 5250 4775
+$Comp
+L Device:LED D?
+U 1 1 65714C05
+P 5950 4775
+F 0 "D?" H 5943 4520 50  0000 C CNN
+F 1 "SSD_COMM_ON" H 5943 4611 50  0000 C CNN
+F 2 "" H 5950 4775 50  0001 C CNN
+F 3 "~" H 5950 4775 50  0001 C CNN
+	1    5950 4775
+	-1   0    0    1   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65715AF3
+P 6200 4850
+F 0 "#PWR?" H 6200 4600 50  0001 C CNN
+F 1 "GND" H 6205 4677 50  0000 C CNN
+F 2 "" H 6200 4850 60  0000 C CNN
+F 3 "" H 6200 4850 60  0000 C CNN
+	1    6200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4775 5800 4775
+Wire Wire Line
+	6200 4775 6200 4850
+Wire Wire Line
+	6100 4775 6200 4775
+NoConn ~ 5000 4875
+NoConn ~ 5000 4625
+NoConn ~ 5000 4525
+NoConn ~ 5000 4425
+NoConn ~ 5000 4325
+NoConn ~ 5000 4225
+NoConn ~ 5000 4125
+NoConn ~ 5000 4025
+NoConn ~ 5000 3925
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 657DE5A1
+P 1550 2050
+F 0 "#PWR?" H 1550 1900 50  0001 C CNN
+F 1 "+3.3V" H 1565 2223 50  0000 C CNN
+F 2 "" H 1550 2050 60  0000 C CNN
+F 3 "" H 1550 2050 60  0000 C CNN
+	1    1550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 657EF2CF
+P 1850 2125
+F 0 "R?" V 1900 2225 50  0000 L CNN
+F 1 "4.7K" V 1900 1850 50  0000 L CNN
+F 2 "" V 1890 2115 50  0001 C CNN
+F 3 "~" H 1850 2125 50  0001 C CNN
+	1    1850 2125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 2125 2000 2125
+Wire Wire Line
+	1700 2125 1550 2125
+Wire Wire Line
+	1550 2125 1550 2050
+Wire Wire Line
+	7950 2725 8000 2725
+Wire Wire Line
+	7950 2825 8000 2825
+Wire Wire Line
+	7950 2925 7975 2925
+Wire Wire Line
+	7950 3025 8000 3025
+Wire Wire Line
+	7950 3125 8000 3125
+Wire Wire Line
+	7950 3225 8000 3225
+Wire Wire Line
+	7950 3325 8000 3325
+Wire Wire Line
+	7950 3425 8000 3425
+Wire Wire Line
+	7950 3525 8000 3525
+Wire Wire Line
+	7950 3625 8000 3625
+Wire Wire Line
+	7950 3725 8000 3725
+Wire Wire Line
+	7950 3825 8000 3825
+Wire Wire Line
+	7950 3925 8000 3925
+NoConn ~ 8000 2725
+NoConn ~ 8000 2825
+NoConn ~ 8175 2725
+NoConn ~ 8175 2825
+NoConn ~ 7975 2925
+NoConn ~ 8000 3025
+NoConn ~ 8175 2925
+NoConn ~ 8175 3025
+NoConn ~ 8000 3125
+NoConn ~ 8000 3225
+NoConn ~ 8175 3225
+NoConn ~ 8000 3325
+NoConn ~ 8175 3325
+NoConn ~ 8000 3425
+NoConn ~ 8000 3525
+NoConn ~ 8175 3425
+NoConn ~ 8175 3525
+NoConn ~ 8000 3625
+NoConn ~ 8000 3725
+NoConn ~ 8175 3625
+NoConn ~ 8175 3725
+NoConn ~ 8000 3825
+NoConn ~ 8000 3925
+NoConn ~ 8175 3825
+NoConn ~ 8175 3925
+NoConn ~ 8200 4625
+NoConn ~ 10500 4125
+Text Label 10850 4500 0    50   ~ 0
+PEDET
+$Comp
+L Device:R_US R?
+U 1 1 65B88EC4
+P 10825 4900
+F 0 "R?" V 10875 5000 50  0000 L CNN
+F 1 "4.7K" V 10875 4625 50  0000 L CNN
+F 2 "" V 10865 4890 50  0001 C CNN
+F 3 "~" H 10825 4900 50  0001 C CNN
+	1    10825 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10825 4750 10825 4500
+Wire Wire Line
+	10825 4500 10850 4500
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65BC2505
+P 10825 5175
+F 0 "#PWR?" H 10825 4925 50  0001 C CNN
+F 1 "GND" H 10830 5002 50  0000 C CNN
+F 2 "" H 10825 5175 60  0000 C CNN
+F 3 "" H 10825 5175 60  0000 C CNN
+	1    10825 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10825 5175 10825 5050
+Text Notes 10675 5600 0    39   ~ 0
+PEET=LOW\nENABLE SATA\nINTERFACE
+$EndSCHEMATC
