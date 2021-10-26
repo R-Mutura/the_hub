@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -13,40 +13,27 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 10725 3325 0    50   ~ 0
-SD_CD
 $Comp
 L OLIMEX_Power:GND #PWR?
 U 1 1 63D3BD81
-P 10775 3700
+P 10575 4100
 AR Path="/619540C6/63D3BD81" Ref="#PWR?"  Part="1" 
 AR Path="/63D3BD81" Ref="#PWR?"  Part="1" 
 AR Path="/63D2BAD4/63D3BD81" Ref="#PWR?"  Part="1" 
 AR Path="/66525694/63D3BD81" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10775 3450 50  0001 C CNN
-F 1 "GND" H 10780 3527 50  0000 C CNN
-F 2 "" H 10775 3700 60  0000 C CNN
-F 3 "" H 10775 3700 60  0000 C CNN
-	1    10775 3700
+F 0 "#PWR?" H 10575 3850 50  0001 C CNN
+F 1 "GND" H 10580 3927 50  0000 C CNN
+F 2 "" H 10575 4100 60  0000 C CNN
+F 3 "" H 10575 4100 60  0000 C CNN
+	1    10575 4100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10775 3625 10775 3700
-Text Label 10750 3425 0    50   ~ 0
-SD_WP
+	10575 4025 10575 4100
 Wire Wire Line
-	10750 3425 10550 3425
-Wire Wire Line
-	10650 3625 10775 3625
-Connection ~ 10650 3625
+	10450 4025 10575 4025
 Wire Wire Line
 	10650 3725 10650 3625
-Wire Wire Line
-	10550 3725 10650 3725
-Wire Wire Line
-	10550 3625 10650 3625
-Wire Wire Line
-	10550 3325 10725 3325
 NoConn ~ 6300 2625
 NoConn ~ 6300 2775
 NoConn ~ 6350 3125
@@ -59,49 +46,35 @@ NoConn ~ 6350 4025
 NoConn ~ 6350 3825
 Wire Wire Line
 	6525 3525 6350 3525
-Text Label 6525 3525 0    50   ~ 0
-SD_WP
-Wire Wire Line
-	8050 3725 8750 3725
-Connection ~ 7800 3725
-Wire Wire Line
-	7800 3725 8050 3725
-Wire Wire Line
-	7800 3675 7800 3725
 $Comp
 L Device:C_Small C?
 U 1 1 63D332FA
-P 7800 3575
+P 7875 3625
 AR Path="/63D332FA" Ref="C?"  Part="1" 
 AR Path="/63D2BAD4/63D332FA" Ref="C?"  Part="1" 
 AR Path="/66525694/63D332FA" Ref="C?"  Part="1" 
-F 0 "C?" H 7892 3621 50  0000 L CNN
-F 1 "1nF" H 7892 3530 50  0000 L CNN
-F 2 "" H 7800 3575 50  0001 C CNN
-F 3 "~" H 7800 3575 50  0001 C CNN
-	1    7800 3575
+F 0 "C?" H 7967 3671 50  0000 L CNN
+F 1 "1nF" H 7967 3580 50  0000 L CNN
+F 2 "" H 7875 3625 50  0001 C CNN
+F 3 "~" H 7875 3625 50  0001 C CNN
+	1    7875 3625
 	1    0    0    -1  
 $EndComp
-Text Label 7800 3375 2    31   ~ 0
+Text Label 7875 3425 2    31   ~ 0
 CRD_PWR
-Connection ~ 8050 3725
-Wire Wire Line
-	8050 3425 8750 3425
-Wire Wire Line
-	8050 3725 8050 3425
 $Comp
 L OLIMEX_Power:GND #PWR?
 U 1 1 63D332F0
-P 7800 3725
+P 7875 3775
 AR Path="/619540C6/63D332F0" Ref="#PWR?"  Part="1" 
 AR Path="/63D332F0" Ref="#PWR?"  Part="1" 
 AR Path="/63D2BAD4/63D332F0" Ref="#PWR?"  Part="1" 
 AR Path="/66525694/63D332F0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7800 3475 50  0001 C CNN
-F 1 "GND" H 7805 3552 50  0000 C CNN
-F 2 "" H 7800 3725 60  0000 C CNN
-F 3 "" H 7800 3725 60  0000 C CNN
-	1    7800 3725
+F 0 "#PWR?" H 7875 3525 50  0001 C CNN
+F 1 "GND" H 7880 3602 50  0000 C CNN
+F 2 "" H 7875 3775 60  0000 C CNN
+F 3 "" H 7875 3775 60  0000 C CNN
+	1    7875 3775
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -113,8 +86,8 @@ Wire Wire Line
 Text Label 6525 4425 0    50   ~ 0
 SD_CLK
 Wire Wire Line
-	8750 3625 8575 3625
-Text Label 8575 3625 2    50   ~ 0
+	8750 3525 8575 3525
+Text Label 8575 3525 2    50   ~ 0
 SD_CLK
 Wire Wire Line
 	8750 3325 8600 3325
@@ -125,9 +98,9 @@ Wire Wire Line
 Text Label 6525 4125 0    50   ~ 0
 SD_CMD
 Wire Wire Line
-	8575 3925 8750 3925
-Wire Wire Line
 	8575 3825 8750 3825
+Wire Wire Line
+	8575 3725 8750 3725
 Wire Wire Line
 	8575 3225 8750 3225
 Wire Wire Line
@@ -136,9 +109,9 @@ Text Label 8575 3225 2    50   ~ 0
 SD_D3
 Text Label 8575 3125 2    50   ~ 0
 SD_D2
-Text Label 8575 3925 2    50   ~ 0
-SD_D1
 Text Label 8575 3825 2    50   ~ 0
+SD_D1
+Text Label 8575 3725 2    50   ~ 0
 SD_D0
 Text Label 6525 3725 0    50   ~ 0
 SD_D3
@@ -156,20 +129,6 @@ Wire Wire Line
 	6525 3725 6350 3725
 Text Label 6525 3325 0    50   ~ 0
 SD_D0
-$Comp
-L Connector:SD_Card J?
-U 1 1 63D332CA
-P 9650 3525
-AR Path="/63D332CA" Ref="J?"  Part="1" 
-AR Path="/63D2BAD4/63D332CA" Ref="J?"  Part="1" 
-AR Path="/66525694/63D332CA" Ref="J?"  Part="1" 
-F 0 "J?" H 9650 4190 50  0000 C CNN
-F 1 "SD_Card" H 9650 4099 50  0000 C CNN
-F 2 "" H 9650 3525 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 9650 3525 50  0001 C CNN
-	1    9650 3525
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 2625 8900 2625
 Wire Wire Line
@@ -801,6 +760,37 @@ Wire Wire Line
 Connection ~ 2175 4050
 Wire Wire Line
 	2175 4050 2375 4050
+Wire Wire Line
+	7875 3425 7875 3525
+Text Label 8550 3425 2    31   ~ 0
+CRD_PWR
+Wire Wire Line
+	8750 3425 8550 3425
+Text Notes 5150 775  0    39   ~ 0
+DECOUPLING CAPS
+$Comp
+L Connector:Micro_SD_Card_Det J?
+U 1 1 66574B47
+P 9650 3525
+F 0 "J?" H 9600 4342 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 9600 4251 50  0000 C CNN
+F 2 "" H 11700 4225 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 9650 3625 50  0001 C CNN
+	1    9650 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 3775 7875 3750
+Wire Wire Line
+	8750 3625 8200 3625
+Wire Wire Line
+	8200 3625 8200 3750
+Wire Wire Line
+	8200 3750 7875 3750
+Connection ~ 7875 3750
+Wire Wire Line
+	7875 3750 7875 3725
+NoConn ~ 8750 4025
 $Comp
 L SamacSys_Parts:USB2240-AEZG-06 IC?
 U 1 1 63D33289
@@ -822,11 +812,12 @@ F 9 "USB2240-AEZG-06" H 4600 575 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 3375 7800 3475
-Text Label 8550 3525 2    31   ~ 0
-CRD_PWR
+	10550 3625 10650 3625
 Wire Wire Line
-	8750 3525 8550 3525
-Text Notes 5150 775  0    39   ~ 0
-DECOUPLING CAPS
+	10550 3725 10650 3725
+NoConn ~ 6525 3525
+Text Label 8575 3925 2    50   ~ 0
+SD_CD
+Wire Wire Line
+	8750 3925 8575 3925
 $EndSCHEMATC
