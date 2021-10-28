@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 15
+Sheet 2 15
 Title ""
 Date ""
 Rev ""
@@ -13,111 +13,30 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2300 2975 2    50   ~ 0
-LnC_n
-Text Label 2300 3075 2    50   ~ 0
-LnC_p
-Text Label 2300 2675 2    50   ~ 0
-LnD_n
-Text Label 2300 2775 2    50   ~ 0
-LnD_p
-Text Label 2275 2575 2    50   ~ 0
-GND
-Text Label 2275 3175 2    50   ~ 0
-GND
-Text Label 2275 3775 2    50   ~ 0
-GND
-Text Label 5325 2675 0    50   ~ 0
-GND
 Wire Wire Line
-	5100 2675 5325 2675
-Text Label 5325 3275 0    50   ~ 0
-GND
+	3675 5675 3675 5900
 Wire Wire Line
-	5100 3275 5325 3275
-Wire Wire Line
-	4300 4075 4300 4300
-Text Label 4300 4300 3    50   ~ 0
-GND
-Wire Wire Line
-	3600 4075 3600 4300
-Text Label 3600 4300 3    50   ~ 0
-GND
-Wire Wire Line
-	3200 4075 3200 4300
-Text Label 3200 4300 3    50   ~ 0
-GND
-Wire Wire Line
-	3700 2275 3700 2075
-Text Label 3700 2075 1    50   ~ 0
-GND
-Wire Wire Line
-	4100 2275 4100 2050
-Text Label 4100 2050 1    50   ~ 0
-GND
-Wire Wire Line
-	3200 2275 3200 2050
-Text Label 3200 2050 1    50   ~ 0
-GND
-Wire Wire Line
-	2500 3775 2275 3775
-Wire Wire Line
-	2500 3175 2275 3175
-Wire Wire Line
-	2500 2875 2275 2875
-Wire Wire Line
-	2500 2575 2275 2575
-Wire Wire Line
-	2300 2775 2500 2775
-Wire Wire Line
-	2300 2675 2500 2675
-Wire Wire Line
-	2300 3075 2500 3075
-Wire Wire Line
-	2300 2975 2500 2975
-Wire Wire Line
-	2300 3375 2500 3375
-Wire Wire Line
-	2500 3275 2300 3275
+	2875 5675 2875 5900
 $Comp
 L OLIMEX_Power:GND #PWR?
 U 1 1 64E7C5EF
-P 6150 3150
+P 7050 6175
 AR Path="/619540C6/64E7C5EF" Ref="#PWR?"  Part="1" 
 AR Path="/64E7C5EF" Ref="#PWR?"  Part="1" 
-AR Path="/64E160D5/64E7C5EF" Ref="#PWR0149"  Part="1" 
-F 0 "#PWR0149" H 6150 2900 50  0001 C CNN
-F 1 "GND" H 6155 2977 50  0000 C CNN
-F 2 "" H 6150 3150 60  0000 C CNN
-F 3 "" H 6150 3150 60  0000 C CNN
-	1    6150 3150
-	0    1    -1   0   
+AR Path="/64E160D5/64E7C5EF" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 7050 5925 50  0001 C CNN
+F 1 "GND" H 7055 6002 50  0000 C CNN
+F 2 "" H 7050 6175 60  0000 C CNN
+F 3 "" H 7050 6175 60  0000 C CNN
+	1    7050 6175
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6225 3150 6150 3150
+	7050 6100 7050 6175
 Text Label 8250 2250 2    50   ~ 0
 TMDS_D1+
 Text Label 8275 2450 2    50   ~ 0
 TMDS_D1-
-$Comp
-L SamacSys_Parts:ESD122DMXR D?
-U 1 1 64E7C5FE
-P 6225 3150
-AR Path="/64E7C5FE" Ref="D?"  Part="1" 
-AR Path="/64E160D5/64E7C5FE" Ref="D11"  Part="1" 
-F 0 "D11" H 6125 3075 50  0000 C CNN
-F 1 "ESD122DMXR" H 6125 3000 50  0000 C CNN
-F 2 "SamacSys_Parts_2:DMX0003A" H 7075 3250 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/esd122" H 7075 3150 50  0001 L CNN
-F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 7075 3050 50  0001 L CNN "Description"
-F 5 "" H 7075 2950 50  0001 L CNN "Height"
-F 6 "595-ESD122DMXR" H 7075 2850 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 7075 2750 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 7075 2650 50  0001 L CNN "Manufacturer_Name"
-F 9 "ESD122DMXR" H 7075 2550 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6225 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8375 2450 8275 2450
 Wire Wire Line
@@ -178,8 +97,8 @@ L OLIMEX_Power:+5V #PWR?
 U 1 1 64E7C620
 P 8175 3625
 AR Path="/64E7C620" Ref="#PWR?"  Part="1" 
-AR Path="/64E160D5/64E7C620" Ref="#PWR0150"  Part="1" 
-F 0 "#PWR0150" H 8175 3475 50  0001 C CNN
+AR Path="/64E160D5/64E7C620" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 8175 3475 50  0001 C CNN
 F 1 "+5V" V 8190 3753 50  0000 L CNN
 F 2 "" H 8175 3625 60  0000 C CNN
 F 3 "" H 8175 3625 60  0000 C CNN
@@ -220,8 +139,8 @@ L OLIMEX_Power:GND #PWR?
 U 1 1 64E7C634
 P 8900 1775
 AR Path="/64E7C634" Ref="#PWR?"  Part="1" 
-AR Path="/64E160D5/64E7C634" Ref="#PWR0151"  Part="1" 
-F 0 "#PWR0151" H 8900 1525 50  0001 C CNN
+AR Path="/64E160D5/64E7C634" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 8900 1525 50  0001 C CNN
 F 1 "GND" H 8905 1602 50  0000 C CNN
 F 2 "" H 8900 1775 60  0000 C CNN
 F 3 "" H 8900 1775 60  0000 C CNN
@@ -233,8 +152,8 @@ L OLIMEX_Power:GND #PWR?
 U 1 1 64E7C63A
 P 8625 4025
 AR Path="/64E7C63A" Ref="#PWR?"  Part="1" 
-AR Path="/64E160D5/64E7C63A" Ref="#PWR0152"  Part="1" 
-F 0 "#PWR0152" H 8625 3775 50  0001 C CNN
+AR Path="/64E160D5/64E7C63A" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 8625 3775 50  0001 C CNN
 F 1 "GND" H 8725 3900 50  0000 C CNN
 F 2 "" H 8625 4025 60  0000 C CNN
 F 3 "" H 8625 4025 60  0000 C CNN
@@ -252,99 +171,30 @@ Wire Wire Line
 Connection ~ 8625 4025
 Text Label 8675 4025 0    50   ~ 0
 GND
-Text Label 5325 3475 0    50   ~ 0
+Text Label 5150 3075 0    50   ~ 0
 TMDS_D1+
-Text Label 5300 3375 0    50   ~ 0
-TMDS_D1-
-Text Label 5325 3775 0    50   ~ 0
+Text Label 5150 3275 0    50   ~ 0
 TMDS_D2+
-Text Label 5325 3675 0    50   ~ 0
+Text Label 5150 3175 0    50   ~ 0
 TMDS_D2-
 Wire Wire Line
-	5100 3375 5300 3375
+	4925 3175 5150 3175
 Wire Wire Line
-	5100 3475 5325 3475
-Wire Wire Line
-	5100 3675 5325 3675
-Wire Wire Line
-	5100 3775 5325 3775
-Text Label 5325 3175 0    50   ~ 0
-TMDS_D0+
-Text Label 5325 3075 0    50   ~ 0
-TMDS_D0-
-Wire Wire Line
-	5100 3075 5325 3075
-Wire Wire Line
-	5100 3175 5325 3175
-Text Label 3800 2075 1    50   ~ 0
+	4925 3275 5150 3275
+Text Label 5150 3375 0    50   ~ 0
 HPD
-Wire Wire Line
-	3800 2275 3800 2075
-NoConn ~ 3300 2275
-NoConn ~ 3400 2275
-Wire Wire Line
-	4300 2275 4300 2050
-Text Label 4300 2050 1    50   ~ 0
-GND
-NoConn ~ 3400 4075
-NoConn ~ 3500 4075
-NoConn ~ 3700 4075
-NoConn ~ 4100 4075
-Text Label 2300 3375 2    50   ~ 0
-LnB_p
-Text Label 2300 3275 2    50   ~ 0
-LnB_n
-Text Label 2300 3675 2    50   ~ 0
-LnA_p
-Text Label 2300 3575 2    50   ~ 0
-LnA_n
-$Comp
-L SamacSys_Parts:MAX9406ETM+T IC?
-U 1 1 64E7C666
-P 3200 4075
-AR Path="/64E7C666" Ref="IC?"  Part="1" 
-AR Path="/64E160D5/64E7C666" Ref="IC2"  Part="1" 
-F 0 "IC2" V 4150 3550 50  0000 C CNN
-F 1 "MAX9406ETM+T" V 4025 3500 50  0000 C CNN
-F 2 "SamacSys_Parts_2:QFN50P700X700X80-49N" H 4850 4575 50  0001 L CNN
-F 3 "https://pdfserv.maximintegrated.com/en/ds/MAX9406.pdf" H 4850 4475 50  0001 L CNN
-F 4 "MAX9406ETM+T" H 4850 4375 50  0001 L CNN "Description"
-F 5 "0.8" H 4850 4275 50  0001 L CNN "Height"
-F 6 "700-MAX9406ETMT" H 4850 4175 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX9406ETM%2bT?qs=LHmEVA8xxfZt4oSZXNpk%252BA%3D%3D" H 4850 4075 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Maxim Integrated" H 4850 3975 50  0001 L CNN "Manufacturer_Name"
-F 9 "MAX9406ETM+T" H 4850 3875 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3200 4075
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2300 3575 2500 3575
-Wire Wire Line
-	2300 3675 2500 3675
-Text Label 5350 2875 0    50   ~ 0
+Text Label 5175 2675 0    50   ~ 0
 TMDS_CLK+
-Text Label 5350 2775 0    50   ~ 0
+Text Label 5175 2575 0    50   ~ 0
 TMDS_CLK-
 Wire Wire Line
-	5350 2775 5100 2775
+	5175 2575 4925 2575
 Wire Wire Line
-	5100 2875 5350 2875
-Text Label 4000 2075 1    50   ~ 0
+	4925 2675 5175 2675
+Text Label 6750 3475 0    50   ~ 0
 DDC_CLK
-Text Label 3900 2075 1    50   ~ 0
+Text Label 6750 3575 0    50   ~ 0
 DDC_DATA
-Wire Wire Line
-	3900 2075 3900 2275
-Wire Wire Line
-	4000 2075 4000 2275
-Text Label 4000 4200 3    50   ~ 0
-AUX+
-Text Label 3900 4200 3    50   ~ 0
-AUX-
-Wire Wire Line
-	4000 4200 4000 4075
-Wire Wire Line
-	3900 4075 3900 4200
 Wire Wire Line
 	8575 1750 8575 1650
 Wire Wire Line
@@ -356,4 +206,1161 @@ Wire Wire Line
 Connection ~ 8675 1650
 Wire Wire Line
 	8675 1650 8900 1650
+Wire Wire Line
+	3575 5675 3575 5900
+Connection ~ 3575 5900
+Wire Wire Line
+	3575 5900 3675 5900
+Wire Wire Line
+	3475 5675 3475 5900
+Connection ~ 3475 5900
+Wire Wire Line
+	3475 5900 3575 5900
+Wire Wire Line
+	3375 5675 3375 5900
+Connection ~ 3375 5900
+Wire Wire Line
+	3375 5900 3475 5900
+Wire Wire Line
+	2975 5675 2975 5900
+Wire Wire Line
+	2875 5900 2975 5900
+Connection ~ 2975 5900
+Wire Wire Line
+	2975 5900 3075 5900
+Wire Wire Line
+	3075 5675 3075 5900
+Connection ~ 3075 5900
+Wire Wire Line
+	3075 5900 3175 5900
+Wire Wire Line
+	3175 5675 3175 5900
+Connection ~ 3175 5900
+$Comp
+L OLIMEX_Power:+3.3V #PWR025
+U 1 1 61800AA2
+P 1400 2200
+F 0 "#PWR025" H 1400 2050 50  0001 C CNN
+F 1 "+3.3V" H 1415 2373 50  0000 C CNN
+F 2 "" H 1400 2200 60  0000 C CNN
+F 3 "" H 1400 2200 60  0000 C CNN
+	1    1400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 618016C6
+P 1400 2375
+F 0 "R8" H 1468 2421 50  0000 L CNN
+F 1 "2.2K" H 1468 2330 50  0000 L CNN
+F 2 "" V 1440 2365 50  0001 C CNN
+F 3 "~" H 1400 2375 50  0001 C CNN
+	1    1400 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2225 1400 2200
+Wire Wire Line
+	1400 2525 1400 2575
+Wire Wire Line
+	1925 2575 1400 2575
+$Comp
+L Device:R_US R10
+U 1 1 618168B3
+P 1450 4025
+F 0 "R10" V 1375 3975 50  0000 L CNN
+F 1 "249OHM/1%" V 1550 3800 50  0000 L CNN
+F 2 "" V 1490 4015 50  0001 C CNN
+F 3 "~" H 1450 4025 50  0001 C CNN
+	1    1450 4025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3175 5900 3275 5900
+Wire Wire Line
+	3275 5900 3375 5900
+Connection ~ 3275 5900
+Wire Wire Line
+	3275 5675 3275 5900
+$Comp
+L OLIMEX_Power:GND #PWR030
+U 1 1 617E4FEE
+P 3275 5900
+F 0 "#PWR030" H 3275 5650 50  0001 C CNN
+F 1 "GND" H 3280 5727 50  0000 C CNN
+F 2 "" H 3275 5900 60  0000 C CNN
+F 3 "" H 3275 5900 60  0000 C CNN
+	1    3275 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LF85_TO220 U7
+U 1 1 6183C969
+P 7300 900
+F 0 "U7" H 7300 1142 50  0000 C CNN
+F 1 "ZLDO1117G12TA" H 7300 1051 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7300 1125 50  0001 C CIN
+F 3 "https://www.digikey.com/en/products/detail/diodes-incorporated/ZLDO1117G12TA/2095588" H 7300 850 50  0001 C CNN
+	1    7300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR040
+U 1 1 61843C42
+P 6675 875
+F 0 "#PWR040" H 6675 725 50  0001 C CNN
+F 1 "+3.3V" H 6690 1048 50  0000 C CNN
+F 2 "" H 6675 875 60  0000 C CNN
+F 3 "" H 6675 875 60  0000 C CNN
+	1    6675 875 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 900  6675 875 
+$Comp
+L power:+1V2 #PWR043
+U 1 1 61849588
+P 7925 775
+F 0 "#PWR043" H 7925 625 50  0001 C CNN
+F 1 "+1V2" H 7940 948 50  0000 C CNN
+F 2 "" H 7925 775 50  0001 C CNN
+F 3 "" H 7925 775 50  0001 C CNN
+	1    7925 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 900  7925 900 
+Wire Wire Line
+	7925 900  7925 775 
+Text Notes 7225 625  0    39   ~ 0
+Note the G12A
+$Comp
+L Device:C_Small C34
+U 1 1 6184E2C3
+P 6750 1125
+F 0 "C34" H 6842 1171 50  0000 L CNN
+F 1 "10uF" H 6842 1080 50  0000 L CNN
+F 2 "" H 6750 1125 50  0001 C CNN
+F 3 "~" H 6750 1125 50  0001 C CNN
+	1    6750 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C35
+U 1 1 6184E9DF
+P 7925 1175
+F 0 "C35" H 8017 1221 50  0000 L CNN
+F 1 "10uF" H 8017 1130 50  0000 L CNN
+F 2 "" H 7925 1175 50  0001 C CNN
+F 3 "~" H 7925 1175 50  0001 C CNN
+	1    7925 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1025 6750 900 
+Wire Wire Line
+	6675 900  6750 900 
+Connection ~ 6750 900 
+Wire Wire Line
+	6750 900  7000 900 
+Wire Wire Line
+	6750 1225 6750 1425
+Wire Wire Line
+	6750 1425 7300 1425
+Wire Wire Line
+	7300 1425 7300 1200
+Wire Wire Line
+	7300 1425 7925 1425
+Wire Wire Line
+	7925 1425 7925 1275
+Wire Wire Line
+	7925 1075 7925 900 
+Connection ~ 7300 1425
+Connection ~ 7925 900 
+$Comp
+L OLIMEX_Power:GND #PWR042
+U 1 1 618643F6
+P 7300 1425
+F 0 "#PWR042" H 7300 1175 50  0001 C CNN
+F 1 "GND" H 7305 1252 50  0000 C CNN
+F 2 "" H 7300 1425 60  0000 C CNN
+F 3 "" H 7300 1425 60  0000 C CNN
+	1    7300 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L usb_hub:MCDP2900 U6
+U 1 1 6180EA00
+P 3275 2325
+F 0 "U6" H 3900 -1100 50  0000 C CNN
+F 1 "MCDP2900" H 3950 -1200 50  0000 C CNN
+F 2 "" H 5925 1475 50  0001 C CNN
+F 3 "" H 5925 1475 50  0001 C CNN
+	1    3275 2325
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4925 4025
+$Comp
+L OLIMEX_Power:+3.3V #PWR029
+U 1 1 61885DB7
+P 3225 1125
+F 0 "#PWR029" H 3225 975 50  0001 C CNN
+F 1 "+3.3V" H 3240 1298 50  0000 C CNN
+F 2 "" H 3225 1125 60  0000 C CNN
+F 3 "" H 3225 1125 60  0000 C CNN
+	1    3225 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 61889911
+P 3225 1225
+F 0 "FB1" H 3325 1271 50  0000 L CNN
+F 1 "MPZ1608R391ATD25" H 2400 1325 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3155 1225 50  0001 C CNN
+F 3 "~" H 3225 1225 50  0001 C CNN
+	1    3225 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR028
+U 1 1 618A7983
+P 2675 2100
+F 0 "#PWR028" H 2675 1950 50  0001 C CNN
+F 1 "+3.3V" H 2690 2273 50  0000 C CNN
+F 2 "" H 2675 2100 60  0000 C CNN
+F 3 "" H 2675 2100 60  0000 C CNN
+	1    2675 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 2225 2575 2100
+Wire Wire Line
+	2675 2225 2675 2100
+Connection ~ 2675 2100
+Wire Wire Line
+	2575 2100 2675 2100
+Wire Wire Line
+	2675 2100 2775 2100
+Wire Wire Line
+	2775 2100 2775 2225
+Wire Wire Line
+	3225 1500 3175 1500
+Wire Wire Line
+	3075 1500 3075 2225
+Wire Wire Line
+	3225 1325 3225 1350
+Wire Wire Line
+	3175 2225 3175 1500
+Connection ~ 3175 1500
+Wire Wire Line
+	3175 1500 3075 1500
+Wire Wire Line
+	3225 1500 3275 1500
+Wire Wire Line
+	3275 1500 3275 2225
+Connection ~ 3225 1500
+Wire Wire Line
+	3275 1500 3375 1500
+Wire Wire Line
+	3375 1500 3375 2225
+Connection ~ 3275 1500
+Wire Wire Line
+	3775 2225 3775 1950
+$Comp
+L Device:C_Small C29
+U 1 1 618DF118
+P 2575 1400
+F 0 "C29" H 2675 1475 50  0000 C CNN
+F 1 "0.1uF" H 2725 1325 50  0000 C CNN
+F 2 "" H 2575 1400 50  0001 C CNN
+F 3 "~" H 2575 1400 50  0001 C CNN
+	1    2575 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C28
+U 1 1 618E3342
+P 2400 1400
+F 0 "C28" H 2275 1475 50  0000 C CNN
+F 1 "0.1uF" H 2275 1325 50  0000 C CNN
+F 2 "" H 2400 1400 50  0001 C CNN
+F 3 "~" H 2400 1400 50  0001 C CNN
+	1    2400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR031
+U 1 1 618F4828
+P 3700 1550
+F 0 "#PWR031" H 3700 1300 50  0001 C CNN
+F 1 "GND" H 3705 1377 50  0000 C CNN
+F 2 "" H 3700 1550 60  0000 C CNN
+F 3 "" H 3700 1550 60  0000 C CNN
+	1    3700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR027
+U 1 1 618FC5A0
+P 2475 1550
+F 0 "#PWR027" H 2475 1300 50  0001 C CNN
+F 1 "GND" H 2480 1377 50  0000 C CNN
+F 2 "" H 2475 1550 60  0000 C CNN
+F 3 "" H 2475 1550 60  0000 C CNN
+	1    2475 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR032
+U 1 1 6191474D
+P 3875 1175
+F 0 "#PWR032" H 3875 1025 50  0001 C CNN
+F 1 "+1V2" H 3890 1348 50  0000 C CNN
+F 2 "" H 3875 1175 50  0001 C CNN
+F 3 "" H 3875 1175 50  0001 C CNN
+	1    3875 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 6192903F
+P 3875 1325
+F 0 "FB2" H 3975 1371 50  0000 L CNN
+F 1 "MPZ1608R391ATD25" H 3975 1280 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3805 1325 50  0001 C CNN
+F 3 "~" H 3875 1325 50  0001 C CNN
+	1    3875 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 1425 3875 1525
+Wire Wire Line
+	3875 1225 3875 1175
+Wire Wire Line
+	1600 4025 1925 4025
+$Comp
+L Device:C_Small C20
+U 1 1 61962CE4
+P 1050 6900
+F 0 "C20" H 950 6850 50  0000 C CNN
+F 1 "0.1uF" H 1175 6825 50  0000 C CNN
+F 2 "" H 1050 6900 50  0001 C CNN
+F 3 "~" H 1050 6900 50  0001 C CNN
+	1    1050 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4425 1050 5025
+$Comp
+L OLIMEX_Power:GND #PWR022
+U 1 1 619754BD
+P 1050 7050
+F 0 "#PWR022" H 1050 6800 50  0001 C CNN
+F 1 "GND" H 1055 6877 50  0000 C CNN
+F 2 "" H 1050 7050 60  0000 C CNN
+F 3 "" H 1050 7050 60  0000 C CNN
+	1    1050 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 7050 1050 7000
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 6199380C
+P 1600 6375
+F 0 "Y1" V 1554 6619 50  0000 L CNN
+F 1 "27MHz" V 1645 6619 50  0000 L CNN
+F 2 "" H 1600 6375 50  0001 C CNN
+F 3 "~" H 1600 6375 50  0001 C CNN
+F 4 "ABM8G-27.000MHZ-B4Y-T" V 1600 6375 50  0001 C CNN "Mfr No."
+	1    1600 6375
+	0    1    1    0   
+$EndComp
+Text Label 2050 6675 0    39   ~ 0
+XTAL
+Wire Wire Line
+	1600 6225 1600 6175
+Wire Wire Line
+	1600 6525 1600 6675
+$Comp
+L Device:C_Small C23
+U 1 1 619A431F
+P 1275 6175
+F 0 "C23" V 1325 6275 50  0000 C CNN
+F 1 "22pF" V 1350 6025 50  0000 C CNN
+F 2 "" H 1275 6175 50  0001 C CNN
+F 3 "~" H 1275 6175 50  0001 C CNN
+	1    1275 6175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 619A8E44
+P 1300 6675
+F 0 "C24" V 1375 6775 50  0000 C CNN
+F 1 "22pF" V 1350 6525 50  0000 C CNN
+F 2 "" H 1300 6675 50  0001 C CNN
+F 3 "~" H 1300 6675 50  0001 C CNN
+	1    1300 6675
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 6175 1375 6175
+Wire Wire Line
+	1050 6175 1050 6675
+Wire Wire Line
+	1050 6675 1200 6675
+Wire Wire Line
+	1175 6175 1050 6175
+Wire Wire Line
+	1400 6675 1600 6675
+Connection ~ 1600 6175
+Wire Wire Line
+	1050 4425 1925 4425
+Connection ~ 1050 6175
+Connection ~ 1050 6675
+Wire Wire Line
+	1050 6675 1050 6800
+Wire Wire Line
+	1600 6175 2050 6175
+Text Label 2050 6175 0    39   ~ 0
+TCLK
+Text Label 1825 4675 2    39   ~ 0
+TCLK
+Text Label 1825 4575 2    39   ~ 0
+XTAL
+Wire Wire Line
+	2050 6675 1600 6675
+Connection ~ 1600 6675
+Wire Wire Line
+	1925 4575 1825 4575
+Wire Wire Line
+	1825 4675 1925 4675
+$Comp
+L Device:C_Small C31
+U 1 1 619FA3CD
+P 5225 3875
+F 0 "C31" V 5275 3975 50  0000 C CNN
+F 1 "2.2uF" V 5300 3725 50  0000 C CNN
+F 2 "" H 5225 3875 50  0001 C CNN
+F 3 "~" H 5225 3875 50  0001 C CNN
+	1    5225 3875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR035
+U 1 1 619FFBF5
+P 5425 3925
+F 0 "#PWR035" H 5425 3675 50  0001 C CNN
+F 1 "GND" H 5430 3752 50  0000 C CNN
+F 2 "" H 5425 3925 60  0000 C CNN
+F 3 "" H 5425 3925 60  0000 C CNN
+	1    5425 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 3875 5125 3875
+Wire Wire Line
+	5425 3875 5425 3925
+Wire Wire Line
+	5325 3875 5425 3875
+$Comp
+L Device:C_Small C27
+U 1 1 61A0CD39
+P 1700 5175
+F 0 "C27" H 1600 5100 50  0000 C CNN
+F 1 "0.1uf" H 1575 5250 50  0000 C CNN
+F 2 "" H 1700 5175 50  0001 C CNN
+F 3 "~" H 1700 5175 50  0001 C CNN
+	1    1700 5175
+	-1   0    0    1   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR026
+U 1 1 61A12760
+P 1700 5350
+F 0 "#PWR026" H 1700 5100 50  0001 C CNN
+F 1 "GND" H 1705 5177 50  0000 C CNN
+F 2 "" H 1700 5350 60  0000 C CNN
+F 3 "" H 1700 5350 60  0000 C CNN
+	1    1700 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5350 1700 5275
+Wire Wire Line
+	1700 5075 1700 5025
+Wire Wire Line
+	1050 5025 1700 5025
+Connection ~ 1050 5025
+Wire Wire Line
+	1050 5025 1050 6175
+$Comp
+L power:+1V2 #PWR033
+U 1 1 61A268F7
+P 4700 1950
+F 0 "#PWR033" H 4700 1800 50  0001 C CNN
+F 1 "+1V2" H 4715 2123 50  0000 C CNN
+F 2 "" H 4700 1950 50  0001 C CNN
+F 3 "" H 4700 1950 50  0001 C CNN
+	1    4700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 2225 4125 2125
+Wire Wire Line
+	4125 2125 4225 2125
+Wire Wire Line
+	4700 1950 4700 2125
+Wire Wire Line
+	4225 2225 4225 2125
+Connection ~ 4225 2125
+Wire Wire Line
+	4225 2125 4700 2125
+Wire Wire Line
+	3875 1525 4225 1525
+Connection ~ 3875 1525
+Text Label 4225 1525 0    39   ~ 0
+1.2v_FB
+Wire Wire Line
+	1050 4425 875  4425
+Connection ~ 1050 4425
+$Comp
+L OLIMEX_Power:GND #PWR034
+U 1 1 61A67345
+P 5050 2125
+F 0 "#PWR034" H 5050 1875 50  0001 C CNN
+F 1 "GND" H 5055 1952 50  0000 C CNN
+F 2 "" H 5050 2125 60  0000 C CNN
+F 3 "" H 5050 2125 60  0000 C CNN
+	1    5050 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2125 4900 2125
+$Comp
+L Device:C_Small C30
+U 1 1 61A67358
+P 4800 2125
+F 0 "C30" V 4700 2075 50  0000 C CNN
+F 1 "0.1uF" V 4750 2275 50  0000 C CNN
+F 2 "" H 4800 2125 50  0001 C CNN
+F 3 "~" H 4800 2125 50  0001 C CNN
+	1    4800 2125
+	0    1    1    0   
+$EndComp
+Connection ~ 4700 2125
+Text Label 875  4425 2    39   ~ 0
+1.2v_FB
+Text Label 1125 4025 2    39   ~ 0
+1.2v_FB
+Wire Wire Line
+	1300 4025 1125 4025
+Wire Wire Line
+	3575 2225 3575 1950
+Wire Wire Line
+	3575 1950 3675 1950
+Wire Wire Line
+	3675 1950 3775 1950
+Connection ~ 3675 1950
+Connection ~ 3775 1950
+Wire Wire Line
+	3775 1950 3875 1950
+Wire Wire Line
+	3675 1950 3675 2225
+Connection ~ 3875 1950
+Wire Wire Line
+	3875 1950 3875 2225
+Wire Wire Line
+	3700 1500 3700 1550
+$Comp
+L Device:C_Small C32
+U 1 1 61AF13C1
+P 5475 1750
+F 0 "C32" H 5425 1850 50  0000 C CNN
+F 1 "0.1uF" H 5375 1700 50  0000 C CNN
+F 2 "" H 5475 1750 50  0001 C CNN
+F 3 "~" H 5475 1750 50  0001 C CNN
+	1    5475 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C33
+U 1 1 61AF823D
+P 5675 1750
+F 0 "C33" H 5775 1825 50  0000 C CNN
+F 1 "0.1uF" H 5825 1675 50  0000 C CNN
+F 2 "" H 5675 1750 50  0001 C CNN
+F 3 "~" H 5675 1750 50  0001 C CNN
+	1    5675 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 1525 3875 1950
+Text Label 5550 1425 0    39   ~ 0
+1.2v_FB
+Wire Wire Line
+	5550 1425 5550 1650
+Wire Wire Line
+	5550 1650 5475 1650
+Wire Wire Line
+	5675 1650 5550 1650
+Connection ~ 5550 1650
+Wire Wire Line
+	5475 1850 5475 1925
+Wire Wire Line
+	5475 1925 5575 1925
+Wire Wire Line
+	5675 1925 5675 1850
+$Comp
+L OLIMEX_Power:GND #PWR036
+U 1 1 61B27C09
+P 5575 1925
+F 0 "#PWR036" H 5575 1675 50  0001 C CNN
+F 1 "GND" H 5580 1752 50  0000 C CNN
+F 2 "" H 5575 1925 60  0000 C CNN
+F 3 "" H 5575 1925 60  0000 C CNN
+	1    5575 1925
+	1    0    0    -1  
+$EndComp
+Connection ~ 5575 1925
+Wire Wire Line
+	5575 1925 5675 1925
+Text Notes 5625 1600 0    39   ~ 0
+DCAPS\nRX,TX
+Wire Wire Line
+	3225 1350 2950 1350
+Wire Wire Line
+	2950 1350 2950 1275
+Wire Wire Line
+	2950 1275 2575 1275
+Wire Wire Line
+	2400 1275 2400 1300
+Connection ~ 3225 1350
+Wire Wire Line
+	3225 1350 3225 1500
+Wire Wire Line
+	2575 1300 2575 1275
+Connection ~ 2575 1275
+Wire Wire Line
+	2575 1275 2400 1275
+Wire Wire Line
+	2400 1500 2400 1550
+Wire Wire Line
+	2400 1550 2475 1550
+Wire Wire Line
+	2575 1550 2575 1500
+Connection ~ 2475 1550
+Wire Wire Line
+	2475 1550 2575 1550
+$Comp
+L Device:C_Small C26
+U 1 1 61B8F796
+P 1600 1400
+F 0 "C26" H 1700 1475 50  0000 C CNN
+F 1 "0.1uF" H 1750 1325 50  0000 C CNN
+F 2 "" H 1600 1400 50  0001 C CNN
+F 3 "~" H 1600 1400 50  0001 C CNN
+	1    1600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 61B8F7AE
+P 1350 1375
+F 0 "C25" H 1300 1450 50  0000 C CNN
+F 1 "0.1uF" H 1225 1300 50  0000 C CNN
+F 2 "" H 1350 1375 50  0001 C CNN
+F 3 "~" H 1350 1375 50  0001 C CNN
+	1    1350 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1475 1350 1550
+Wire Wire Line
+	1600 1550 1600 1500
+$Comp
+L Device:C_Small C21
+U 1 1 61B979F5
+P 1075 1400
+F 0 "C21" H 1025 1475 50  0000 C CNN
+F 1 "0.1uF" H 950 1325 50  0000 C CNN
+F 2 "" H 1075 1400 50  0001 C CNN
+F 3 "~" H 1075 1400 50  0001 C CNN
+	1    1075 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR023
+U 1 1 61BA7F4F
+P 1350 1225
+F 0 "#PWR023" H 1350 1075 50  0001 C CNN
+F 1 "+3.3V" H 1365 1398 50  0000 C CNN
+F 2 "" H 1350 1225 60  0000 C CNN
+F 3 "" H 1350 1225 60  0000 C CNN
+	1    1350 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 1300 1075 1225
+Wire Wire Line
+	1075 1225 1350 1225
+Wire Wire Line
+	1350 1275 1350 1225
+Connection ~ 1350 1225
+Wire Wire Line
+	1600 1300 1600 1225
+Wire Wire Line
+	1600 1225 1350 1225
+Wire Wire Line
+	1075 1500 1075 1550
+Wire Wire Line
+	1075 1550 1350 1550
+Connection ~ 1350 1550
+Wire Wire Line
+	1350 1550 1600 1550
+$Comp
+L OLIMEX_Power:GND #PWR024
+U 1 1 61BD2B6B
+P 1350 1550
+F 0 "#PWR024" H 1350 1300 50  0001 C CNN
+F 1 "GND" H 1355 1377 50  0000 C CNN
+F 2 "" H 1350 1550 60  0000 C CNN
+F 3 "" H 1350 1550 60  0000 C CNN
+	1    1350 1550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4925 5325
+NoConn ~ 4925 5425
+NoConn ~ 4925 5125
+NoConn ~ 4925 5025
+NoConn ~ 4925 4925
+NoConn ~ 4925 4725
+NoConn ~ 4925 4475
+NoConn ~ 4925 4575
+NoConn ~ 4925 4825
+NoConn ~ 4925 4275
+NoConn ~ 4925 4175
+Text HLabel 1750 3475 0    50   Input ~ 0
+LnA_p
+Text HLabel 1750 3375 0    50   Input ~ 0
+LnA_n
+Text HLabel 1750 3275 0    50   Input ~ 0
+LnB_p
+Text HLabel 1750 3175 0    50   Input ~ 0
+LnB_n
+Text HLabel 1750 3075 0    50   Input ~ 0
+LnC_p
+Text HLabel 1750 2975 0    50   Input ~ 0
+LnC_n
+Text HLabel 1750 2875 0    50   Input ~ 0
+LnD_p
+Text HLabel 1750 2775 0    50   Input ~ 0
+LnD_n
+Wire Wire Line
+	1925 2775 1750 2775
+Wire Wire Line
+	1750 2875 1925 2875
+Wire Wire Line
+	1925 2975 1750 2975
+Wire Wire Line
+	1750 3075 1925 3075
+Wire Wire Line
+	1925 3175 1750 3175
+Wire Wire Line
+	1750 3275 1925 3275
+Wire Wire Line
+	1925 3375 1750 3375
+Wire Wire Line
+	1750 3475 1925 3475
+Text HLabel 1750 3625 0    50   Input ~ 0
+AUXP
+Text HLabel 1750 3725 0    50   Input ~ 0
+AUXN
+Wire Wire Line
+	1925 3625 1750 3625
+Wire Wire Line
+	1750 3725 1925 3725
+Text Label 6750 3675 0    50   ~ 0
+CEC
+Wire Wire Line
+	4925 3375 5150 3375
+Wire Wire Line
+	4925 3475 5900 3475
+Wire Wire Line
+	4925 3575 6225 3575
+Wire Wire Line
+	4925 3675 6600 3675
+Wire Wire Line
+	4925 3075 5150 3075
+Wire Wire Line
+	4925 2775 5150 2775
+Wire Wire Line
+	4925 2875 5150 2875
+Wire Wire Line
+	4925 2975 5150 2975
+Text Label 5150 2775 0    50   ~ 0
+TMDS_D0-
+Text Label 5150 2875 0    50   ~ 0
+TMDS_D0+
+Text Label 5150 2975 0    50   ~ 0
+TMDS_D1-
+$Comp
+L Device:R_US R11
+U 1 1 62195D9B
+P 5900 3150
+F 0 "R11" H 5968 3196 50  0000 L CNN
+F 1 "R_US" H 5968 3105 50  0000 L CNN
+F 2 "" V 5940 3140 50  0001 C CNN
+F 3 "~" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 6219699F
+P 5900 2775
+F 0 "D7" V 5946 2695 50  0000 R CNN
+F 1 "D" V 5855 2695 50  0000 R CNN
+F 2 "" H 5900 2775 50  0001 C CNN
+F 3 "~" H 5900 2775 50  0001 C CNN
+	1    5900 2775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:+5V #PWR037
+U 1 1 621AA6B9
+P 5900 2575
+F 0 "#PWR037" H 5900 2425 50  0001 C CNN
+F 1 "+5V" H 5915 2748 50  0000 C CNN
+F 2 "" H 5900 2575 60  0000 C CNN
+F 3 "" H 5900 2575 60  0000 C CNN
+	1    5900 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2575 5900 2625
+Wire Wire Line
+	5900 2925 5900 3000
+$Comp
+L Device:R_US R12
+U 1 1 621B49D0
+P 6225 3150
+F 0 "R12" H 6293 3196 50  0000 L CNN
+F 1 "R_US" H 6293 3105 50  0000 L CNN
+F 2 "" V 6265 3140 50  0001 C CNN
+F 3 "~" H 6225 3150 50  0001 C CNN
+	1    6225 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 621B49EE
+P 6225 2775
+F 0 "D8" V 6271 2695 50  0000 R CNN
+F 1 "D" V 6180 2695 50  0000 R CNN
+F 2 "" H 6225 2775 50  0001 C CNN
+F 3 "~" H 6225 2775 50  0001 C CNN
+	1    6225 2775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:+5V #PWR038
+U 1 1 621B49F8
+P 6225 2525
+F 0 "#PWR038" H 6225 2375 50  0001 C CNN
+F 1 "+5V" H 6240 2698 50  0000 C CNN
+F 2 "" H 6225 2525 60  0000 C CNN
+F 3 "" H 6225 2525 60  0000 C CNN
+	1    6225 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 2925 6225 3000
+$Comp
+L Device:R_US R13
+U 1 1 621BEB72
+P 6600 3150
+F 0 "R13" H 6668 3196 50  0000 L CNN
+F 1 "R_US" H 6668 3105 50  0000 L CNN
+F 2 "" V 6640 3140 50  0001 C CNN
+F 3 "~" H 6600 3150 50  0001 C CNN
+	1    6600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 621BEB90
+P 6600 2775
+F 0 "D9" V 6646 2695 50  0000 R CNN
+F 1 "D" V 6555 2695 50  0000 R CNN
+F 2 "" H 6600 2775 50  0001 C CNN
+F 3 "~" H 6600 2775 50  0001 C CNN
+	1    6600 2775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR039
+U 1 1 621C8AB8
+P 6600 2575
+F 0 "#PWR039" H 6600 2425 50  0001 C CNN
+F 1 "+3.3V" H 6615 2748 50  0000 C CNN
+F 2 "" H 6600 2575 60  0000 C CNN
+F 3 "" H 6600 2575 60  0000 C CNN
+	1    6600 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3300 5900 3475
+Connection ~ 5900 3475
+Wire Wire Line
+	5900 3475 6750 3475
+Wire Wire Line
+	6225 3300 6225 3575
+Connection ~ 6225 3575
+Wire Wire Line
+	6225 3575 6750 3575
+Wire Wire Line
+	6600 2575 6600 2625
+Wire Wire Line
+	6600 3300 6600 3675
+Wire Wire Line
+	6600 2925 6600 3000
+Connection ~ 6600 3675
+Wire Wire Line
+	6600 3675 6750 3675
+Text Notes 2175 1275 0    39   ~ 0
+DCAPS\nRX,TX
+$Comp
+L Device:R_US R9
+U 1 1 6223D357
+P 1450 3875
+F 0 "R9" V 1400 3625 50  0000 L CNN
+F 1 "100K" V 1400 4000 50  0000 L CNN
+F 2 "" V 1490 3865 50  0001 C CNN
+F 3 "~" H 1450 3875 50  0001 C CNN
+	1    1450 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	725  3875 725  3950
+Wire Wire Line
+	725  3875 1300 3875
+Wire Wire Line
+	1600 3875 1925 3875
+$Comp
+L OLIMEX_Power:GND #PWR020
+U 1 1 622528ED
+P 725 3950
+F 0 "#PWR020" H 725 3700 50  0001 C CNN
+F 1 "GND" H 730 3777 50  0000 C CNN
+F 2 "" H 725 3950 60  0000 C CNN
+F 3 "" H 725 3950 60  0000 C CNN
+	1    725  3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 6225EC2C
+P 1175 2575
+F 0 "C22" V 1125 2425 50  0000 C CNN
+F 1 "0.1uF" V 1125 2700 50  0000 C CNN
+F 2 "" H 1175 2575 50  0001 C CNN
+F 3 "~" H 1175 2575 50  0001 C CNN
+	1    1175 2575
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR021
+U 1 1 6226A124
+P 875 2600
+F 0 "#PWR021" H 875 2350 50  0001 C CNN
+F 1 "GND" H 880 2427 50  0000 C CNN
+F 2 "" H 875 2600 60  0000 C CNN
+F 3 "" H 875 2600 60  0000 C CNN
+	1    875  2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2575 1275 2575
+Wire Wire Line
+	875  2575 875  2600
+Wire Wire Line
+	1075 2575 875  2575
+Connection ~ 1400 2575
+Wire Wire Line
+	6225 2525 6225 2625
+Wire Wire Line
+	1925 5025 1700 5025
+Connection ~ 1700 5025
+$Comp
+L OLIMEX_Power:PWR_FLAG #FLG0101
+U 1 1 643ABF16
+P 1050 4425
+F 0 "#FLG0101" H 1050 4520 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 4648 50  0000 C CNN
+F 2 "" H 1050 4425 60  0000 C CNN
+F 3 "" H 1050 4425 60  0000 C CNN
+	1    1050 4425
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1400 6375
+NoConn ~ 1800 6375
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 64E7C5FE
+P 7050 6100
+AR Path="/64E7C5FE" Ref="D?"  Part="1" 
+AR Path="/64E160D5/64E7C5FE" Ref="D10"  Part="1" 
+F 0 "D10" H 6950 6025 50  0000 C CNN
+F 1 "ESD122DMXR" H 6950 5950 50  0000 C CNN
+F 2 "SamacSys_Parts_2:DMX0003A" H 7900 6200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 7900 6100 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 7900 6000 50  0001 L CNN "Description"
+F 5 "" H 7900 5900 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 7900 5800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 7900 5700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 7900 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 7900 5500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7050 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 643E0004
+P 7750 6200
+AR Path="/619540C6/643E0004" Ref="#PWR?"  Part="1" 
+AR Path="/643E0004" Ref="#PWR?"  Part="1" 
+AR Path="/64E160D5/643E0004" Ref="#PWR0199"  Part="1" 
+F 0 "#PWR0199" H 7750 5950 50  0001 C CNN
+F 1 "GND" H 7755 6027 50  0000 C CNN
+F 2 "" H 7750 6200 60  0000 C CNN
+F 3 "" H 7750 6200 60  0000 C CNN
+	1    7750 6200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 643E001D
+P 7750 6100
+AR Path="/643E001D" Ref="D?"  Part="1" 
+AR Path="/64E160D5/643E001D" Ref="D33"  Part="1" 
+F 0 "D33" H 7650 6025 50  0000 C CNN
+F 1 "ESD122DMXR" H 7650 5950 50  0000 C CNN
+F 2 "SamacSys_Parts_2:DMX0003A" H 8600 6200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 8600 6100 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 8600 6000 50  0001 L CNN "Description"
+F 5 "" H 8600 5900 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 8600 5800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 8600 5700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 8600 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 8600 5500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7750 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 643EC1C3
+P 8500 6175
+AR Path="/619540C6/643EC1C3" Ref="#PWR?"  Part="1" 
+AR Path="/643EC1C3" Ref="#PWR?"  Part="1" 
+AR Path="/64E160D5/643EC1C3" Ref="#PWR0200"  Part="1" 
+F 0 "#PWR0200" H 8500 5925 50  0001 C CNN
+F 1 "GND" H 8505 6002 50  0000 C CNN
+F 2 "" H 8500 6175 60  0000 C CNN
+F 3 "" H 8500 6175 60  0000 C CNN
+	1    8500 6175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 6100 8500 6175
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 643EC1DC
+P 8500 6100
+AR Path="/643EC1DC" Ref="D?"  Part="1" 
+AR Path="/64E160D5/643EC1DC" Ref="D34"  Part="1" 
+F 0 "D34" H 8400 6025 50  0000 C CNN
+F 1 "ESD122DMXR" H 8400 5950 50  0000 C CNN
+F 2 "SamacSys_Parts_2:DMX0003A" H 9350 6200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 9350 6100 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 9350 6000 50  0001 L CNN "Description"
+F 5 "" H 9350 5900 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 9350 5800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 9350 5700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 9350 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 9350 5500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8500 6100
+	0    -1   -1   0   
+$EndComp
+Text Label 8600 4975 1    50   ~ 0
+TMDS_D1+
+Text Label 9200 5050 1    50   ~ 0
+TMDS_D2+
+Text Label 9100 5050 1    50   ~ 0
+TMDS_D2-
+Text Label 7150 5025 1    50   ~ 0
+TMDS_CLK+
+Text Label 7050 5025 1    50   ~ 0
+TMDS_CLK-
+Text Label 7750 4975 1    50   ~ 0
+TMDS_D0-
+Text Label 7850 4975 1    50   ~ 0
+TMDS_D0+
+Text Label 8500 4975 1    50   ~ 0
+TMDS_D1-
+$Comp
+L SamacSys_Parts:ESD122DMXR D?
+U 1 1 6442779D
+P 9100 6125
+AR Path="/6442779D" Ref="D?"  Part="1" 
+AR Path="/64E160D5/6442779D" Ref="D35"  Part="1" 
+F 0 "D35" H 9000 6050 50  0000 C CNN
+F 1 "ESD122DMXR" H 9000 5975 50  0000 C CNN
+F 2 "SamacSys_Parts_2:DMX0003A" H 9950 6225 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 9950 6125 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 9950 6025 50  0001 L CNN "Description"
+F 5 "" H 9950 5925 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 9950 5825 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 9950 5725 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 9950 5625 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 9950 5525 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9100 6125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64432BA1
+P 9100 6175
+AR Path="/619540C6/64432BA1" Ref="#PWR?"  Part="1" 
+AR Path="/64432BA1" Ref="#PWR?"  Part="1" 
+AR Path="/64E160D5/64432BA1" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 9100 5925 50  0001 C CNN
+F 1 "GND" H 9105 6002 50  0000 C CNN
+F 2 "" H 9100 6175 60  0000 C CNN
+F 3 "" H 9100 6175 60  0000 C CNN
+	1    9100 6175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5100 7050 5025
+Wire Wire Line
+	7150 5100 7150 5025
+Wire Wire Line
+	7750 5100 7750 4975
+Wire Wire Line
+	7850 5100 7850 4975
+Wire Wire Line
+	8500 5100 8500 4975
+Wire Wire Line
+	8600 5100 8600 4975
+Wire Wire Line
+	7750 6100 7750 6200
+Wire Wire Line
+	9100 6175 9100 6125
+Wire Wire Line
+	9100 5050 9100 5125
+Wire Wire Line
+	9200 5050 9200 5125
 $EndSCHEMATC

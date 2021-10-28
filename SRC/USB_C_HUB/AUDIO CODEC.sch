@@ -1,0 +1,571 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:ADAU1961WBCPZ-R7 IC?
+U 1 1 63C28A3A
+P 5700 2225
+AR Path="/63C28A3A" Ref="IC?"  Part="1" 
+AR Path="/63B95183/63C28A3A" Ref="IC6"  Part="1" 
+F 0 "IC6" H 5900 -350 50  0000 C CNN
+F 1 "ADAU1961WBCPZ-R7" H 5875 -450 50  0000 C CNN
+F 2 "QFN50P500X500X100-33N-D" H 7350 3025 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ADAU1961WBCPZ-R7.pdf" H 7350 2925 50  0001 L CNN
+F 4 "General Purpose Audio Codec 2ADC / 2DAC Ch Automotive 32-Pin LFCSP EP T/R" H 7350 2825 50  0001 L CNN "Description"
+F 5 "1" H 7350 2725 50  0001 L CNN "Height"
+F 6 "584-ADAU1961WBCPZ-R7" H 7350 2625 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-ADAU1961WBCPZ-R7" H 7350 2525 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Analog Devices" H 7350 2425 50  0001 L CNN "Manufacturer_Name"
+F 9 "ADAU1961WBCPZ-R7" H 7350 2325 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5700 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 63C28A40
+P 5600 1675
+AR Path="/63C28A40" Ref="C?"  Part="1" 
+AR Path="/63B95183/63C28A40" Ref="C194"  Part="1" 
+F 0 "C194" V 5550 1575 50  0000 C CNN
+F 1 "0.1uF" V 5550 1875 50  0000 C CNN
+F 2 "" H 5600 1675 50  0001 C CNN
+F 3 "~" H 5600 1675 50  0001 C CNN
+	1    5600 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 63C28A46
+P 5600 1875
+AR Path="/63C28A46" Ref="C?"  Part="1" 
+AR Path="/63B95183/63C28A46" Ref="C195"  Part="1" 
+F 0 "C195" V 5550 1800 50  0000 C CNN
+F 1 "10uF" V 5550 2075 50  0000 C CNN
+F 2 "" H 5600 1875 50  0001 C CNN
+F 3 "~" H 5600 1875 50  0001 C CNN
+	1    5600 1875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 1675 5400 1875
+Wire Wire Line
+	5400 1875 5500 1875
+Wire Wire Line
+	5400 1675 5500 1675
+Wire Wire Line
+	5700 1675 6100 1675
+Wire Wire Line
+	5700 1875 6100 1875
+Connection ~ 6100 1675
+Wire Wire Line
+	6100 1675 6100 1875
+Connection ~ 6100 1875
+Wire Wire Line
+	6100 1875 6100 2025
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63C28A55
+P 6450 5000
+AR Path="/619540C6/63C28A55" Ref="#PWR?"  Part="1" 
+AR Path="/63C28A55" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A55" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 6450 4750 50  0001 C CNN
+F 1 "GND" H 6455 4827 50  0000 C CNN
+F 2 "" H 6450 5000 60  0000 C CNN
+F 3 "" H 6450 5000 60  0000 C CNN
+	1    6450 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4925 6350 5000
+Wire Wire Line
+	6350 5000 6450 5000
+Wire Wire Line
+	6450 5000 6450 4925
+Connection ~ 6450 5000
+Wire Wire Line
+	6450 5000 6550 5000
+Wire Wire Line
+	6550 5000 6550 4925
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63C28A61
+P 5400 1875
+AR Path="/619540C6/63C28A61" Ref="#PWR?"  Part="1" 
+AR Path="/63C28A61" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A61" Ref="#PWR0186"  Part="1" 
+F 0 "#PWR0186" H 5400 1625 50  0001 C CNN
+F 1 "GND" H 5405 1702 50  0000 C CNN
+F 2 "" H 5400 1875 60  0000 C CNN
+F 3 "" H 5400 1875 60  0000 C CNN
+	1    5400 1875
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5400 1875
+Text HLabel 5000 2325 1    50   Input ~ 0
+I2S_MCLK
+Text HLabel 5400 3025 0    50   Input ~ 0
+I2S_SCK
+Text HLabel 5400 3125 0    50   Input ~ 0
+I2S_LRCK
+Text HLabel 5400 2675 0    50   Input ~ 0
+I2S_SDI
+Text HLabel 5400 2575 0    50   Input ~ 0
+I2S_SDO
+Wire Wire Line
+	5500 2475 5400 2475
+Wire Wire Line
+	5500 2575 5400 2575
+Wire Wire Line
+	5500 2675 5400 2675
+Wire Wire Line
+	5500 3025 5400 3025
+Wire Wire Line
+	5500 3125 5400 3125
+Text Notes 2600 3050 0    39   ~ 0
+• I2S_SDI: Serial Data Input\n• I2S_SDO: Serial Data Output\n• I2S_SCK: Serial Clock\n• I2S_LRCK: Left/Right Clock (SS/FSYNC)\n• I2S_MCLK: Master Clock\n• MIC_DET: Microphone Plug Detect
+Text HLabel 5375 4075 0    39   Input ~ 0
+MIC_DET
+Wire Wire Line
+	5500 4075 5375 4075
+Text HLabel 4275 2775 0    50   Input ~ 0
+I2C_DATA
+Text HLabel 4275 2875 0    50   Input ~ 0
+I2C_CLK
+Wire Wire Line
+	5500 2875 4675 2875
+Wire Wire Line
+	6100 1550 6100 1675
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 63C28A79
+P 6100 1550
+AR Path="/63C28A79" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A79" Ref="#PWR0187"  Part="1" 
+F 0 "#PWR0187" H 6100 1400 50  0001 C CNN
+F 1 "+3.3V" H 6115 1723 50  0000 C CNN
+F 2 "" H 6100 1550 60  0000 C CNN
+F 3 "" H 6100 1550 60  0000 C CNN
+	1    6100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 63C28A7F
+P 6250 1650
+AR Path="/63C28A7F" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A7F" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 6250 1500 50  0001 C CNN
+F 1 "+3.3V" H 6265 1823 50  0000 C CNN
+F 2 "" H 6250 1650 60  0000 C CNN
+F 3 "" H 6250 1650 60  0000 C CNN
+	1    6250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 63C28A85
+P 7075 1675
+AR Path="/63C28A85" Ref="C?"  Part="1" 
+AR Path="/63B95183/63C28A85" Ref="C196"  Part="1" 
+F 0 "C196" H 7175 1750 50  0000 C CNN
+F 1 "0.1uF" H 7225 1600 50  0000 C CNN
+F 2 "" H 7075 1675 50  0001 C CNN
+F 3 "~" H 7075 1675 50  0001 C CNN
+	1    7075 1675
+	-1   0    0    1   
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 63C28A8B
+P 7075 1525
+AR Path="/63C28A8B" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A8B" Ref="#PWR0191"  Part="1" 
+F 0 "#PWR0191" H 7075 1375 50  0001 C CNN
+F 1 "+3.3V" H 7090 1698 50  0000 C CNN
+F 2 "" H 7075 1525 60  0000 C CNN
+F 3 "" H 7075 1525 60  0000 C CNN
+	1    7075 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63C28A91
+P 7225 1850
+AR Path="/619540C6/63C28A91" Ref="#PWR?"  Part="1" 
+AR Path="/63C28A91" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A91" Ref="#PWR0192"  Part="1" 
+F 0 "#PWR0192" H 7225 1600 50  0001 C CNN
+F 1 "GND" H 7230 1677 50  0000 C CNN
+F 2 "" H 7225 1850 60  0000 C CNN
+F 3 "" H 7225 1850 60  0000 C CNN
+	1    7225 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 1575 7075 1525
+Wire Wire Line
+	6250 1650 6250 1700
+$Comp
+L Device:C_Small C?
+U 1 1 63C28A99
+P 7400 1675
+AR Path="/63C28A99" Ref="C?"  Part="1" 
+AR Path="/63B95183/63C28A99" Ref="C197"  Part="1" 
+F 0 "C197" H 7500 1750 50  0000 C CNN
+F 1 "0.1uF" H 7550 1600 50  0000 C CNN
+F 2 "" H 7400 1675 50  0001 C CNN
+F 3 "~" H 7400 1675 50  0001 C CNN
+	1    7400 1675
+	-1   0    0    1   
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 63C28A9F
+P 7400 1525
+AR Path="/63C28A9F" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28A9F" Ref="#PWR0193"  Part="1" 
+F 0 "#PWR0193" H 7400 1375 50  0001 C CNN
+F 1 "+3.3V" H 7415 1698 50  0000 C CNN
+F 2 "" H 7400 1525 60  0000 C CNN
+F 3 "" H 7400 1525 60  0000 C CNN
+	1    7400 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 1775 7075 1850
+Wire Wire Line
+	7075 1850 7225 1850
+Wire Wire Line
+	7400 1850 7400 1775
+Wire Wire Line
+	7400 1575 7400 1525
+Connection ~ 7225 1850
+Wire Wire Line
+	7225 1850 7400 1850
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63C28AAB
+P 6450 1775
+AR Path="/619540C6/63C28AAB" Ref="#PWR?"  Part="1" 
+AR Path="/63C28AAB" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28AAB" Ref="#PWR0189"  Part="1" 
+F 0 "#PWR0189" H 6450 1525 50  0001 C CNN
+F 1 "GND" H 6455 1602 50  0000 C CNN
+F 2 "" H 6450 1775 60  0000 C CNN
+F 3 "" H 6450 1775 60  0000 C CNN
+	1    6450 1775
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 2025 6325 1750
+Wire Wire Line
+	6325 1750 6450 1750
+Wire Wire Line
+	6450 1750 6450 1775
+Wire Wire Line
+	6250 1700 6550 1700
+Wire Wire Line
+	6550 1700 6550 2025
+Connection ~ 6250 1700
+Wire Wire Line
+	6250 1700 6250 2025
+Wire Wire Line
+	6325 2025 6400 2025
+$Comp
+L Device:R_US R?
+U 1 1 63C28AB9
+P 4400 2425
+AR Path="/63C28AB9" Ref="R?"  Part="1" 
+AR Path="/63B95183/63C28AB9" Ref="R98"  Part="1" 
+F 0 "R98" H 4468 2471 50  0000 L CNN
+F 1 "10K" H 4468 2380 50  0000 L CNN
+F 2 "" V 4440 2415 50  0001 C CNN
+F 3 "~" H 4400 2425 50  0001 C CNN
+	1    4400 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 63C28ABF
+P 4675 2425
+AR Path="/63C28ABF" Ref="R?"  Part="1" 
+AR Path="/63B95183/63C28ABF" Ref="R99"  Part="1" 
+F 0 "R99" H 4743 2471 50  0000 L CNN
+F 1 "10K" H 4743 2380 50  0000 L CNN
+F 2 "" V 4715 2415 50  0001 C CNN
+F 3 "~" H 4675 2425 50  0001 C CNN
+	1    4675 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 63C28AC5
+P 4550 2175
+AR Path="/63C28AC5" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63C28AC5" Ref="#PWR0184"  Part="1" 
+F 0 "#PWR0184" H 4550 2025 50  0001 C CNN
+F 1 "+3.3V" H 4565 2348 50  0000 C CNN
+F 2 "" H 4550 2175 60  0000 C CNN
+F 3 "" H 4550 2175 60  0000 C CNN
+	1    4550 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2175 4550 2225
+Wire Wire Line
+	4400 2275 4400 2225
+Wire Wire Line
+	4400 2225 4550 2225
+Wire Wire Line
+	4675 2275 4675 2225
+Wire Wire Line
+	4675 2225 4550 2225
+Connection ~ 4550 2225
+Wire Wire Line
+	4400 2575 4400 2775
+Wire Wire Line
+	4275 2775 4400 2775
+Connection ~ 4400 2775
+Wire Wire Line
+	4400 2775 5500 2775
+Wire Wire Line
+	4675 2575 4675 2875
+Connection ~ 4675 2875
+Wire Wire Line
+	4675 2875 4275 2875
+$Comp
+L Device:R_US R?
+U 1 1 63FE39AC
+P 5250 2475
+AR Path="/63FE39AC" Ref="R?"  Part="1" 
+AR Path="/63B95183/63FE39AC" Ref="R100"  Part="1" 
+F 0 "R100" V 5455 2475 50  0000 C CNN
+F 1 "49.9" V 5364 2475 50  0000 C CNN
+F 2 "" V 5290 2465 50  0001 C CNN
+F 3 "~" H 5250 2475 50  0001 C CNN
+	1    5250 2475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 2325 5000 2475
+Wire Wire Line
+	5000 2475 5100 2475
+$Comp
+L Connector:AudioJack2_Ground J9
+U 1 1 63FE79DD
+P 8650 2550
+F 0 "J9" H 8682 2875 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 8682 2784 50  0000 C CNN
+F 2 "" H 8650 2550 50  0001 C CNN
+F 3 "~" H 8650 2550 50  0001 C CNN
+	1    8650 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2925 7950 2925
+Wire Wire Line
+	8650 2925 8650 2750
+$Comp
+L Device:CP_Small C199
+U 1 1 63FEBA83
+P 8050 2925
+F 0 "C199" V 8000 2800 50  0000 C CNN
+F 1 "220uF" V 8000 3150 50  0000 C CNN
+F 2 "" H 8050 2925 50  0001 C CNN
+F 3 "~" H 8050 2925 50  0001 C CNN
+	1    8050 2925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8150 2925 8650 2925
+$Comp
+L Device:CP_Small C200
+U 1 1 63FEC32A
+P 8050 3125
+F 0 "C200" V 8000 3000 50  0000 C CNN
+F 1 "220uF" V 8000 3350 50  0000 C CNN
+F 2 "" H 8050 3125 50  0001 C CNN
+F 3 "~" H 8050 3125 50  0001 C CNN
+	1    8050 3125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP_Small C198
+U 1 1 63FED1F0
+P 8025 2725
+F 0 "C198" V 7975 2600 50  0000 C CNN
+F 1 "220uF" V 7975 2950 50  0000 C CNN
+F 2 "" H 8025 2725 50  0001 C CNN
+F 3 "~" H 8025 2725 50  0001 C CNN
+	1    8025 2725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 2825 7750 2825
+Wire Wire Line
+	7750 2825 7750 2725
+Wire Wire Line
+	7750 2725 7925 2725
+Wire Wire Line
+	8375 2725 8375 2450
+Wire Wire Line
+	8375 2450 8450 2450
+Wire Wire Line
+	8125 2725 8375 2725
+Wire Wire Line
+	7350 3025 7700 3025
+Wire Wire Line
+	7700 3025 7700 3125
+Wire Wire Line
+	7700 3125 7950 3125
+Wire Wire Line
+	8450 3125 8450 2550
+Wire Wire Line
+	8150 3125 8450 3125
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63FF1DC0
+P 8375 3525
+AR Path="/619540C6/63FF1DC0" Ref="#PWR?"  Part="1" 
+AR Path="/63FF1DC0" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/63FF1DC0" Ref="#PWR0194"  Part="1" 
+F 0 "#PWR0194" H 8375 3275 50  0001 C CNN
+F 1 "GND" H 8380 3352 50  0000 C CNN
+F 2 "" H 8375 3525 60  0000 C CNN
+F 3 "" H 8375 3525 60  0000 C CNN
+	1    8375 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8075 3525 7675 3525
+Wire Wire Line
+	8075 3325 7675 3325
+Wire Wire Line
+	8375 3325 8275 3325
+Wire Wire Line
+	8375 3525 8275 3525
+$Comp
+L Device:C_Small C?
+U 1 1 63FF1DB2
+P 8175 3525
+AR Path="/63FF1DB2" Ref="C?"  Part="1" 
+AR Path="/63B95183/63FF1DB2" Ref="C202"  Part="1" 
+F 0 "C202" V 8125 3450 50  0000 C CNN
+F 1 "10uF" V 8125 3725 50  0000 C CNN
+F 2 "" H 8175 3525 50  0001 C CNN
+F 3 "~" H 8175 3525 50  0001 C CNN
+	1    8175 3525
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 63FF1D9A
+P 8175 3325
+AR Path="/63FF1D9A" Ref="C?"  Part="1" 
+AR Path="/63B95183/63FF1D9A" Ref="C201"  Part="1" 
+F 0 "C201" V 8125 3225 50  0000 C CNN
+F 1 "0.1uF" V 8125 3525 50  0000 C CNN
+F 2 "" H 8175 3325 50  0001 C CNN
+F 3 "~" H 8175 3325 50  0001 C CNN
+	1    8175 3325
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7350 3225 7675 3225
+Wire Wire Line
+	7675 3225 7675 3325
+Connection ~ 7675 3325
+Wire Wire Line
+	7675 3325 7675 3525
+Wire Wire Line
+	8375 3325 8375 3525
+Connection ~ 8375 3525
+$Comp
+L Device:C_Small C?
+U 1 1 63FFC708
+P 4875 4675
+AR Path="/63FFC708" Ref="C?"  Part="1" 
+AR Path="/63B95183/63FFC708" Ref="C192"  Part="1" 
+F 0 "C192" V 4825 4600 50  0000 C CNN
+F 1 "10uF" V 4825 4875 50  0000 C CNN
+F 2 "" H 4875 4675 50  0001 C CNN
+F 3 "~" H 4875 4675 50  0001 C CNN
+	1    4875 4675
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 63FFDF8B
+P 5100 4650
+AR Path="/63FFDF8B" Ref="C?"  Part="1" 
+AR Path="/63B95183/63FFDF8B" Ref="C193"  Part="1" 
+F 0 "C193" V 5050 4575 50  0000 C CNN
+F 1 "10uF" V 5050 4850 50  0000 C CNN
+F 2 "" H 5100 4650 50  0001 C CNN
+F 3 "~" H 5100 4650 50  0001 C CNN
+	1    5100 4650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5500 4525 5100 4525
+Wire Wire Line
+	4875 4525 4875 4575
+Wire Wire Line
+	4875 4775 4875 5100
+Wire Wire Line
+	4875 5100 4975 5100
+Wire Wire Line
+	5100 5100 5100 4750
+Wire Wire Line
+	5100 4550 5100 4525
+Connection ~ 5100 4525
+Wire Wire Line
+	5100 4525 4875 4525
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64003B10
+P 4975 5100
+AR Path="/619540C6/64003B10" Ref="#PWR?"  Part="1" 
+AR Path="/64003B10" Ref="#PWR?"  Part="1" 
+AR Path="/63B95183/64003B10" Ref="#PWR0185"  Part="1" 
+F 0 "#PWR0185" H 4975 4850 50  0001 C CNN
+F 1 "GND" H 4980 4927 50  0000 C CNN
+F 2 "" H 4975 5100 60  0000 C CNN
+F 3 "" H 4975 5100 60  0000 C CNN
+	1    4975 5100
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4975 5100
+Wire Wire Line
+	4975 5100 5100 5100
+NoConn ~ 5500 4375
+NoConn ~ 5500 4225
+NoConn ~ 5500 3275
+NoConn ~ 5500 3375
+Text Notes 9700 2725 2    39   ~ 0
+AUDIO JACK TO HEAD PHONE\n
+NoConn ~ 5500 3475
+NoConn ~ 5500 3575
+NoConn ~ 5500 3675
+NoConn ~ 5500 3775
+NoConn ~ 5500 3875
+NoConn ~ 7350 2375
+NoConn ~ 7350 2475
+NoConn ~ 7350 2575
+NoConn ~ 7350 2675
+Text Notes 9400 3125 2    39   ~ 0
+CAPS REMOVES THE DC BIAS\nthere is a DC bias of VDD/2
+$EndSCHEMATC
