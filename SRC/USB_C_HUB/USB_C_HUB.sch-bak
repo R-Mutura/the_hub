@@ -4,11 +4,11 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 15
-Title ""
-Date ""
-Rev ""
+Title "USB C HUB"
+Date "2021-10-28"
+Rev "1.1"
 Comp ""
-Comment1 ""
+Comment1 "Designer: ROBERT M M"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -27,7 +27,7 @@ Text Label 1925 1625 0    50   ~ 0
 USB_D-
 Wire Wire Line
 	1750 1625 1925 1625
-Text Notes 625  750  0    50   ~ 10
+Text Notes 575  750  0    98   ~ 20
 UPWARD FACING PORT(UFP)\n
 Wire Wire Line
 	1150 3725 1150 3775
@@ -1055,7 +1055,7 @@ Wire Wire Line
 	14075 3475 14250 3475
 Wire Wire Line
 	14075 3575 14275 3575
-Text Notes 17150 900  0    98   ~ 20
+Text Notes 16150 1025 0    98   ~ 20
 OUTPUT SECTION\n      (DFP)
 Wire Wire Line
 	21300 950  21300 850 
@@ -1170,50 +1170,50 @@ USB3DN_RXDN1
 $Comp
 L SamacSys_Parts:ESD122DMXR D4
 U 1 1 6301CA21
-P 3925 1725
-F 0 "D4" H 3825 1650 50  0000 C CNN
-F 1 "ESD122DMXR" H 3825 1575 50  0000 C CNN
-F 2 "SamacSys_Parts_2:DMX0003A" H 4775 1825 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/esd122" H 4775 1725 50  0001 L CNN
-F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 4775 1625 50  0001 L CNN "Description"
-F 5 "" H 4775 1525 50  0001 L CNN "Height"
-F 6 "595-ESD122DMXR" H 4775 1425 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 4775 1325 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 4775 1225 50  0001 L CNN "Manufacturer_Name"
-F 9 "ESD122DMXR" H 4775 1125 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3925 1725
+P 3925 1600
+F 0 "D4" H 3825 1525 50  0000 C CNN
+F 1 "ESD122DMXR" H 3825 1450 50  0000 C CNN
+F 2 "SamacSys_Parts_2:DMX0003A" H 4775 1700 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/esd122" H 4775 1600 50  0001 L CNN
+F 4 "2-Channel ESD Protection Diode for USB Type-C and HDMI 2.0" H 4775 1500 50  0001 L CNN "Description"
+F 5 "" H 4775 1400 50  0001 L CNN "Height"
+F 6 "595-ESD122DMXR" H 4775 1300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=gt1LBUVyoHlO%2FS8I%252Bb9aFA%3D%3D" H 4775 1200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4775 1100 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESD122DMXR" H 4775 1000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3925 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L OLIMEX_Power:GND #PWR?
 U 1 1 6301CA2B
-P 3550 1725
+P 3550 1600
 AR Path="/619540C6/6301CA2B" Ref="#PWR?"  Part="1" 
 AR Path="/6301CA2B" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 3550 1475 50  0001 C CNN
-F 1 "GND" H 3555 1552 50  0000 C CNN
-F 2 "" H 3550 1725 60  0000 C CNN
-F 3 "" H 3550 1725 60  0000 C CNN
-	1    3550 1725
+F 0 "#PWR07" H 3550 1350 50  0001 C CNN
+F 1 "GND" H 3555 1427 50  0000 C CNN
+F 2 "" H 3550 1600 60  0000 C CNN
+F 3 "" H 3550 1600 60  0000 C CNN
+	1    3550 1600
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	3925 1725 3550 1725
+	3925 1600 3550 1600
 Wire Wire Line
-	4925 1725 4950 1725
+	4925 1600 4950 1600
 Wire Wire Line
-	4925 1825 5075 1825
+	4925 1700 5075 1700
 Wire Wire Line
-	4950 1550 4950 1725
+	4950 1425 4950 1600
 Wire Wire Line
-	5075 1825 5075 1550
-Text Label 4950 1550 2    50   ~ 0
+	5075 1700 5075 1425
+Text Label 4950 1425 2    50   ~ 0
 USB_D+
-Text Label 5075 1550 0    50   ~ 0
+Text Label 5075 1425 0    50   ~ 0
 USB_D-
 Text Notes 4125 4100 0    39   ~ 0
 ESD PROTECTION
-Text Notes 4250 1625 0    39   ~ 0
+Text Notes 4250 1500 0    39   ~ 0
 ESD PROTECTION
 Wire Wire Line
 	13900 12750 13900 12900
@@ -2332,4 +2332,43 @@ Wire Notes Line
 	15650 4025 22725 4025
 Wire Notes Line
 	15650 525  15650 11575
+$Comp
+L Device:C_Small C?
+U 1 1 64CB2E8E
+P 6425 1175
+F 0 "C?" H 6517 1221 50  0000 L CNN
+F 1 "0.1uf" H 6517 1130 50  0000 L CNN
+F 2 "" H 6425 1175 50  0001 C CNN
+F 3 "~" H 6425 1175 50  0001 C CNN
+	1    6425 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 64CB3D37
+P 6425 1025
+F 0 "#PWR?" H 6425 875 50  0001 C CNN
+F 1 "+3.3V" H 6275 1100 50  0000 C CNN
+F 2 "" H 6425 1025 60  0000 C CNN
+F 3 "" H 6425 1025 60  0000 C CNN
+	1    6425 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64CDC8A5
+P 6425 1300
+AR Path="/619540C6/64CDC8A5" Ref="#PWR?"  Part="1" 
+AR Path="/64CDC8A5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6425 1050 50  0001 C CNN
+F 1 "GND" H 6300 1200 50  0000 C CNN
+F 2 "" H 6425 1300 60  0000 C CNN
+F 3 "" H 6425 1300 60  0000 C CNN
+	1    6425 1300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 1025 6425 1075
+Wire Wire Line
+	6425 1275 6425 1300
 $EndSCHEMATC

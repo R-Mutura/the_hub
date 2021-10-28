@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 13 15
-Title ""
-Date ""
-Rev ""
+Title "USB C HUB"
+Date "2021-10-28"
+Rev "1.1"
 Comp ""
-Comment1 ""
+Comment1 "Designer: ROBERT M M"
 Comment2 ""
 Comment3 ""
 Comment4 ""

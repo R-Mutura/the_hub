@@ -4,11 +4,11 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 15
-Title ""
-Date ""
-Rev ""
+Title "USB C HUB"
+Date "2021-10-28"
+Rev "1.1"
 Comp ""
-Comment1 ""
+Comment1 "Designer: ROBERT M M"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -2332,4 +2332,45 @@ Wire Notes Line
 	15650 4025 22725 4025
 Wire Notes Line
 	15650 525  15650 11575
+$Comp
+L Device:C_Small C?
+U 1 1 64CB2E8E
+P 6425 1175
+F 0 "C?" H 6517 1221 50  0000 L CNN
+F 1 "0.1uf" H 6517 1130 50  0000 L CNN
+F 2 "" H 6425 1175 50  0001 C CNN
+F 3 "~" H 6425 1175 50  0001 C CNN
+	1    6425 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:+3.3V #PWR?
+U 1 1 64CB3D37
+P 6425 1025
+F 0 "#PWR?" H 6425 875 50  0001 C CNN
+F 1 "+3.3V" H 6275 1100 50  0000 C CNN
+F 2 "" H 6425 1025 60  0000 C CNN
+F 3 "" H 6425 1025 60  0000 C CNN
+	1    6425 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 64CDC8A5
+P 6425 1300
+AR Path="/619540C6/64CDC8A5" Ref="#PWR?"  Part="1" 
+AR Path="/64CDC8A5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6425 1050 50  0001 C CNN
+F 1 "GND" H 6300 1200 50  0000 C CNN
+F 2 "" H 6425 1300 60  0000 C CNN
+F 3 "" H 6425 1300 60  0000 C CNN
+	1    6425 1300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 1025 6425 1075
+Wire Wire Line
+	6425 1275 6425 1300
+Text Notes 11525 14150 2    50   ~ 0
+HEADPHONE JACK\n
 $EndSCHEMATC
