@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# RJ45-8Z
+#
+DEF RJ45-8Z J 0 40 Y Y 1 L N
+F0 "J" -230 450 50 H V L BNN
+F1 "RJ45-8Z" -230 -581 50 H V L BNN
+F2 "CONN_RJ45-8Z" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F5 "TE CONNECTIVITY" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+S -200 -500 100 400 0 0 10 f
+X 1 1 300 300 200 L 40 40 0 0 P 
+X 2 2 300 200 200 L 40 40 0 0 P 
+X 3 3 300 100 200 L 40 40 0 0 P 
+X 4 4 300 0 200 L 40 40 0 0 P 
+X 5 5 300 -100 200 L 40 40 0 0 P 
+X 6 6 300 -200 200 L 40 40 0 0 P 
+X 7 7 300 -300 200 L 40 40 0 0 P 
+X 8 8 300 -400 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
