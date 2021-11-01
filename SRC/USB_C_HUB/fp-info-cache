@@ -1,4 +1,4 @@
-20813797340728932
+20815432865417121
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -89687,6 +89687,13 @@ QFP40P900X900X120-65N
 0
 65
 65
+footprints
+SOIC127P600X175-8N
+
+
+0
+8
+8
 footprints
 SOP65P490X110-8N
 
